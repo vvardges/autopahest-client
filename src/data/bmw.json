@@ -1,0 +1,397 @@
+[
+  {
+    "Model": "1 Series",
+    "Bodies": [
+      "IV (F70) 2024—2025",
+      "III (F52) Restyling 2019—2024",
+      "III (F40) 2019—2024",
+      "II (F20/F21) Restyling 2 2017—2019",
+      "III (F52) 2017—2019",
+      "II (F20/F21) Restyling 2015—2017",
+      "II (F20/F21) 2011—2015",
+      "I (E82/E88) Restyling 2 2011—2014",
+      "I (E81/E82/E87/E88) Restyling 2007—2011",
+      "I (E81/E82/E87/E88) 2004—2007"
+    ]
+  },
+  {
+    "Model": "1M",
+    "Bodies": [
+      "I (E82) 2010—2012"
+    ]
+  },
+  {
+    "Model": "2 Series",
+    "Bodies": [
+      "F74/78 2024—2025",
+      "G42 Restyling 2023—2025",
+      "G42 2021—2025",
+      "F44 2019—2024",
+      "F22 Restyling 2017—2021",
+      "F22 2014—2017"
+    ]
+  },
+  {
+    "Model": "2 Series Active Tourer",
+    "Bodies": [
+      "U06 2021—2025",
+      "F45 Restyling 2018—2021",
+      "F45 2014—2018"
+    ]
+  },
+  {
+    "Model": "2 Series Gran Tourer",
+    "Bodies": [
+      "F46 Restyling 2018—2022",
+      "F46 2015—2018"
+    ]
+  },
+  {
+    "Model": "3 Series",
+    "Bodies": [
+      "VII (G2x) Restyling 2 2024—2025",
+      "VII (G2x) Restyling 2022—2025",
+      "VII (G2x) 2018—2022",
+      "VI (F3x) Restyling 2015—2020",
+      "VI (F3x) 2011—2016",
+      "V (E90/E91/E92/E93) Restyling 2008—2013",
+      "V (E90/E91/E92/E93) 2004—2010",
+      "IV (E46) Restyling 2001—2007",
+      "IV (E46) 1998—2003",
+      "III (E36) 1990—2000",
+      "II (E30) 1982—1994",
+      "I (E21) 1975—1983"
+    ]
+  },
+  {
+    "Model": "4 Series",
+    "Bodies": [
+      "G22, G23, G26 Restyling 2024—2025",
+      "G22, G23, G26 2020—2025",
+      "F32/F33/F36 Restyling 2017—2021",
+      "F32/F33/F36 2013—2017"
+    ]
+  },
+  {
+    "Model": "5 Series",
+    "Bodies": [
+      "VIII (G60/G61/G68) 2023—2025",
+      "VII (G30/G31) Restyling 2020—2023",
+      "VII (G30/G31) 2017—2020",
+      "VI (F10/F11/F07) Restyling 2013—2017",
+      "VI (F10/F11/F07) 2009—2013",
+      "V (E60/E61) Restyling 2007—2010",
+      "V (E60/E61) 2003—2007",
+      "IV (E39) Restyling 2000—2004",
+      "IV (E39) 1995—2000",
+      "III (E34) 1987—1996",
+      "II (E28) 1981—1988",
+      "I (E12) Restyling 1976—1981",
+      "I (E12) 1972—1976"
+    ]
+  },
+  {
+    "Model": "6 Series",
+    "Bodies": [
+      "IV (G32) Restyling 2020—2025",
+      "IV (G32) 2017—2020",
+      "III (F06/F13/F12) Restyling 2015—2018",
+      "III (F06/F13/F12) 2011—2015",
+      "II (E63/E64) Restyling 2007—2010",
+      "II (E63/E64) 2003—2007",
+      "I (E24) 1976—1989"
+    ]
+  },
+  {
+    "Model": "7 Series",
+    "Bodies": [
+      "VII (G70) 2022—2025",
+      "VI (G11/G12) Restyling 2019—2022",
+      "VI (G11/G12) 2015—2019",
+      "V (F01/F02/F04) Restyling 2012—2015",
+      "V (F01/F02/F04) 2008—2012",
+      "IV (E65/E66) Restyling 2005—2008",
+      "IV (E65/E66) 2001—2005",
+      "III (E38) Restyling 1998—2001",
+      "III (E38) 1994—1998",
+      "II (E32) 1986—1994",
+      "I (E23) 1977—1986"
+    ]
+  },
+  {
+    "Model": "8 Series",
+    "Bodies": [
+      "II (G14/G15/G16) Restyling 2022—2025",
+      "II (G14/G15/G16) 2018—2022",
+      "I (E31) 1989—1999"
+    ]
+  },
+  {
+    "Model": "M2",
+    "Bodies": [
+      "G87 Restyling 2024—2025",
+      "G87 2022—2025",
+      "F87 Restyling 2017—2021",
+      "F87 2015—2017"
+    ]
+  },
+  {
+    "Model": "M3",
+    "Bodies": [
+      "VI (G80) Restyling 2024—2025",
+      "VI (G80) 2020—2025",
+      "V (F80) 2014—2018",
+      "IV (E90) 2007—2013",
+      "III (E46) 1999—2006",
+      "II (E36) 1992—1999",
+      "I (E30) 1986—1991"
+    ]
+  },
+  {
+    "Model": "M4",
+    "Bodies": [
+      "G82/G83 Restyling 2024—2025",
+      "G82/G83 2020—2024",
+      "F82/F83 Restyling 2017—2020",
+      "F82/F83 2014—2017"
+    ]
+  },
+  {
+    "Model": "M5",
+    "Bodies": [
+      "VII (G90) 2024—2025",
+      "VI (F90) Restyling 2020—2024",
+      "VI (F90) 2017—2020",
+      "V (F10) Restyling 2013—2016",
+      "V (F10) 2011—2013",
+      "IV (E60/E61) 2004—2010",
+      "III (E39) 1998—2003",
+      "II (E34) 1988—1995",
+      "I (E28) 1985—1988"
+    ]
+  },
+  {
+    "Model": "M6",
+    "Bodies": [
+      "III (F06/F13/F12) 2012—2018",
+      "II (E63/E64) 2005—2010",
+      "I (E24) 1984—1989"
+    ]
+  },
+  {
+    "Model": "M8",
+    "Bodies": [
+      "I (F91/F92/F93) Restyling 2022—2025",
+      "I (F91/F92/F93) 2019—2022"
+    ]
+  },
+  {
+    "Model": "X1",
+    "Bodies": [
+      "III (U11/U12) 2022—2025",
+      "II (F48) Restyling 2019—2022",
+      "II (F48) 2015—2019",
+      "I (E84) Restyling 2012—2015",
+      "I (E84) 2009—2012"
+    ]
+  },
+  {
+    "Model": "X2",
+    "Bodies": [
+      "II (U10) 2023—2025",
+      "I (F39) 2017—2023"
+    ]
+  },
+  {
+    "Model": "X3",
+    "Bodies": [
+      "IV (G45/G48) 2024—2025",
+      "III (G01) Restyling 2021—2024",
+      "III (G01) 2017—2021",
+      "II (F25) Restyling 2014—2017",
+      "II (F25) 2010—2014",
+      "I (E83) Restyling 2006—2010",
+      "I (E83) 2003—2006"
+    ]
+  },
+  {
+    "Model": "X3 M",
+    "Bodies": [
+      "I (F97) Restyling 2021—2025",
+      "I (F97) 2019—2021"
+    ]
+  },
+  {
+    "Model": "X4",
+    "Bodies": [
+      "II (G02) Restyling 2021—2025",
+      "II (G02) 2018—2021",
+      "I (F26) 2014—2018"
+    ]
+  },
+  {
+    "Model": "X4 M",
+    "Bodies": [
+      "I (F98) Restyling 2021—2025",
+      "I (F98) 2019—2021"
+    ]
+  },
+  {
+    "Model": "X5",
+    "Bodies": [
+      "IV (G05/G18) Restyling 2023—2025",
+      "IV (G05/G18) 2018—2023",
+      "III (F15) 2013—2018",
+      "II (E70) Restyling 2010—2013",
+      "II (E70) 2006—2010",
+      "I (E53) Restyling 2003—2006",
+      "I (E53) 1999—2003"
+    ]
+  },
+  {
+    "Model": "X5 M",
+    "Bodies": [
+      "III (F95) Restyling 2023—2025",
+      "III (F95) 2019—2023",
+      "II (F85) 2014—2018",
+      "I (E70) 2009—2013"
+    ]
+  },
+  {
+    "Model": "X6",
+    "Bodies": [
+      "III (G06) Restyling 2023—2025",
+      "III (G06) 2019—2023",
+      "II (F16) 2014—2019",
+      "I (E71) Restyling 2012—2014",
+      "I (E71) 2007—2012"
+    ]
+  },
+  {
+    "Model": "X6 M",
+    "Bodies": [
+      "III (F96) Restyling 2023—2025",
+      "III (F96) 2019—2023",
+      "II (F86) 2014—2019",
+      "I (E71) Restyling 2012—2014",
+      "I (E71) 2009—2012"
+    ]
+  },
+  {
+    "Model": "X7",
+    "Bodies": [
+      "I (G07) Restyling 2022—2025",
+      "I (G07) 2019—2022"
+    ]
+  },
+  {
+    "Model": "XM",
+    "Bodies": [
+      " 2022—2025"
+    ]
+  },
+  {
+    "Model": "Z3",
+    "Bodies": [
+      "I Restyling 2000—2002",
+      "I 1995—2000"
+    ]
+  },
+  {
+    "Model": "Z3 M",
+    "Bodies": [
+      "I Restyling (E36) 2001—2002",
+      "I (E36) 1997—2000"
+    ]
+  },
+  {
+    "Model": "Z4",
+    "Bodies": [
+      "III (G29) Restyling 2022—2025",
+      "III (G29) 2018—2022",
+      "II (E89) Restyling 2013—2017",
+      "II (E89) 2009—2013",
+      "I (E85/E86) Restyling 2005—2009",
+      "I (E85/E86) 2002—2005"
+    ]
+  },
+  {
+    "Model": "Z4 M",
+    "Bodies": [
+      " 2006—2009"
+    ]
+  },
+  {
+    "Model": "Z8",
+    "Bodies": [
+      " 2000—2003"
+    ]
+  },
+  {
+    "Model": "i3",
+    "Bodies": [
+      "I (G28) Restyling 2023—2025",
+      "I (G28) 2022—2023",
+      "I (I01) Restyling 2017—2022",
+      "I (I01) 2013—2017"
+    ]
+  },
+  {
+    "Model": "i4",
+    "Bodies": [
+      "G26 Restyling 2024—2025",
+      "G26 2021—2024"
+    ]
+  },
+  {
+    "Model": "i5",
+    "Bodies": [
+      " 2023—2025"
+    ]
+  },
+  {
+    "Model": "i7",
+    "Bodies": [
+      " 2022—2025"
+    ]
+  },
+  {
+    "Model": "i8",
+    "Bodies": [
+      "I Restyling 2017—2020",
+      "I 2014—2017"
+    ]
+  },
+  {
+    "Model": "iX",
+    "Bodies": [
+      "I (I20) Restyling 2025—2025",
+      "I (I20) 2021—2025"
+    ]
+  },
+  {
+    "Model": "iX1",
+    "Bodies": [
+      " 2022—2025"
+    ]
+  },
+  {
+    "Model": "iX2",
+    "Bodies": [
+      " 2023—2025"
+    ]
+  },
+  {
+    "Model": "iX3",
+    "Bodies": [
+      "I (G08) Restyling 2021—2025",
+      "I (G08) 2020—2021"
+    ]
+  },
+  {
+    "Model": "iX5",
+    "Bodies": [
+      " 2023—2025"
+    ]
+  }
+]
