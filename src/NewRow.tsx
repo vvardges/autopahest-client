@@ -12,14 +12,14 @@ const columns = [
 
 const carManufacturers = ["bmw", "mercedes"]; // TODO: Replace with real data
 
-const data = {
+const carData = {
   bmw: bmwData,
   mercedes: mercedesData
 }
 // Extract model names for Autocomplete
 const modelOptions = {
-  bmw: data.bmw.map(item => item.Model),
-  mercedes: data.mercedes.map(item => item.Model)
+  bmw: carData.bmw.map(item => item.Model),
+  mercedes: carData.mercedes.map(item => item.Model)
 };
 
 const initialState = {
@@ -38,7 +38,7 @@ const initialState = {
   "NMA Images": ""
 };
 
-const NewRow = ({ onAdd }) => {
+const NewRow = ({ onAdd, data }) => {
   const [form, setForm] = useState(initialState);
 
   // Derive body codes based on selected models
@@ -46,7 +46,7 @@ const NewRow = ({ onAdd }) => {
     return form["Car Model"]
         .map(
             model =>
-                data[form["Car Manufacturer"]].find(item => item.Model === model)?.Bodies || []
+                carData[form["Car Manufacturer"]].find(item => item.Model === model)?.Bodies || []
         ).flat();
   }, [form["Car Model"]]);
 
@@ -64,6 +64,25 @@ const NewRow = ({ onAdd }) => {
     <TableRow>
       {columns.map(col => {
         switch (col) {
+          case "Name":
+          case "Brand":
+            return (
+              <TableCell key={col} padding="none">
+                <Autocomplete
+                  freeSolo
+                  options={[...data[col]]}
+                  value={form[col] || null}
+                  onChange={(event, newValue) => {
+                    setForm({ ...form, [col]: newValue || "" });
+                  }}
+                  fullWidth
+                  renderInput={params => (
+                      <TextField {...params} placeholder={col} fullWidth />
+                  )}
+                  autoSelect
+                />
+              </TableCell>
+            );
           case "Car Manufacturer":
             return (
               <TableCell key={col} padding="none">
@@ -101,6 +120,7 @@ const NewRow = ({ onAdd }) => {
                   renderInput={params => (
                     <TextField {...params} placeholder="Models" fullWidth />
                   )}
+                  disableCloseOnSelect
                 />
               </TableCell>
             );
@@ -120,6 +140,7 @@ const NewRow = ({ onAdd }) => {
                   renderInput={params => (
                     <TextField {...params} placeholder="Body" fullWidth />
                   )}
+                  disableCloseOnSelect
                 />
               </TableCell>
             );

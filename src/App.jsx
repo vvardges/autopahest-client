@@ -58,7 +58,10 @@ function App() {
                 ))}
               </TableRow>
             ))}
-            <NewRow onAdd={handleAddRow} />
+            <NewRow onAdd={handleAddRow} data={{
+              Name: new Set(rows.map(row => row.Name)),
+              Brand: new Set(rows.map(row => row.Brand))
+            }} />
           </TableBody>
         </Table>
       </TableContainer>
