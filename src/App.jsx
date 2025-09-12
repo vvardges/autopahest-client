@@ -5,8 +5,9 @@ import NewRow from "./NewRow.js";
 
 const columns = [
   'Car Manufacturer', 'Car Model', 'Body Code', 'Name', 'Description',
-  'Brand', 'Origin', 'Price', 'AM Article', 'OEM Article', 'Weight',
-  'English', 'NMA Images', 'Actions'
+  'Brand', 'Price', 'Origin',
+  //  'AM Article', 'OEM Article', 'Weight',
+    'English', 'NMA Images', 'Actions'
 ]
 
 const initialRows = [
@@ -54,11 +55,17 @@ function App() {
             {rows.map((row, idx) => (
               <TableRow key={idx}>
                 {columns.map(col => (
-                  <TableCell key={col}>{row[col]}</TableCell>
+                  <TableCell key={col}>
+                      {(col === "NMA Images" && row[col]) ? (
+                          <img src={row[col]} alt="NMA" style={{height: '50px', width: '50px', objectFit: 'cover'}} />
+                      ) : (
+                        row[col]
+                      )}
+                  </TableCell>
                 ))}
               </TableRow>
             ))}
-            <NewRow onAdd={handleAddRow} data={{
+            <NewRow onAdd={handleAddRow} key={rows.length} data={{
               Name: new Set(rows.map(row => row.Name)),
               Brand: new Set(rows.map(row => row.Brand))
             }} />

@@ -1,13 +1,17 @@
 import {useMemo, useState} from "react";
-import {Autocomplete, Button, TableCell, TableRow, TextField} from "@mui/material";
+import {Autocomplete, Button, createFilterOptions, TableCell, TableRow, TextField} from "@mui/material";
 
+// @ts-ignore
 import bmwData from "./data/bmw.json";
-import mercedesData from "./data/mercedes.json";
+// @ts-ignore
+import mercedesData from './data/mercedes.json';
+import GoogleImagePicker from "./GoogleImagePicker";
 
 const columns = [
   "Car Manufacturer", "Car Model", "Body Code", "Name", "Description",
-  "Brand", "Origin", "Price", "AM Article", "OEM Article", "Weight",
-  "English", "NMA Images", "Actions"
+  "Brand", "Price", "Origin",
+  //  "AM Article", "OEM Article", "Weight",
+    "English", "NMA Images", "Actions"
 ];
 
 const carManufacturers = ["bmw", "mercedes"]; // TODO: Replace with real data
@@ -31,23 +35,52 @@ const initialState = {
   "Brand": "",
   "Origin": "",
   "Price": "",
-  "AM Article": "",
-  "OEM Article": "",
-  "Weight": "",
+  // "AM Article": "",
+  // "OEM Article": "",
+  // "Weight": "",
   "English": "",
-  "NMA Images": ""
+  "NMA Images": "",
+    "Actions": ""
 };
+
+const origins = [
+    "China",
+    "Germany",
+    "Japan",
+    "South Korea",
+    "United States",
+    "France",
+    "Italy",
+    "Spain",
+    "United Kingdom",
+    "Czech Republic",
+    "Poland",
+    "Romania",
+    "Turkey",
+    "India",
+    "Thailand",
+    "Malaysia",
+    "Mexico",
+    "Brazil",
+    "Slovakia",
+    "Hungary"
+]
 
 const NewRow = ({ onAdd, data }) => {
   const [form, setForm] = useState(initialState);
+  const [open, setOpen] = useState(false);
 
   // Derive body codes based on selected models
   const bodyCodeOptions = useMemo(() => {
-    return form["Car Model"]
-        .map(
-            model =>
-                carData[form["Car Manufacturer"]].find(item => item.Model === model)?.Bodies || []
-        ).flat();
+      let flat = form["Car Model"]
+          .map(
+              model =>
+                  carData[form["Car Manufacturer"]].find(item => item.Model === model)?.Bodies.map(body => ({
+                      label: body,
+                      model: model,
+                  })) || []
+          ).flat();
+      return flat;
   }, [form["Car Model"]]);
 
   // Handle change for single values
@@ -56,6 +89,8 @@ const NewRow = ({ onAdd, data }) => {
   };
 
   const handleAdd = () => {
+    // @ts-ignore
+      form["Body Code"] = form["Body Code"] ? form["Body Code"].map(body => body.label).join(", ") : [];
     onAdd?.(form);
     setForm(initialState);
   };
@@ -64,25 +99,6 @@ const NewRow = ({ onAdd, data }) => {
     <TableRow>
       {columns.map(col => {
         switch (col) {
-          case "Name":
-          case "Brand":
-            return (
-              <TableCell key={col} padding="none">
-                <Autocomplete
-                  freeSolo
-                  options={[...data[col]]}
-                  value={form[col] || null}
-                  onChange={(event, newValue) => {
-                    setForm({ ...form, [col]: newValue || "" });
-                  }}
-                  fullWidth
-                  renderInput={params => (
-                      <TextField {...params} placeholder={col} fullWidth />
-                  )}
-                  autoSelect
-                />
-              </TableCell>
-            );
           case "Car Manufacturer":
             return (
               <TableCell key={col} padding="none">
@@ -115,7 +131,7 @@ const NewRow = ({ onAdd, data }) => {
                       "Body Code": []
                     });
                   }}
-                  sx={{ width: "300px"}}
+                  sx={{ width: "200px"}}
                   fullWidth
                   renderInput={params => (
                     <TextField {...params} placeholder="Models" fullWidth />
@@ -130,11 +146,12 @@ const NewRow = ({ onAdd, data }) => {
                 <Autocomplete
                   multiple
                   options={bodyCodeOptions}
+                  groupBy={option => option.model}
                   value={form[col]}
                   onChange={(event, newValue) => {
                     setForm({ ...form, [col]: newValue || [] });
                   }}
-                  sx={{ width: "300px"}}
+                  sx={{ width: "200px"}}
                   fullWidth
                   disabled={form["Car Model"].length === 0}
                   renderInput={params => (
@@ -144,6 +161,71 @@ const NewRow = ({ onAdd, data }) => {
                 />
               </TableCell>
             );
+        case "Name":
+        case "Brand":
+            return (
+                <TableCell key={col} padding="none">
+                    <Autocomplete
+                        sx={{ width: "200px"}}
+                        freeSolo
+                        options={[...data[col]]}
+                        fullWidth
+                        renderInput={params => (
+                            <TextField {...params} placeholder={col} fullWidth />
+                        )}
+                        onChange={(e, newValue) => {
+                            setForm({ ...form, [col]: newValue || "" });
+                        }}
+                        inputValue={form[col]}
+                        onInput={handleChange(col)}
+                        filterSelectedOptions={false}
+                        includeInputInList={true}
+                    />
+                </TableCell>
+            );
+        case "Description":
+            return (
+                <TableCell key={col} padding="none">
+                    <TextField
+                        sx={{ width: "200px"}}
+                        label="Description"
+                        multiline
+                        maxRows={4}
+                        onChange={handleChange(col)}
+                        value={form[col]}
+                    />
+                </TableCell>
+            )
+          case "Price":
+              return (
+                  <TableCell key={col} padding="none">
+                      <TextField
+                          sx={{ width: "100px"}}
+                          label="Price"
+                          type="number"
+                          onChange={handleChange(col)}
+                          value={form[col]}
+                      />
+                  </TableCell>
+              )
+            case "Origin":
+                return (
+                    <TableCell key={col} padding="none">
+                        <Autocomplete
+                            sx={{ width: "200px"}}
+                            selectOnFocus
+                            options={origins}
+                            value={form[col] || null}
+                            onChange={(event, newValue) => {
+                                setForm({ ...form, [col]: newValue || "" });
+                            }}
+                            fullWidth
+                            renderInput={params => (
+                                <TextField {...params} placeholder="Origin" fullWidth />
+                            )}
+                        />
+                    </TableCell>
+                )
           case "Actions":
             return (
               <TableCell key={col} padding="none">
@@ -152,6 +234,20 @@ const NewRow = ({ onAdd, data }) => {
                 </Button>
               </TableCell>
             );
+          case "NMA Images":
+              return (
+                  <TableCell key={col} padding="none">
+                      <Button onClick={() => setOpen(true)}>Select</Button>
+                      {open && <GoogleImagePicker
+                          onClose={() => setOpen((prevState) => !prevState)}
+                          onSelect={url => {
+                              setForm({ ...form, [col]: url });
+                              setOpen(false);
+                          }}
+                          defaultValue={form["English"]}
+                      />}
+                  </TableCell>
+              )
           default:
             return (
               <TableCell key={col} padding="none">
