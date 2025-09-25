@@ -3,85 +3,91 @@ import {COLUMNS} from "@/constants";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import {getColumnSx} from "@/helpers";
+import type { ReactNode } from "react";
+import type { Row as RowType } from "@/types";
 
-const label = { inputProps: { "aria-label": "Actions" } }
+const label = { inputProps: { "aria-label": "Actions" } };
 
-const Row = ({ row, idx, onDoubleClick }) => {
-    return (
-        <TableRow
-            hover
-            key={row.index}
-            onDoubleClick={() => onDoubleClick(row.index)}
-            data-index={idx}
-        >
-            {COLUMNS.map(col => {
-                let content: React.ReactNode;
-                switch (col) {
-                    case "models":
-                        content = row[col].length ? row[col].map((item) => (item.Model)).join(", ") : "";
-                        break;
-                    case "bodies":
-                        content = row[col].length ? row[col].map((item) => (item.label)).join(", ") : "";
-                        break;
-                    case "images":
-                        content =
-                            row[col] ? (
-                                <img
-                                    src={row[col]}
-                                    alt="NMA"
-                                    style={{ height: "50px", width: "50px", objectFit: "cover" }}
-                                />
-                            ) : (
-                                row[col]
-                            )
-                        break
-                    case "publish":
-                        content = <Switch {...label} />
-                        break
-                    case "actions":
-                        content = (
-                            <>
-                                <IconButton
-                                    aria-label="Edit"
-                                    size="small"
-                                    //onClick={() => setEditRowIdx(row.index)}
-                                >
-                                    <EditIcon fontSize="small" />
-                                </IconButton>
-                                <IconButton
-                                    aria-label="Delete"
-                                    size="small"
-                                    //onClick={() => handleDeleteRow(row.index)}
-                                >
-                                    <DeleteIcon fontSize="small" />
-                                </IconButton>
-                            </>
-                        )
-                        break
-                    default:
-                        content = row[col]
-                }
+type Props = {
+  row: RowType;
+  idx: number;
+  onDoubleClick: (idx: number) => void;
+};
 
-                return (
-                    <TableCell
-                        key={col}
-                        padding="none"
-                        sx={{
-                            position: "relative",
-                            paddingLeft: "5px",
-                            ...getColumnSx(col),
-                        }}
-                    >
-                        {content &&
-                            <Typography noWrap={true} component="p" fontSize={14}>
-                                {content}
-                            </Typography>
-                        }
-                    </TableCell>
-                )
-            })}
-        </TableRow>
-    )
-}
+const Row = ({ row, idx, onDoubleClick }: Props) => {
+  return (
+    <TableRow
+      hover
+      key={row.index}
+      onDoubleClick={() => onDoubleClick(row.index)}
+      data-index={idx}
+    >
+      {COLUMNS.map((col) => {
+        let content: ReactNode;
+
+        switch (col) {
+          case "models":
+          case "bodies":
+            content = row[col].join(", ");
+            break;
+          case "images":
+            content = row[col] ? (
+              <img
+                src={row[col]}
+                alt="NMA"
+                style={{ height: "50px", width: "50px", objectFit: "cover" }}
+              />
+            ) : (
+              row[col]
+            );
+            break;
+          case "publish":
+            content = <Switch {...label} />;
+            break;
+          case "actions":
+            content = (
+              <>
+                <IconButton
+                  aria-label="Edit"
+                  size="small"
+                  // onClick={() => setEditRowIdx(row.index)}
+                >
+                  <EditIcon fontSize="small" />
+                </IconButton>
+                <IconButton
+                  aria-label="Delete"
+                  size="small"
+                  // onClick={() => handleDeleteRow(row.index)}
+                >
+                  <DeleteIcon fontSize="small" />
+                </IconButton>
+              </>
+            );
+            break;
+          default:
+            content = row[col];
+        }
+
+        return (
+          <TableCell
+            key={col}
+            padding="none"
+            sx={{
+              position: "relative",
+              paddingLeft: "5px",
+              ...getColumnSx(col),
+            }}
+          >
+            {content && (
+              <Typography noWrap component="p" fontSize={14}>
+                {content}
+              </Typography>
+            )}
+          </TableCell>
+        );
+      })}
+    </TableRow>
+  );
+};
 
 export default Row;

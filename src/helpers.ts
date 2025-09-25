@@ -1,10 +1,12 @@
+import type { Theme } from "@mui/material";
+
 import type { Column } from "@/types";
 
 export const getColumnSx = (col: Column) => {
   const stickyBase = {
     position: "sticky",
     zIndex: 2,
-    backgroundColor: (theme: any) => theme.palette.background.default,
+    backgroundColor: (theme: Theme) => theme.palette.background.default,
   } as const;
 
   switch (col) {

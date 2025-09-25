@@ -29,11 +29,6 @@ import { COLUMNS } from "@/constants";
 import type {Column, Row} from "@/types";
 import {getColumnSx} from "@/helpers";
 
-type DataDict = {
-  Name: ReadonlyArray<string> | ReadonlySet<string>;
-  Brand: ReadonlyArray<string> | ReadonlySet<string>;
-};
-
 type ModelOptions = {
   Model: string;
   Bodies: string[];
