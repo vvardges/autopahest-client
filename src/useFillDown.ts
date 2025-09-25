@@ -1,25 +1,9 @@
 // src/hooks/useFillDown.js
 import { useEffect, useRef, useState } from "react"
 
-export function useFillDown({ columns, initialRows, totalRows = 20 }) {
-  // Build an empty row with all columns present
-  const makeEmptyRow = (index) => {
-    const obj = {}
-    for (const col of columns) {
-      if (col === "index") obj[col] = index
-      else obj[col] = ""
-    }
-    return obj
-  }
+import { Column } from "@/types";
 
-  // Keep a fixed number of rows in state so we can fill into them
-  const [rows, setRows] = useState(() => {
-    const arr = [...initialRows]
-    for (let i = arr.length; i < totalRows; i++) {
-      arr.push(makeEmptyRow(i + 1))
-    }
-    return arr
-  })
+export function useFillDown({ columns, initialRows, totalRows = 20 }) {
 
   // Drag-fill state
   const [drag, setDrag] = useState({
@@ -32,38 +16,35 @@ export function useFillDown({ columns, initialRows, totalRows = 20 }) {
   const dragRef = useRef(drag)
   dragRef.current = drag
 
-  // Apply fill on mouseup and clean up
-  useEffect(() => {
-    const onMouseUp = () => {
-      const { active, column, startRow, hoverRow, value } = dragRef.current
-      if (!active) return
+  const onMouseUp = () => {
+    console.log("aa")
+    const { active, column, startRow, hoverRow, value } = dragRef.current
+    if (!active) return
 
-      if (
-        typeof startRow === "number" &&
-        typeof hoverRow === "number" &&
-        column &&
-        value !== null &&
-        hoverRow > startRow
-      ) {
-        setRows((prev) => {
-          const next = prev.map((r) => ({ ...r }))
-          for (let i = startRow + 1; i <= hoverRow; i++) {
-            if (column !== "index") {
-              next[i][column] = value
-            }
+    if (
+      typeof startRow === "number" &&
+            typeof hoverRow === "number" &&
+            column &&
+            value !== null &&
+            hoverRow > startRow
+    ) {
+      setRows((prev) => {
+        const next = prev.map((r) => ({ ...r }))
+        for (let i = startRow + 1; i <= hoverRow; i++) {
+          next[i][column] = value
+          if (column === "models" || column === "bodies") {
+            next[i].manufacturer = next[startRow].manufacturer;
           }
-          return next
-        })
-      }
-      setDrag({ active: false, column: null, startRow: null, hoverRow: null, value: null })
-      document.body.style.userSelect = ""
+          if(column === "bodies") {
+            next[i].models = next[startRow].models;
+          }
+        }
+        return next
+      })
     }
-
-    window.addEventListener("mouseup", onMouseUp)
-    return () => {
-      window.removeEventListener("mouseup", onMouseUp)
-    }
-  }, [])
+    setDrag({ active: false, column: null, startRow: null, hoverRow: null, value: null })
+    document.body.style.userSelect = ""
+  }
 
   const startFill = (col, rowIndex) => (e) => {
     e.preventDefault()
@@ -79,9 +60,10 @@ export function useFillDown({ columns, initialRows, totalRows = 20 }) {
     document.body.style.userSelect = "none"
   }
 
-  const onRowEnter = (rowIndex) => () => {
-    if (!dragRef.current.active) return
-    setDrag((d) => ({ ...d, hoverRow: rowIndex }))
+  const onRowEnter = (rowIndex) => {
+    console.log(rowIndex)
+    //if (!dragRef.current.active) return
+    //setDrag((d) => ({ ...d, hoverRow: rowIndex }))
   }
 
   const isFilling = drag.active && typeof drag.hoverRow === "number"
@@ -95,30 +77,17 @@ export function useFillDown({ columns, initialRows, totalRows = 20 }) {
     rowIdx >= minSel &&
     rowIdx <= maxSel
 
-  const showHandle = (col) => col !== "index" && col !== "Actions"
+  const isCellInSelection = (rowIdx, col) =>
+    isRowInSelection(rowIdx) && col === drag.column
 
-  const fillHandleStyle = {
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: 16,
-    height: 16,
-    borderRadius: 3,
-    border: "1px solid rgba(255,255,255,0.3)",
-    color: "inherit",
-    fontSize: 12,
-    cursor: "ns-resize",
-    opacity: 0.7,
-    userSelect: "none",
-  }
+  const showHandle = (col: Column) => col !== "index" && col !== "publish" && col !== "actions"
 
   return {
-    rows,
-    setRows,
     startFill,
     onRowEnter,
     isRowInSelection,
+    isCellInSelection,
     showHandle,
-    fillHandleStyle,
+    onMouseUp,
   }
 }
