@@ -1,0 +1,140 @@
+[
+  {
+    "Model": "Mazda2 / Demio",
+    "Bodies": [
+      "DJ/DL (Gen4) 2014—Present (facelifts 2019, 2023)",
+      "DE (Gen3) 2007—2014",
+      "DY (Gen2) 2002—2007",
+      "DW (Gen1) 1996—2002"
+    ]
+  },
+  {
+    "Model": "Mazda3 / Axela",
+    "Bodies": [
+      "BP (Gen4) 2019—Present",
+      "BM/BN (Gen3) 2013—2019",
+      "BL (Gen2) 2009—2013",
+      "BK (Gen1) 2003—2009"
+    ]
+  },
+  {
+    "Model": "Mazda6 / Atenza",
+    "Bodies": [
+      "GJ/GL (Gen3) 2012—2023",
+      "GH (Gen2) 2007—2012",
+      "GG/GY (Gen1) 2002—2008"
+    ]
+  },
+  {
+    "Model": "Mazda5 / Premacy",
+    "Bodies": [
+      "CW (Gen2) 2010—2018",
+      "CR (Gen1) 2005—2010"
+    ]
+  },
+  {
+    "Model": "Mazda CX-3",
+    "Bodies": [
+      "DK (Gen1) 2015—Present"
+    ]
+  },
+  {
+    "Model": "Mazda CX-30",
+    "Bodies": [
+      "DM (Gen1) 2019—Present"
+    ]
+  },
+  {
+    "Model": "Mazda CX-5",
+    "Bodies": [
+      "KF (Gen2) 2017—Present",
+      "KE (Gen1) 2012—2017"
+    ]
+  },
+  {
+    "Model": "Mazda CX-50",
+    "Bodies": [
+      "TA (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Mazda CX-60 / CX-70 / CX-80 / CX-90",
+    "Bodies": [
+      "KH/KK (Large Platform) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Mazda CX-7",
+    "Bodies": [
+      "ER (Gen1) 2006—2012"
+    ]
+  },
+  {
+    "Model": "Mazda CX-8",
+    "Bodies": [
+      "KG (Gen1) 2017—Present"
+    ]
+  },
+  {
+    "Model": "Mazda CX-9",
+    "Bodies": [
+      "TC (Gen2) 2016—2023",
+      "TB (Gen1) 2006—2015"
+    ]
+  },
+  {
+    "Model": "MX-5 / Roadster / Miata",
+    "Bodies": [
+      "ND (Gen4) 2015—Present",
+      "NC (Gen3) 2005—2015",
+      "NB (Gen2) 1998—2005",
+      "NA (Gen1) 1989—1997"
+    ]
+  },
+  {
+    "Model": "RX-7",
+    "Bodies": [
+      "FD (Gen3) 1991—2002",
+      "FC (Gen2) 1985—1991",
+      "SA/FB (Gen1) 1978—1985"
+    ]
+  },
+  {
+    "Model": "RX-8",
+    "Bodies": [
+      "SE (Gen1) 2003—2012"
+    ]
+  },
+  {
+    "Model": "Mazda2 Hybrid (rebadged Yaris EU)",
+    "Bodies": [
+      "Hybrid (XP210-based) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Mazda3 Hybrid / e-Skyactiv X",
+    "Bodies": [
+      "BP MHEV 2019—Present"
+    ]
+  },
+  {
+    "Model": "MX-30 (EV/PHEV)",
+    "Bodies": [
+      "DR (BEV/REx) 2020—Present"
+    ]
+  },
+  {
+    "Model": "Bongo / Brawny (LCV)",
+    "Bodies": [
+      "SK/SD/UN series 1966—Present"
+    ]
+  },
+  {
+    "Model": "BT-50",
+    "Bodies": [
+      "TF (Gen3, Isuzu-based) 2020—Present",
+      "UR (Gen2) 2011—2020",
+      "UP/UN (Gen1) 2006—2011"
+    ]
+  }
+]

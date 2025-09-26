@@ -21,6 +21,7 @@ function Brand({ value, onChange }: Props) {
       onInputChange={(_e, value) => onChange({ brand: value })}
       filterSelectedOptions={false}
       includeInputInList={true}
+      disableClearable={true}
     />
   )
 }

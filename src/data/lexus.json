@@ -1,0 +1,123 @@
+[
+  {
+    "Model": "ES",
+    "Bodies": [
+      "AXZH10 (Gen7) 2018—Present",
+      "XV60 (Gen6) 2012—2018",
+      "XV40 (Gen5) 2006—2012",
+      "XV30 (Gen4) 2001—2006",
+      "XV20 (Gen3) 1996—2001",
+      "XV10 (Gen2) 1991—1996",
+      "VZV21 (Gen1) 1989—1991"
+    ]
+  },
+  {
+    "Model": "IS",
+    "Bodies": [
+      "XE30 (Gen3) 2013—Present (facelift 2020)",
+      "XE20 (Gen2) 2005—2013",
+      "XE10 (Gen1) 1998—2005"
+    ]
+  },
+  {
+    "Model": "GS",
+    "Bodies": [
+      "L10 (Gen4) 2011—2020",
+      "S190 (Gen3) 2005—2011",
+      "S160 (Gen2) 1997—2005",
+      "S140 (Gen1) 1991—1997"
+    ]
+  },
+  {
+    "Model": "LS",
+    "Bodies": [
+      "XF50 (Gen5) 2017—Present",
+      "XF40 (Gen4) 2006—2017",
+      "XF30 (Gen3) 2000—2006",
+      "XF20 (Gen2) 1994—2000",
+      "XF10 (Gen1) 1989—1994"
+    ]
+  },
+  {
+    "Model": "UX",
+    "Bodies": [
+      "ZA10 (Gen1) 2018—Present"
+    ]
+  },
+  {
+    "Model": "NX",
+    "Bodies": [
+      "AZ20 (Gen2) 2021—Present",
+      "AZ10 (Gen1) 2014—2021"
+    ]
+  },
+  {
+    "Model": "RX",
+    "Bodies": [
+      "AL30 (Gen5) 2022—Present",
+      "AL20 (Gen4) 2015—2022",
+      "AL10 (Gen3) 2008—2015",
+      "XU30 (Gen2) 2003—2008",
+      "XU10 (Gen1) 1997—2003"
+    ]
+  },
+  {
+    "Model": "RZ (EV)",
+    "Bodies": [
+      "AA10 (BEV) 2022—Present"
+    ]
+  },
+  {
+    "Model": "GX",
+    "Bodies": [
+      "J250 (Gen3) 2024—Present",
+      "J150 (Gen2) 2009—2024",
+      "J120 (Gen1) 2002—2009"
+    ]
+  },
+  {
+    "Model": "LX",
+    "Bodies": [
+      "J310 (Gen4) 2021—Present",
+      "J200 (Gen3) 2007—2021",
+      "J100 (Gen2) 1998—2007"
+    ]
+  },
+  {
+    "Model": "CT",
+    "Bodies": [
+      "A10 (Gen1) 2010—2022"
+    ]
+  },
+  {
+    "Model": "HS",
+    "Bodies": [
+      "ANF10 (Gen1) 2009—2018"
+    ]
+  },
+  {
+    "Model": "LC",
+    "Bodies": [
+      "Z100 (Gen1) 2017—Present"
+    ]
+  },
+  {
+    "Model": "LFA",
+    "Bodies": [
+      "LFA10 (Gen1) 2010—2012"
+    ]
+  },
+  {
+    "Model": "SC",
+    "Bodies": [
+      "Z40 (Gen2) 2001—2010",
+      "Z30 (Gen1) 1991—2000"
+    ]
+  },
+  {
+    "Model": "RC",
+    "Bodies": [
+      "GZ10 (Gen1) 2014—Present"
+    ]
+  }
+]

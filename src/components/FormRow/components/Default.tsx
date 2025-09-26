@@ -12,7 +12,7 @@ function Default({ value, onChange, placeholder }: Props) {
     <TextField
       size="small"
       value={value}
-      onChange={(e) => onChange(e.target.vlaue)}
+      onChange={(e) => onChange(e.target.value)}
       fullWidth
       variant="outlined"
       placeholder={placeholder}

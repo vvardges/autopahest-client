@@ -25,7 +25,8 @@ declare global {
 
 type GoogleImagePickerProps = {
   onSelect: (url: string) => void;
-  defaultValue?: string;
+  defaultValue: string;
+  toggle: () => void;
 };
 
 type ImageItem = {
@@ -39,14 +40,13 @@ const CX_ID = import.meta.env.VITE_GOOGLE_CSE_CX_ID as string;
 
 export default function Images({
   onSelect,
-  defaultValue
+  defaultValue,
+  toggle,
 }: GoogleImagePickerProps) {
-  const [query, setQuery] = useState<string>(defaultValue ?? "");
+  const [query, setQuery] = useState<string>(defaultValue);
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState<ImageItem[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
-  const [open, setOpen] = useState(false);
-  const toggle = () => setOpen(prev => !prev);
 
   const searchImages = useCallback(async() => {
     if (!query) return;
@@ -90,9 +90,8 @@ export default function Images({
     }
   };
 
-  return (<>
-    <Button onClick={toggle}>Select</Button>
-    <Dialog open={open} onClose={toggle} fullWidth maxWidth="md">
+  return (
+    <Dialog open={true} onClose={toggle} fullWidth maxWidth="md">
       <DialogTitle>Pick an Image</DialogTitle>
       <DialogContent>
         <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>
@@ -176,5 +175,5 @@ export default function Images({
         </Button>
       </DialogActions>
     </Dialog>
-  </>);
+  );
 }

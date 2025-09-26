@@ -3,10 +3,11 @@ import {
   Save as SaveIcon
 } from "@mui/icons-material";
 import {
-  IconButton,
-  Switch,
-  TableCell,
-  TableRow,
+    Button,
+    IconButton,
+    Switch,
+    TableCell,
+    TableRow,
 } from "@mui/material";
 import {
   useEffect,
@@ -45,6 +46,9 @@ const FormRow = ({
 }) => {
   const [form, setForm] = useState<Row>(rowData);
   const [modelOptions, setModelOptions] = useState<ModelOptions[]>([]);
+
+  const [open, setOpen] = useState(false);
+  const toggle = () => setOpen(prev => !prev);
 
   // Handle change for single values
   const handleChange =
@@ -144,12 +148,16 @@ const FormRow = ({
                 );
               case "images":
                 return (
-                  <Images
-                    onSelect={(url: string) => {
-                      setForm({ ...form, [col]: url } as Row);
-                    }}
-                    defaultValue={`${form.manufacturer} ${form.models} ${form.english}`.trim()}
-                  />
+                    <>
+                        <Button onClick={toggle}>Select</Button>
+                        {open && <Images
+                            toggle={toggle}
+                            onSelect={(url: string) => {
+                                setForm({ ...form, [col]: url } as Row);
+                            }}
+                            defaultValue={`${form.manufacturer} ${form.models.toString()} ${form.english}`.trim()}
+                        />}
+                    </>
                 );
               case "actions":
                 return (

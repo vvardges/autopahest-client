@@ -22,14 +22,6 @@ export const getColumnSx = (col: Column) => {
         left: 60, // width of the "Actions" colum
         width: 30,
       };
-    case "name":
-      return {
-        width: 160,
-      }
-    case "description":
-      return {
-        width: 160,
-      }
     case "manufacturer":
       return {
         width: 120,
@@ -41,6 +33,26 @@ export const getColumnSx = (col: Column) => {
     case "bodies":
       return {
         width: 200,
+      }
+    case "name":
+      return {
+        width: 160,
+      }
+    case "description":
+      return {
+        width: 160,
+      }
+    case "brand":
+      return {
+        width: 100,
+      }
+    case "origin":
+      return {
+        width: 65,
+      }
+    case "price":
+      return {
+        width: 95,
       }
     case "actions":
       return {
