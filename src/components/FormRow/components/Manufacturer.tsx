@@ -1,7 +1,7 @@
 import { Autocomplete, TextField } from "@mui/material";
 import React from "react";
 
-const options = ["bmw", "mercedes"];
+const options = ["bmw", "mercedes", "chevrolet", "ford", "hyundai", "kia", "jeep", "nissan"];
 
 type Props = {
     value: string;
