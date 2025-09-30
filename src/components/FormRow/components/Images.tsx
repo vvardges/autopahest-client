@@ -15,6 +15,8 @@ import { useCallback,useEffect, useState } from "react";
 // Types
 declare global {
   interface ImportMetaEnv {
+    VITE_SUPABASE_ANON_KEY: any;
+    VITE_SUPABASE_URL: any;
     readonly VITE_GOOGLE_CSE_API_KEY?: string;
     readonly VITE_GOOGLE_CSE_CX_ID?: string;
   }

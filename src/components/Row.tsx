@@ -1,8 +1,9 @@
-import {IconButton, Switch, TableCell, TableRow, Typography} from "@mui/material";
+import {Box, IconButton, Switch, TableCell, TableRow, Typography} from "@mui/material";
 import {COLUMNS} from "@/constants";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
-import {getColumnSx} from "@/helpers";
+import AddIcon from "@mui/icons-material/Add"
+import {getColumnSx, getIsColumnCopiable} from "@/helpers";
 import type { ReactNode } from "react";
 import type { Row as RowType } from "@/types";
 
@@ -11,15 +12,16 @@ const label = { inputProps: { "aria-label": "Actions" } };
 type Props = {
   row: RowType;
   idx: number;
-  onDoubleClick: (idx: number) => void;
+  onEdit: (idx: number) => void;
+  onDelete: (idx: number) => void;
 };
 
-const Row = ({ row, idx, onDoubleClick }: Props) => {
+const Row = ({ row, idx, onEdit, onDelete }: Props) => {
   return (
     <TableRow
       hover
       key={row.index}
-      onDoubleClick={() => onDoubleClick(row.index)}
+      onDoubleClick={() => onEdit(row.index)}
       data-index={idx}
     >
       {COLUMNS.map((col) => {
@@ -50,14 +52,14 @@ const Row = ({ row, idx, onDoubleClick }: Props) => {
                 <IconButton
                   aria-label="Edit"
                   size="small"
-                  // onClick={() => setEditRowIdx(row.index)}
+                  onClick={() => onEdit(row.index)}
                 >
                   <EditIcon fontSize="small" />
                 </IconButton>
                 <IconButton
                   aria-label="Delete"
                   size="small"
-                  // onClick={() => handleDeleteRow(row.index)}
+                  onClick={() => onDelete(row.index)}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
@@ -79,9 +81,18 @@ const Row = ({ row, idx, onDoubleClick }: Props) => {
             }}
           >
             {content && (
-              <Typography noWrap component="p" fontSize={14}>
-                {content}
-              </Typography>
+                <>
+                  <Typography noWrap component="p" fontSize={14}>
+                    {content}
+                  </Typography>
+                  {getIsColumnCopiable(col) &&
+                      <Box position="absolute" right={0} bottom={0}>
+                        <IconButton size="small" data-index={idx} data-column={col}>
+                            <AddIcon fontSize="small" />
+                        </IconButton>
+                      </Box>
+                  }
+                </>
             )}
           </TableCell>
         );

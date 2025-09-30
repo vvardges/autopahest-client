@@ -24,8 +24,14 @@ const Head = () => {
       <TableRow>
         {COLUMNS.map(col => (
           <TableCell
+            padding="none"
             key={col}
-            sx={{ ...getColumnSx(col), zIndex: 3 }}
+            sx={{
+              ...getColumnSx(col),
+              zIndex: 3,
+              paddingLeft: "5px",
+              textTransform: "uppercase",
+            }}
           >
             {getColumnLabel(col)}
           </TableCell>

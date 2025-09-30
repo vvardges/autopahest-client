@@ -1,39 +1,25 @@
 import { Paper, Table, TableContainer, } from "@mui/material"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import Body from "@/components/Body";
 import FormRow from "@/components/FormRow";
 import Head from "@/components/Head";
 import Row from "@/components/Row";
-import { COLUMNS } from "@/constants";
+import supabase from "@/supabese";
 import type { Row as RowType } from "@/types";
 
-const ROWS_LENGTH = 100;
-
-// Create properly typed default rows
-const createEmptyRow = (i: number): RowType => ({
-  index: i + 1,
-  publish: false,
-  manufacturer: "",
-  models: [],
-  bodies: [],
-  name: "",
-  description: "",
-  brand: "",
-  price: "",
-  origin: "",
-  images: "",
-  english: "",
-  actions: "",
-  amArticle: "",
-  oemArticle: "",
-  weight: ""
-});
-
 function App() {
-  const [rows, setRows] = useState<RowType[]>(
-    Array.from({ length: ROWS_LENGTH }, (_, i) => createEmptyRow(i))
-  );
+  const [rows, setRows] = useState<RowType[]>([]);
+
+  useEffect(() => {
+    supabase.from("data").select("json").then(res => {
+      let data = [];
+      if(res && res.data && res.data.length) {
+        data = res.data[0].json;
+      }
+      setRows(data);
+    })
+  }, []);
 
   const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
 
@@ -42,27 +28,53 @@ function App() {
   }
 
   const handleAddRow = (row: RowType) => {
-    setRows((prev) => prev.map((r) => (r.index === editRowIdx ? row : r)));
+    const updatedRows = [...rows].map((r) => (r.index === editRowIdx ? row : r))
+    setRows(updatedRows);
     setEditRowIdx(null);
+    handleSaveToDB(updatedRows);
   }
 
   const handleCancelEdit = () => {
     setEditRowIdx(null);
   };
 
-  const handleCopy = <K extends keyof RowType>(start: number, end: number, columnIndex: number) => {
-    const column = COLUMNS[columnIndex] as K;
-    const value = rows[start][column];
+  const handleDeleteRow = (index: number) => {
+    const updatedRows = [...rows].filter(row => row.index !== index);
+    setRows(updatedRows);
+    handleSaveToDB(updatedRows);
+  }
+
+  const handleCopy = <K extends keyof RowType>(start: number, end: number, columns: K[]) => {
     const newRows = [...rows];
     for (let i = start + 1; i <= end; i++) {
-      newRows[i][column] = value;
+      for (const column of columns) {
+        newRows[i][column] = rows[start][column];
+      }
     }
     setRows(newRows);
+    handleSaveToDB(newRows);
+  }
+
+  const handleSaveToDB = (jsonData: RowType[]) => {
+    supabase.from("data").update([{ json: jsonData }]).eq("id", 1).then(res => console.log(res));
   }
 
   return (
     <TableContainer component={Paper} sx={{ height: "100vh", overflow: "auto", width: "100%" }}>
-      <Table size="small" stickyHeader sx={{ tableLayout: "fixed" }}>
+      <Table
+        size="small"
+        stickyHeader
+        sx={{
+          tableLayout: "fixed",
+          borderCollapse: "collapse",
+          "& td, & th": {
+            borderRight: "1px solid #515151",
+          },
+          "& td:last-child, & th:last-child": {
+            borderRight: "none",
+          },
+        }}
+      >
         <Head />
         <Body onDragEnd={handleCopy}>
           {rows.map((row, index) => (
@@ -83,7 +95,8 @@ function App() {
                   key={row.index}
                   idx={index}
                   row={row}
-                  onDoubleClick={handleEditRow}
+                  onEdit={handleEditRow}
+                  onDelete={handleDeleteRow}
                 />
               )
           ))}
