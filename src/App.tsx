@@ -70,6 +70,11 @@ function App() {
     setFilters((prev) => ({ ...prev, [column]: query }));
   }, []);
 
+  const [sort, setSort] = useState<{column: Column, order: string}>({ column: "index", order: "asc" });
+  const handleSort = useCallback((column: Column, order: string) => {
+      setSort({ column, order });
+  }, []);
+
   const filteredRows = useMemo(() => {
     return rows.filter((row) => {
       return Object.entries(filters).every(([key, value]) => {
@@ -80,8 +85,13 @@ function App() {
 
         return itemValue.includes(filterValue);
       });
+    }).sort((a, b) => {
+        const { column, order } = sort;
+        if (a[column] < b[column]) return order === "asc" ? -1 : 1;
+        if (a[column] > b[column]) return order === "asc" ? 1 : -1;
+        return 0;
     });
-  }, [rows, filters]);
+  }, [rows, filters, sort]);
 
   return (
     <TableContainer component={Paper} sx={{ height: "100vh", overflow: "auto", width: "100%" }}>
@@ -99,7 +109,7 @@ function App() {
           },
         }}
       >
-        <Head onSearch={handleSearch} />
+        <Head onSearch={handleSearch} onSort={handleSort}/>
         <Body onDragEnd={handleCopy}>
           {filteredRows.map((row, index) =>
             editRowIdx === row.index ? (

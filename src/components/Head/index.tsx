@@ -5,11 +5,18 @@ import { COLUMNS } from "@/constants";
 import { getColumnSx, getIsColumnCopiable } from "@/helpers";
 import { Column } from "@/types";
 
+type Order = "asc" | "desc";
+
 type Props = {
   onSearch: (column: Column, query: string) => void;
+  onSort: (column: Column, order: Order) => void;
 };
 
-const Head = ({ onSearch }: Props) => {
+const Head = ({ onSearch, onSort }: Props) => {
+  const handleSort = (sortBy: Column, orderBy: Order) => {
+      onSort(sortBy, orderBy);
+  };
+
   return (
     <TableHead>
       <TableRow>
@@ -23,7 +30,9 @@ const Head = ({ onSearch }: Props) => {
               textTransform: "uppercase",
             }}
           >
-            {getIsColumnCopiable(col) && <Search column={col} onSearch={onSearch} />}
+            {getIsColumnCopiable(col) && (
+              <Search column={col} onSearch={onSearch} onSortClick={(order: Order) => handleSort(col, order)} />
+            )}
           </TableCell>
         ))}
       </TableRow>
