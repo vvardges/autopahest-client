@@ -1,8 +1,8 @@
 export const COLUMNS = [
   "publish", "index",
   "manufacturer", "models", "bodies",
-  "name", "description", "brand", "origin", "price",
-  "english", "images",
+  "name", "origin", "price", "images",
+  "description", "brand", "english",
   "amArticle", "oemArticle", "weight",
   "actions"
 ] as const;

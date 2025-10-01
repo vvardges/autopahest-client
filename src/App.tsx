@@ -83,10 +83,10 @@ function App() {
                 onAdd={handleAddRow}
                 onCancel={handleCancelEdit}
                 key={row.index}
-                // data={{
-                //   name: new Set(rows.filter(row => row.name.trim() !== "").map(row => row.name)),
-                //   brand: new Set(rows.filter(row => row.brand.trim() !== "").map(row => row.brand))
-                // }}
+                helperData={{
+                  name: new Set(rows.filter(row => row.name.trim() !== "").map(row => row.name)),
+                  brand: new Set(rows.filter(row => row.brand.trim() !== "").map(row => row.brand))
+                }}
                 rowData={row}
               />
             ) :

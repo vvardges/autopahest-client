@@ -37,10 +37,15 @@ type ModelOptions = {
 
 const FormRow = ({
   onAdd,
+  helperData,
   rowData,
   onCancel
 }: {
   onAdd?: (row: Row) => void;
+  helperData: {
+    name: Set<string>;
+    brand: Set<string>;
+  },
   rowData: Row;
   onCancel?: () => void;
 }) => {
@@ -116,6 +121,7 @@ const FormRow = ({
                   <Name
                     value={form.name as string}
                     onChange={handleChange}
+                    options={[...helperData.name]}
                   />
                 );
               case "description":
@@ -130,6 +136,7 @@ const FormRow = ({
                   <Brand
                     value={form.brand as string}
                     onChange={handleChange}
+                    options={[...helperData.brand]}
                   />
                 )
               case "price":
