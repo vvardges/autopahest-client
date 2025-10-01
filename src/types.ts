@@ -19,4 +19,5 @@ export type Row = {
   amArticle: string;
   oemArticle: string;
   weight: string;
+  _filled: boolean;
 };

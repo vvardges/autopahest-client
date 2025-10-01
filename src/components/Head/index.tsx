@@ -14,7 +14,7 @@ type Props = {
 
 const Head = ({ onSearch, onSort }: Props) => {
   const handleSort = (sortBy: Column, orderBy: Order) => {
-      onSort(sortBy, orderBy);
+    onSort(sortBy, orderBy);
   };
 
   return (
@@ -31,7 +31,11 @@ const Head = ({ onSearch, onSort }: Props) => {
             }}
           >
             {getIsColumnCopiable(col) && (
-              <Search column={col} onSearch={onSearch} onSortClick={(order: Order) => handleSort(col, order)} />
+              <Search
+                column={col}
+                onSearch={onSearch}
+                onSortClick={(order: Order) => handleSort(col, order)}
+              />
             )}
           </TableCell>
         ))}

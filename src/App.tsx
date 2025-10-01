@@ -8,6 +8,30 @@ import Row from "@/components/Row";
 import supabase from "@/supabese";
 import type { Column, Row as RowType } from "@/types";
 
+// const generateEmptyRow = (index: number): RowType => ({
+//     index,
+//     publish: false,
+//     manufacturer: "",
+//     models: [],
+//     bodies: [],
+//     name: "",
+//     description: "",
+//     brand: "",
+//     origin: "",
+//     price: "",
+//     amArticle: "",
+//     oemArticle: "",
+//     actions: "",
+//     images: "",
+//     english: "",
+//     weight: "",
+//     _filled: false,
+// });
+//
+// const generateRows = (count: number, startIndex: number): RowType[] => {
+//     return Array.from({ length: count }, (_, index) => generateEmptyRow(index + startIndex));
+// }
+
 function App() {
   const [rows, setRows] = useState<RowType[]>([]);
   const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
@@ -31,7 +55,9 @@ function App() {
   };
 
   const handleAddRow = (row: RowType) => {
-    const updatedRows = [...rows].map((r) => (r.index === editRowIdx ? row : r));
+    const updatedRows = [...rows].map((r) =>
+      r.index === editRowIdx ? { ...row, _filled: true } : r,
+    );
     setRows(updatedRows);
     setEditRowIdx(null);
     handleSaveToDB(updatedRows);
@@ -42,7 +68,7 @@ function App() {
   };
 
   const handleDeleteRow = (index: number) => {
-    const updatedRows = [...rows].filter((row) => row.index !== index);
+    const updatedRows = [...rows.filter((row) => row.index !== index)];
     setRows(updatedRows);
     handleSaveToDB(updatedRows);
   };
@@ -52,6 +78,7 @@ function App() {
     for (let i = start + 1; i <= end; i++) {
       for (const column of columns) {
         newRows[i][column] = rows[start][column];
+        newRows[i]._filled = true;
       }
     }
     setRows(newRows);
@@ -70,27 +97,36 @@ function App() {
     setFilters((prev) => ({ ...prev, [column]: query }));
   }, []);
 
-  const [sort, setSort] = useState<{column: Column, order: string}>({ column: "index", order: "asc" });
+  const [sort, setSort] = useState<{ column: Column; order: string }>({
+    column: "index",
+    order: "asc",
+  });
   const handleSort = useCallback((column: Column, order: string) => {
-      setSort({ column, order });
+    setSort({ column, order });
   }, []);
 
   const filteredRows = useMemo(() => {
-    return rows.filter((row) => {
-      return Object.entries(filters).every(([key, value]) => {
-        if (!value) return true;
+    return rows
+      .filter((row) => {
+        return Object.entries(filters).every(([key, value]) => {
+          if (!value) return true;
 
-        const itemValue = String(row[key as Column]).toLowerCase();
-        const filterValue = String(value).toLowerCase();
+          const itemValue = String(row[key as Column]).toLowerCase();
+          const filterValue = String(value).toLowerCase();
 
-        return itemValue.includes(filterValue);
-      });
-    }).sort((a, b) => {
+          return itemValue.includes(filterValue);
+        });
+      })
+      .sort((a, b) => {
+        if (a._filled !== b._filled) {
+          return a._filled ? -1 : 1;
+        }
+
         const { column, order } = sort;
         if (a[column] < b[column]) return order === "asc" ? -1 : 1;
         if (a[column] > b[column]) return order === "asc" ? 1 : -1;
         return 0;
-    });
+      });
   }, [rows, filters, sort]);
 
   return (
@@ -109,7 +145,7 @@ function App() {
           },
         }}
       >
-        <Head onSearch={handleSearch} onSort={handleSort}/>
+        <Head onSearch={handleSearch} onSort={handleSort} />
         <Body onDragEnd={handleCopy}>
           {filteredRows.map((row, index) =>
             editRowIdx === row.index ? (

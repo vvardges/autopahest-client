@@ -20,10 +20,10 @@ function Search({ column, onSearch, onSortClick }: Props) {
   const [order, setOrder] = useState<Order>("asc");
 
   const handleSort = () => {
-      const newOrder = order === "asc" ? "desc" : "asc";
-      setOrder(newOrder);
-      onSortClick(newOrder);
-  }
+    const newOrder = order === "asc" ? "desc" : "asc";
+    setOrder(newOrder);
+    onSortClick(newOrder);
+  };
 
   useEffect(() => {
     onSearch(column, debouncedQuery);
