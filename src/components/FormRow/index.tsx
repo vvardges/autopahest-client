@@ -110,7 +110,7 @@ const FormRow = ({
               case "models":
                 return (
                   <Model
-                    options={modelOptions.map(item => item.Model)}
+                    options={form.manufacturer ? modelOptions.map(item => item.Model) : []}
                     onChange={handleChange}
                     value={form.models as []}
                   />
@@ -121,9 +121,10 @@ const FormRow = ({
                     value={form.bodies as []}
                     onChange={handleChange}
                     options={
+                      form.models.length > 0 ?
                       modelOptions
                         .filter(option => form?.models?.includes(option.Model))
-                        .map(option => option.Bodies).flat()
+                        .map(option => option.Bodies).flat() : []
                     }
                   />
                 );
