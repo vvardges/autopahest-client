@@ -2,10 +2,10 @@ import { Autocomplete, TextField } from "@mui/material";
 import React from "react";
 
 type Props = {
-    value: string;
-    onChange: (value: {brand: string}) => void;
-    options: string[];
-}
+  value: string;
+  onChange: (value: { brand: string }) => void;
+  options: string[];
+};
 
 function Brand({ value, onChange, options }: Props) {
   return (
@@ -15,9 +15,7 @@ function Brand({ value, onChange, options }: Props) {
       freeSolo
       options={options}
       fullWidth
-      renderInput={(params) => (
-        <TextField {...params} placeholder={"Brand"} fullWidth />
-      )}
+      renderInput={(params) => <TextField {...params} placeholder={"Brand"} fullWidth />}
       onChange={(_e, value) => onChange({ brand: value })}
       inputValue={value}
       onInputChange={(_e, value) => onChange({ brand: value })}
@@ -25,7 +23,7 @@ function Brand({ value, onChange, options }: Props) {
       includeInputInList={true}
       disableClearable={true}
     />
-  )
+  );
 }
 
 export default Brand;

@@ -55,18 +55,11 @@
   },
   {
     "Model": "Bronco Sport",
-    "Bodies": [
-      "Gen1 2021—Present"
-    ]
+    "Bodies": ["Gen1 2021—Present"]
   },
   {
     "Model": "Escape / Kuga (Global)",
-    "Bodies": [
-      "Gen4 2020—Present",
-      "Gen3 2013—2019",
-      "Gen2 2008—2012",
-      "Gen1 2001—2007"
-    ]
+    "Bodies": ["Gen4 2020—Present", "Gen3 2013—2019", "Gen2 2008—2012", "Gen1 2001—2007"]
   },
   {
     "Model": "Explorer",
@@ -90,17 +83,11 @@
   },
   {
     "Model": "Edge / Endura",
-    "Bodies": [
-      "Gen2 2015—2023",
-      "Gen1 2007—2014"
-    ]
+    "Bodies": ["Gen2 2015—2023", "Gen1 2007—2014"]
   },
   {
     "Model": "EcoSport",
-    "Bodies": [
-      "Gen2 2012—2023",
-      "Gen1 2003—2012"
-    ]
+    "Bodies": ["Gen2 2012—2023", "Gen1 2003—2012"]
   },
   {
     "Model": "Focus",
@@ -147,18 +134,11 @@
   },
   {
     "Model": "Crown Victoria",
-    "Bodies": [
-      "Gen2 1998—2012",
-      "Gen1 1992—1997"
-    ]
+    "Bodies": ["Gen2 1998—2012", "Gen1 1992—1997"]
   },
   {
     "Model": "Galaxy / S-Max",
-    "Bodies": [
-      "Gen3 2015—2023",
-      "Gen2 2006—2014",
-      "Gen1 1995—2005"
-    ]
+    "Bodies": ["Gen3 2015—2023", "Gen2 2006—2014", "Gen1 1995—2005"]
   },
   {
     "Model": "Transit / Transit Custom",
@@ -175,18 +155,11 @@
   },
   {
     "Model": "Transit Connect",
-    "Bodies": [
-      "Gen3 2024—Present",
-      "Gen2 2014—2023",
-      "Gen1 2002—2013"
-    ]
+    "Bodies": ["Gen3 2024—Present", "Gen2 2014—2023", "Gen1 2002—2013"]
   },
   {
     "Model": "Maverick",
-    "Bodies": [
-      "Gen2 (Pickup) 2022—Present",
-      "Gen1 (Compact Car) 1970—1977"
-    ]
+    "Bodies": ["Gen2 (Pickup) 2022—Present", "Gen1 (Compact Car) 1970—1977"]
   },
   {
     "Model": "Courier / Bantam",
@@ -199,18 +172,11 @@
   },
   {
     "Model": "Ka / Figo",
-    "Bodies": [
-      "Ka+ / Figo Gen3 2015—2021",
-      "Ka Gen2 2008—2016",
-      "Ka Gen1 1996—2008"
-    ]
+    "Bodies": ["Ka+ / Figo Gen3 2015—2021", "Ka Gen2 2008—2016", "Ka Gen1 1996—2008"]
   },
   {
     "Model": "Puma",
-    "Bodies": [
-      "Crossover Gen2 2020—Present",
-      "Coupe Gen1 1997—2002"
-    ]
+    "Bodies": ["Crossover Gen2 2020—Present", "Coupe Gen1 1997—2002"]
   },
   {
     "Model": "Everest / Endeavour",
@@ -223,17 +189,11 @@
   },
   {
     "Model": "Territory (China / LatAm / ASEAN)",
-    "Bodies": [
-      "Gen2 2022—Present",
-      "Gen1 2018—2021"
-    ]
+    "Bodies": ["Gen2 2022—Present", "Gen1 2018—2021"]
   },
   {
     "Model": "Figo Aspire / Ikon (India)",
-    "Bodies": [
-      "Figo Aspire 2015—2021",
-      "Ikon 1999—2011"
-    ]
+    "Bodies": ["Figo Aspire 2015—2021", "Ikon 1999—2011"]
   },
   {
     "Model": "Falcon (Australia)",
@@ -249,56 +209,38 @@
   },
   {
     "Model": "Mustang Mach-E",
-    "Bodies": [
-      "CX727 (BEV) 2021—Present"
-    ]
+    "Bodies": ["CX727 (BEV) 2021—Present"]
   },
   {
     "Model": "F-150 Lightning",
-    "Bodies": [
-      "P702 (BEV) 2022—Present"
-    ]
+    "Bodies": ["P702 (BEV) 2022—Present"]
   },
   {
     "Model": "E-Transit",
-    "Bodies": [
-      "Full-size (BEV) 2022—Present"
-    ]
+    "Bodies": ["Full-size (BEV) 2022—Present"]
   },
   {
     "Model": "E-Transit Custom",
-    "Bodies": [
-      "Medium van (BEV) 2024—Present"
-    ]
+    "Bodies": ["Medium van (BEV) 2024—Present"]
   },
   {
     "Model": "E-Tourneo Custom",
-    "Bodies": [
-      "Passenger van (BEV) 2024—Present"
-    ]
+    "Bodies": ["Passenger van (BEV) 2024—Present"]
   },
   {
     "Model": "Explorer (Europe, EV)",
-    "Bodies": [
-      "MEB-based (BEV) 2024—Present"
-    ]
+    "Bodies": ["MEB-based (BEV) 2024—Present"]
   },
   {
     "Model": "Capri (Europe, EV)",
-    "Bodies": [
-      "MEB-based (BEV) 2024—Present"
-    ]
+    "Bodies": ["MEB-based (BEV) 2024—Present"]
   },
   {
     "Model": "E-Transit Courier",
-    "Bodies": [
-      "Compact van (BEV) 2024—Present"
-    ]
+    "Bodies": ["Compact van (BEV) 2024—Present"]
   },
   {
     "Model": "E-Tourneo Courier",
-    "Bodies": [
-      "Compact MPV (BEV) 2024—Present"
-    ]
+    "Bodies": ["Compact MPV (BEV) 2024—Present"]
   }
 ]

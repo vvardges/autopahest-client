@@ -49,16 +49,11 @@
   },
   {
     "Model": "Leaf (EV)",
-    "Bodies": [
-      "ZE1 (Gen2) 2018—Present",
-      "ZE0 (Gen1) 2010—2017"
-    ]
+    "Bodies": ["ZE1 (Gen2) 2018—Present", "ZE0 (Gen1) 2010—2017"]
   },
   {
     "Model": "Ariya (EV)",
-    "Bodies": [
-      "FE0 (Gen1) 2022—Present"
-    ]
+    "Bodies": ["FE0 (Gen1) 2022—Present"]
   },
   {
     "Model": "Skyline / Infiniti Q50",
@@ -126,10 +121,7 @@
   },
   {
     "Model": "Titan",
-    "Bodies": [
-      "A61 (Gen2) 2016—2024",
-      "A60 (Gen1) 2003—2015"
-    ]
+    "Bodies": ["A61 (Gen2) 2016—2024", "A60 (Gen1) 2003—2015"]
   },
   {
     "Model": "X-Trail / Rogue",
@@ -142,26 +134,15 @@
   },
   {
     "Model": "Qashqai / Rogue Sport",
-    "Bodies": [
-      "J12 (Gen3) 2021—Present",
-      "J11 (Gen2) 2013—2021",
-      "J10 (Gen1) 2006—2013"
-    ]
+    "Bodies": ["J12 (Gen3) 2021—Present", "J11 (Gen2) 2013—2021", "J10 (Gen1) 2006—2013"]
   },
   {
     "Model": "Juke",
-    "Bodies": [
-      "F16 (Gen2) 2019—Present",
-      "F15 (Gen1) 2010—2019"
-    ]
+    "Bodies": ["F16 (Gen2) 2019—Present", "F15 (Gen1) 2010—2019"]
   },
   {
     "Model": "Murano",
-    "Bodies": [
-      "Z52 (Gen3) 2015—Present",
-      "Z51 (Gen2) 2009—2014",
-      "Z50 (Gen1) 2002—2008"
-    ]
+    "Bodies": ["Z52 (Gen3) 2015—Present", "Z51 (Gen2) 2009—2014", "Z50 (Gen1) 2002—2008"]
   },
   {
     "Model": "Pathfinder",
@@ -175,16 +156,11 @@
   },
   {
     "Model": "Terra",
-    "Bodies": [
-      "D23 (Gen1) 2018—Present"
-    ]
+    "Bodies": ["D23 (Gen1) 2018—Present"]
   },
   {
     "Model": "Armada (North America)",
-    "Bodies": [
-      "Y62 (Gen2) 2017—Present",
-      "TA60 (Gen1) 2004—2015"
-    ]
+    "Bodies": ["Y62 (Gen2) 2017—Present", "TA60 (Gen1) 2004—2015"]
   },
   {
     "Model": "Quest",
@@ -197,11 +173,7 @@
   },
   {
     "Model": "Elgrand",
-    "Bodies": [
-      "E52 (Gen3) 2010—Present",
-      "E51 (Gen2) 2002—2010",
-      "E50 (Gen1) 1997—2002"
-    ]
+    "Bodies": ["E52 (Gen3) 2010—Present", "E51 (Gen2) 2002—2010", "E50 (Gen1) 1997—2002"]
   },
   {
     "Model": "Caravan / NV350",
@@ -215,27 +187,18 @@
   },
   {
     "Model": "NV200 / Evalia",
-    "Bodies": [
-      "M20 (Gen1) 2009—Present"
-    ]
+    "Bodies": ["M20 (Gen1) 2009—Present"]
   },
   {
     "Model": "Townstar (EV)",
-    "Bodies": [
-      "XFK (BEV) 2022—Present"
-    ]
+    "Bodies": ["XFK (BEV) 2022—Present"]
   },
   {
     "Model": "Primastar / Interstar / NV300",
-    "Bodies": [
-      "X82 (Gen2) 2014—Present",
-      "X83 (Gen1) 2001—2014"
-    ]
+    "Bodies": ["X82 (Gen2) 2014—Present", "X83 (Gen1) 2001—2014"]
   },
   {
     "Model": "Urvan / King Van",
-    "Bodies": [
-      "E24/E25 (Asia) 1987—Present"
-    ]
+    "Bodies": ["E24/E25 (Asia) 1987—Present"]
   }
 ]

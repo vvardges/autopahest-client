@@ -2,13 +2,10 @@ import { Autocomplete, TextField } from "@mui/material";
 import React from "react";
 
 type Props = {
-    value: string[];
-    onChange: (value: {
-        models: string[];
-        bodies: string[];
-    }) => void;
-    options: string[];
-}
+  value: string[];
+  onChange: (value: { models: string[]; bodies: string[] }) => void;
+  options: string[];
+};
 
 function Model({ value, onChange, options }: Props) {
   return (
@@ -25,16 +22,14 @@ function Model({ value, onChange, options }: Props) {
       onChange={(_event, newValue) => {
         onChange({
           models: newValue,
-          bodies: []
+          bodies: [],
         });
       }}
       fullWidth
-      renderInput={(params) => (
-        <TextField {...params} placeholder="Models" fullWidth/>
-      )}
+      renderInput={(params) => <TextField {...params} placeholder="Models" fullWidth />}
       disableCloseOnSelect
     />
-  )
+  );
 }
 
 export default Model;

@@ -19,68 +19,43 @@
   },
   {
     "Model": "Mazda6 / Atenza",
-    "Bodies": [
-      "GJ/GL (Gen3) 2012—2023",
-      "GH (Gen2) 2007—2012",
-      "GG/GY (Gen1) 2002—2008"
-    ]
+    "Bodies": ["GJ/GL (Gen3) 2012—2023", "GH (Gen2) 2007—2012", "GG/GY (Gen1) 2002—2008"]
   },
   {
     "Model": "Mazda5 / Premacy",
-    "Bodies": [
-      "CW (Gen2) 2010—2018",
-      "CR (Gen1) 2005—2010"
-    ]
+    "Bodies": ["CW (Gen2) 2010—2018", "CR (Gen1) 2005—2010"]
   },
   {
     "Model": "Mazda CX-3",
-    "Bodies": [
-      "DK (Gen1) 2015—Present"
-    ]
+    "Bodies": ["DK (Gen1) 2015—Present"]
   },
   {
     "Model": "Mazda CX-30",
-    "Bodies": [
-      "DM (Gen1) 2019—Present"
-    ]
+    "Bodies": ["DM (Gen1) 2019—Present"]
   },
   {
     "Model": "Mazda CX-5",
-    "Bodies": [
-      "KF (Gen2) 2017—Present",
-      "KE (Gen1) 2012—2017"
-    ]
+    "Bodies": ["KF (Gen2) 2017—Present", "KE (Gen1) 2012—2017"]
   },
   {
     "Model": "Mazda CX-50",
-    "Bodies": [
-      "TA (Gen1) 2022—Present"
-    ]
+    "Bodies": ["TA (Gen1) 2022—Present"]
   },
   {
     "Model": "Mazda CX-60 / CX-70 / CX-80 / CX-90",
-    "Bodies": [
-      "KH/KK (Large Platform) 2022—Present"
-    ]
+    "Bodies": ["KH/KK (Large Platform) 2022—Present"]
   },
   {
     "Model": "Mazda CX-7",
-    "Bodies": [
-      "ER (Gen1) 2006—2012"
-    ]
+    "Bodies": ["ER (Gen1) 2006—2012"]
   },
   {
     "Model": "Mazda CX-8",
-    "Bodies": [
-      "KG (Gen1) 2017—Present"
-    ]
+    "Bodies": ["KG (Gen1) 2017—Present"]
   },
   {
     "Model": "Mazda CX-9",
-    "Bodies": [
-      "TC (Gen2) 2016—2023",
-      "TB (Gen1) 2006—2015"
-    ]
+    "Bodies": ["TC (Gen2) 2016—2023", "TB (Gen1) 2006—2015"]
   },
   {
     "Model": "MX-5 / Roadster / Miata",
@@ -93,41 +68,27 @@
   },
   {
     "Model": "RX-7",
-    "Bodies": [
-      "FD (Gen3) 1991—2002",
-      "FC (Gen2) 1985—1991",
-      "SA/FB (Gen1) 1978—1985"
-    ]
+    "Bodies": ["FD (Gen3) 1991—2002", "FC (Gen2) 1985—1991", "SA/FB (Gen1) 1978—1985"]
   },
   {
     "Model": "RX-8",
-    "Bodies": [
-      "SE (Gen1) 2003—2012"
-    ]
+    "Bodies": ["SE (Gen1) 2003—2012"]
   },
   {
     "Model": "Mazda2 Hybrid (rebadged Yaris EU)",
-    "Bodies": [
-      "Hybrid (XP210-based) 2022—Present"
-    ]
+    "Bodies": ["Hybrid (XP210-based) 2022—Present"]
   },
   {
     "Model": "Mazda3 Hybrid / e-Skyactiv X",
-    "Bodies": [
-      "BP MHEV 2019—Present"
-    ]
+    "Bodies": ["BP MHEV 2019—Present"]
   },
   {
     "Model": "MX-30 (EV/PHEV)",
-    "Bodies": [
-      "DR (BEV/REx) 2020—Present"
-    ]
+    "Bodies": ["DR (BEV/REx) 2020—Present"]
   },
   {
     "Model": "Bongo / Brawny (LCV)",
-    "Bodies": [
-      "SK/SD/UN series 1966—Present"
-    ]
+    "Bodies": ["SK/SD/UN series 1966—Present"]
   },
   {
     "Model": "BT-50",

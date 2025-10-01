@@ -5,12 +5,14 @@ import {
   Dialog,
   DialogActions,
   DialogContent,
-  DialogTitle, Divider,
+  DialogTitle,
+  Divider,
   ImageList,
   ImageListItem,
   Stack,
-  TextField } from "@mui/material";
-import { useCallback,useEffect, useState } from "react";
+  TextField,
+} from "@mui/material";
+import { useCallback, useEffect, useState } from "react";
 
 // Types
 declare global {
@@ -40,30 +42,24 @@ type ImageItem = {
 const API_KEY = import.meta.env.VITE_GOOGLE_CSE_API_KEY as string;
 const CX_ID = import.meta.env.VITE_GOOGLE_CSE_CX_ID as string;
 
-export default function Images({
-  onSelect,
-  defaultValue,
-  toggle,
-}: GoogleImagePickerProps) {
+export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePickerProps) {
   const [query, setQuery] = useState<string>(defaultValue);
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState<ImageItem[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
 
-  const searchImages = useCallback(async() => {
+  const searchImages = useCallback(async () => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
-      console.warn(
-        "Missing env vars VITE_GOOGLE_CSE_API_KEY or VITE_GOOGLE_CSE_CX_ID"
-      );
+      console.warn("Missing env vars VITE_GOOGLE_CSE_API_KEY or VITE_GOOGLE_CSE_CX_ID");
       return;
     }
     setLoading(true);
     try {
       const res = await fetch(
         `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(
-          query
-        )}&cx=${CX_ID}&key=${API_KEY}&searchType=image&num=10`
+          query,
+        )}&cx=${CX_ID}&key=${API_KEY}&searchType=image&num=10`,
       );
       const data = (await res.json()) as {
         items?: ImageItem[];
@@ -80,9 +76,7 @@ export default function Images({
   }, [searchImages]);
 
   const toggleSelect = (url: string) => {
-    setSelected((prev) =>
-      prev.includes(url) ? prev.filter((u) => u !== url) : [...prev, url]
-    );
+    setSelected((prev) => (prev.includes(url) ? prev.filter((u) => u !== url) : [...prev, url]));
   };
 
   const handleSave = () => {
@@ -107,7 +101,7 @@ export default function Images({
                 fullWidth
               />
               <Button variant="contained" onClick={searchImages}>
-                      Search
+                Search
               </Button>
             </div>
 
@@ -121,13 +115,23 @@ export default function Images({
                     <ImageListItem
                       key={img.link}
                       onClick={() => toggleSelect(img.link)}
-                      style={{ cursor: "pointer", outline: isSelected ? "3px solid #1976d2" : "none", borderRadius: 8 }}
+                      style={{
+                        cursor: "pointer",
+                        outline: isSelected ? "3px solid #1976d2" : "none",
+                        borderRadius: 8,
+                      }}
                       title={isSelected ? "Click to unselect" : "Click to select"}
                     >
                       <img
                         src={img.link}
                         alt={img.title || "search result"}
-                        style={{ borderRadius: 8, display: "block", width: "100%", height: "100%", objectFit: "cover" }}
+                        style={{
+                          borderRadius: 8,
+                          display: "block",
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
                         loading="lazy"
                       />
                     </ImageListItem>
@@ -143,21 +147,20 @@ export default function Images({
                 <span style={{ color: "#666" }}>No images selected</span>
               ) : (
                 selected.map((url) => (
-                  <div
-                    key={url}
-                    style={{ display: "flex", alignItems: "center", gap: 8 }}
-                  >
+                  <div key={url} style={{ display: "flex", alignItems: "center", gap: 8 }}>
                     <img
                       src={url}
                       alt="selected"
-                      style={{ width: 64, height: 64, objectFit: "cover", borderRadius: 6, border: "1px solid #eee" }}
+                      style={{
+                        width: 64,
+                        height: 64,
+                        objectFit: "cover",
+                        borderRadius: 6,
+                        border: "1px solid #eee",
+                      }}
                     />
-                    <Button
-                      size="small"
-                      variant="outlined"
-                      onClick={() => toggleSelect(url)}
-                    >
-                          Remove
+                    <Button size="small" variant="outlined" onClick={() => toggleSelect(url)}>
+                      Remove
                     </Button>
                   </div>
                 ))
@@ -168,11 +171,7 @@ export default function Images({
       </DialogContent>
       <DialogActions>
         <Button onClick={toggle}>Cancel</Button>
-        <Button
-          variant="contained"
-          onClick={handleSave}
-          disabled={selected.length === 0}
-        >
+        <Button variant="contained" onClick={handleSave} disabled={selected.length === 0}>
           Save
         </Button>
       </DialogActions>

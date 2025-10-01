@@ -1,18 +1,6 @@
-import {
-  Close as CloseIcon,
-  Save as SaveIcon
-} from "@mui/icons-material";
-import {
-    Button,
-    IconButton,
-    Switch,
-    TableCell,
-    TableRow,
-} from "@mui/material";
-import {
-    useEffect, useRef,
-    useState,
-} from "react";
+import { Close as CloseIcon, Save as SaveIcon } from "@mui/icons-material";
+import { Button, IconButton, Switch, TableCell, TableRow } from "@mui/material";
+import { useEffect, useRef, useState } from "react";
 
 import {
   Body,
@@ -27,8 +15,8 @@ import {
   Price,
 } from "@/components/FormRow/components";
 import { COLUMNS } from "@/constants";
-import type {Column, Row} from "@/types";
-import {getColumnSx} from "@/helpers";
+import { getColumnSx } from "@/helpers";
+import type { Column, Row } from "@/types";
 
 type ModelOptions = {
   Model: string;
@@ -39,38 +27,38 @@ const FormRow = ({
   onAdd,
   helperData,
   rowData,
-  onCancel
+  onCancel,
 }: {
   onAdd: (row: Row) => void;
   helperData: {
     name: Set<string>;
     brand: Set<string>;
-  },
+  };
   rowData: Row;
   onCancel?: () => void;
 }) => {
   const [form, setForm] = useState<Row>(rowData);
   const [modelOptions, setModelOptions] = useState<ModelOptions[]>([]);
   const [open, setOpen] = useState(false);
-  const toggle = () => setOpen(prev => !prev);
-    const ref = useRef<HTMLTableRowElement>(null);
+  const toggle = () => setOpen((prev) => !prev);
+  const ref = useRef<HTMLTableRowElement>(null);
 
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (ref.current && !ref.current.contains(event.target as Node)) {
-                onAdd(form)
-            }
-        };
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
+        onAdd(form);
+      }
+    };
 
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [form]);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [form, onAdd]);
 
   // Handle change for single values
-  const handleChange =
-    (value: Partial<Row>) => setForm((prev) => ({
+  const handleChange = (value: Partial<Row>) =>
+    setForm((prev) => ({
       ...prev,
       ...value,
     }));
@@ -84,8 +72,8 @@ const FormRow = ({
 
   const manufacturer = form.manufacturer;
   useEffect(() => {
-    if(!manufacturer) return;
-    import(`../../data/${manufacturer}.json`).then(res => setModelOptions(res.default));
+    if (!manufacturer) return;
+    import(`../../data/${manufacturer}.json`).then((res) => setModelOptions(res.default));
   }, [manufacturer]);
 
   return (
@@ -95,22 +83,15 @@ const FormRow = ({
           {(() => {
             switch (col as Column) {
               case "publish":
-                return (
-                  <Switch defaultChecked={false} disabled={true}/>
-                );
+                return <Switch defaultChecked={false} disabled={true} />;
               case "index":
                 return rowData.index;
               case "manufacturer":
-                return (
-                  <Manufacturer
-                    value={form.manufacturer as string}
-                    onChange={handleChange}
-                  />
-                );
+                return <Manufacturer value={form.manufacturer as string} onChange={handleChange} />;
               case "models":
                 return (
                   <Model
-                    options={form.manufacturer ? modelOptions.map(item => item.Model) : []}
+                    options={form.manufacturer ? modelOptions.map((item) => item.Model) : []}
                     onChange={handleChange}
                     value={form.models as []}
                   />
@@ -121,10 +102,12 @@ const FormRow = ({
                     value={form.bodies as []}
                     onChange={handleChange}
                     options={
-                      form.models.length > 0 ?
-                      modelOptions
-                        .filter(option => form?.models?.includes(option.Model))
-                        .map(option => option.Bodies).flat() : []
+                      form.models.length > 0
+                        ? modelOptions
+                            .filter((option) => form?.models?.includes(option.Model))
+                            .map((option) => option.Bodies)
+                            .flat()
+                        : []
                     }
                   />
                 );
@@ -137,12 +120,7 @@ const FormRow = ({
                   />
                 );
               case "description":
-                return (
-                  <Description
-                    value={form.description as string}
-                    onChange={handleChange}
-                  />
-                );
+                return <Description value={form.description as string} onChange={handleChange} />;
               case "brand":
                 return (
                   <Brand
@@ -150,50 +128,34 @@ const FormRow = ({
                     onChange={handleChange}
                     options={[...helperData.brand]}
                   />
-                )
+                );
               case "price":
-                return (
-                  <Price
-                    value={form.price as string}
-                    onChange={handleChange}
-                  />
-                );
+                return <Price value={form.price as string} onChange={handleChange} />;
               case "origin":
-                return (
-                  <Origin
-                    value={String(form.origin)}
-                    onChange={handleChange}
-                  />
-                );
+                return <Origin value={String(form.origin)} onChange={handleChange} />;
               case "images":
                 return (
-                    <>
-                        <Button onClick={toggle}>Select</Button>
-                        {open && <Images
-                            toggle={toggle}
-                            onSelect={(url: string) => {
-                                setForm({ ...form, [col]: url } as Row);
-                            }}
-                            defaultValue={`${form.manufacturer} ${form.models.toString()} ${form.english}`.trim()}
-                        />}
-                    </>
+                  <>
+                    <Button onClick={toggle}>Select</Button>
+                    {open && (
+                      <Images
+                        toggle={toggle}
+                        onSelect={(url: string) => {
+                          setForm({ ...form, [col]: url } as Row);
+                        }}
+                        defaultValue={`${form.manufacturer} ${form.models.toString()} ${form.english}`.trim()}
+                      />
+                    )}
+                  </>
                 );
               case "actions":
                 return (
                   <>
-                    <IconButton
-                      aria-label="Save"
-                      size="small"
-                      onClick={() => handleSave(form)}
-                    >
-                      <SaveIcon fontSize="small"/>
+                    <IconButton aria-label="Save" size="small" onClick={() => handleSave(form)}>
+                      <SaveIcon fontSize="small" />
                     </IconButton>
-                    <IconButton
-                      aria-label="Cancel"
-                      size="small"
-                      onClick={onCancel}
-                    >
-                      <CloseIcon fontSize="small"/>
+                    <IconButton aria-label="Cancel" size="small" onClick={onCancel}>
+                      <CloseIcon fontSize="small" />
                     </IconButton>
                   </>
                 );

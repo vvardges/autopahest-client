@@ -104,18 +104,11 @@
   },
   {
     "Model": "MR2",
-    "Bodies": [
-      "W30 (Gen3) 1999—2007",
-      "SW20 (Gen2) 1989—1999",
-      "AW11 (Gen1) 1984—1989"
-    ]
+    "Bodies": ["W30 (Gen3) 1999—2007", "SW20 (Gen2) 1989—1999", "AW11 (Gen1) 1984—1989"]
   },
   {
     "Model": "C-HR",
-    "Bodies": [
-      "AXU/AXH (Gen2 EU) 2023—Present",
-      "AX10 (Gen1) 2016—2023"
-    ]
+    "Bodies": ["AXU/AXH (Gen2 EU) 2023—Present", "AX10 (Gen1) 2016—2023"]
   },
   {
     "Model": "RAV4",
@@ -170,11 +163,7 @@
   },
   {
     "Model": "Sequoia",
-    "Bodies": [
-      "XK80 (Gen3) 2022—Present",
-      "XK60 (Gen2) 2008—2022",
-      "XK30 (Gen1) 2000—2007"
-    ]
+    "Bodies": ["XK80 (Gen3) 2022—Present", "XK60 (Gen2) 2008—2022", "XK30 (Gen1) 2000—2007"]
   },
   {
     "Model": "Tacoma",
@@ -187,11 +176,7 @@
   },
   {
     "Model": "Tundra",
-    "Bodies": [
-      "XK70 (Gen3) 2021—Present",
-      "XK50 (Gen2) 2007—2021",
-      "XK30 (Gen1) 1999—2006"
-    ]
+    "Bodies": ["XK70 (Gen3) 2021—Present", "XK50 (Gen2) 2007—2021", "XK30 (Gen1) 1999—2006"]
   },
   {
     "Model": "Hilux",
@@ -208,10 +193,7 @@
   },
   {
     "Model": "Fortuner",
-    "Bodies": [
-      "AN160 (Gen2) 2015—Present",
-      "AN50/60 (Gen1) 2004—2015"
-    ]
+    "Bodies": ["AN160 (Gen2) 2015—Present", "AN50/60 (Gen1) 2004—2015"]
   },
   {
     "Model": "Innova / Zenix",
@@ -241,23 +223,14 @@
   },
   {
     "Model": "Proace / Proace City (EU JV)",
-    "Bodies": [
-      "K0 (Proace) 2013—Present",
-      "K9 (Proace City) 2019—Present"
-    ]
+    "Bodies": ["K0 (Proace) 2013—Present", "K9 (Proace City) 2019—Present"]
   },
   {
     "Model": "bZ Series (BEV)",
-    "Bodies": [
-      "bZ4X (E-TNGA) 2022—Present",
-      "bZ3 (China BEV sedan) 2023—Present"
-    ]
+    "Bodies": ["bZ4X (E-TNGA) 2022—Present", "bZ3 (China BEV sedan) 2023—Present"]
   },
   {
     "Model": "Mirai (FCEV)",
-    "Bodies": [
-      "JPD20 (Gen2) 2020—Present",
-      "JPD10 (Gen1) 2014—2020"
-    ]
+    "Bodies": ["JPD20 (Gen2) 2020—Present", "JPD10 (Gen1) 2014—2020"]
   }
 ]

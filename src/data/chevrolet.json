@@ -66,9 +66,7 @@
   },
   {
     "Model": "SS (VF Commodore-based)",
-    "Bodies": [
-      "I (Holden VF) 2014—2017"
-    ]
+    "Bodies": ["I (Holden VF) 2014—2017"]
   },
   {
     "Model": "Aveo / Kalos / Sonic",
@@ -89,37 +87,23 @@
   },
   {
     "Model": "Sail (China/India/Global)",
-    "Bodies": [
-      "Sail III (B315) 2014—2019",
-      "Sail II (B300) 2010—2014",
-      "Sail I 2001—2009"
-    ]
+    "Bodies": ["Sail III (B315) 2014—2019", "Sail II (B300) 2010—2014", "Sail I 2001—2009"]
   },
   {
     "Model": "Onix / Onix Plus (LatAm/China)",
-    "Bodies": [
-      "Onix II / Onix Plus (GM VSS-F) 2019—Present",
-      "Onix I (Gamma) 2012—2019"
-    ]
+    "Bodies": ["Onix II / Onix Plus (GM VSS-F) 2019—Present", "Onix I (Gamma) 2012—2019"]
   },
   {
     "Model": "Prisma (LatAm)",
-    "Bodies": [
-      "II (Onix sedan) 2013—2019",
-      "I (Celta sedan) 2006—2012"
-    ]
+    "Bodies": ["II (Onix sedan) 2013—2019", "I (Celta sedan) 2006—2012"]
   },
   {
     "Model": "Celta (Brazil)",
-    "Bodies": [
-      "I 2000—2015"
-    ]
+    "Bodies": ["I 2000—2015"]
   },
   {
     "Model": "Agile (Argentina/Brazil)",
-    "Bodies": [
-      "I 2009—2016"
-    ]
+    "Bodies": ["I 2009—2016"]
   },
   {
     "Model": "Cruze",
@@ -138,23 +122,15 @@
   },
   {
     "Model": "Epica / Evanda (Europe) / Tosca (Korea)",
-    "Bodies": [
-      "Epica (V250) 2006—2011",
-      "Evanda (V200) 2004—2005"
-    ]
+    "Bodies": ["Epica (V250) 2006—2011", "Evanda (V200) 2004—2005"]
   },
   {
     "Model": "Tacuma / Rezzo",
-    "Bodies": [
-      "I 2000—2008"
-    ]
+    "Bodies": ["I 2000—2008"]
   },
   {
     "Model": "Orlando",
-    "Bodies": [
-      "Gen2 (China) 2018—2023",
-      "Gen1 (Global) 2011—2018"
-    ]
+    "Bodies": ["Gen2 (China) 2018—2023", "Gen1 (Global) 2011—2018"]
   },
   {
     "Model": "Captiva",
@@ -173,12 +149,7 @@
   },
   {
     "Model": "Equinox",
-    "Bodies": [
-      "IV (US) 2025—Present",
-      "III 2018—2024",
-      "II 2010—2017",
-      "I 2005—2009"
-    ]
+    "Bodies": ["IV (US) 2025—Present", "III 2018—2024", "II 2010—2017", "I 2005—2009"]
   },
   {
     "Model": "Blazer",
@@ -190,9 +161,7 @@
   },
   {
     "Model": "Blazer EV",
-    "Bodies": [
-      "I (BEV, Ultium) 2024—Present"
-    ]
+    "Bodies": ["I (BEV, Ultium) 2024—Present"]
   },
   {
     "Model": "Trailblazer",
@@ -252,217 +221,138 @@
   },
   {
     "Model": "Montana (Brazil)",
-    "Bodies": [
-      "III (VSS-F) 2023—Present",
-      "II 2011—2021",
-      "I 2003—2010"
-    ]
+    "Bodies": ["III (VSS-F) 2023—Present", "II 2011—2021", "I 2003—2010"]
   },
   {
     "Model": "Avalanche",
-    "Bodies": [
-      "II (GMT900) 2007—2013",
-      "I (GMT800) 2001—2006"
-    ]
+    "Bodies": ["II (GMT900) 2007—2013", "I (GMT800) 2001—2006"]
   },
   {
     "Model": "HHR",
-    "Bodies": [
-      "I 2006—2011"
-    ]
+    "Bodies": ["I 2006—2011"]
   },
   {
     "Model": "SSR",
-    "Bodies": [
-      "I 2003—2006"
-    ]
+    "Bodies": ["I 2003—2006"]
   },
   {
     "Model": "Astro / Safari",
-    "Bodies": [
-      "I 1985—2005"
-    ]
+    "Bodies": ["I 1985—2005"]
   },
   {
     "Model": "Express / Express Cutaway",
-    "Bodies": [
-      "I 1996—Present"
-    ]
+    "Bodies": ["I 1996—Present"]
   },
   {
     "Model": "Uplander",
-    "Bodies": [
-      "I 2005—2009"
-    ]
+    "Bodies": ["I 2005—2009"]
   },
   {
     "Model": "Venture",
-    "Bodies": [
-      "I 1997—2005"
-    ]
+    "Bodies": ["I 1997—2005"]
   },
   {
     "Model": "Captiva Sport (US Fleet)",
-    "Bodies": [
-      "I (Saturn Vue rebadge) 2012—2014"
-    ]
+    "Bodies": ["I (Saturn Vue rebadge) 2012—2014"]
   },
   {
     "Model": "Niva (Russia)",
-    "Bodies": [
-      "I 2002—2020"
-    ]
+    "Bodies": ["I 2002—2020"]
   },
   {
     "Model": "Lanos (CIS/Egypt)",
-    "Bodies": [
-      "I 2004—2017"
-    ]
+    "Bodies": ["I 2004—2017"]
   },
   {
     "Model": "Tavera (India)",
-    "Bodies": [
-      "I 2004—2017"
-    ]
+    "Bodies": ["I 2004—2017"]
   },
   {
     "Model": "Beat (India)",
-    "Bodies": [
-      "I (M300-based) 2010—2017"
-    ]
+    "Bodies": ["I (M300-based) 2010—2017"]
   },
   {
     "Model": "Enjoy (India)",
-    "Bodies": [
-      "I (Wuling Hongguang-based) 2013—2017"
-    ]
+    "Bodies": ["I (Wuling Hongguang-based) 2013—2017"]
   },
   {
     "Model": "Corsa (LatAm, Opel-based)",
-    "Bodies": [
-      "B/Corsa II 2002—2012",
-      "Classic (facelift) 2010—2016"
-    ]
+    "Bodies": ["B/Corsa II 2002—2012", "Classic (facelift) 2010—2016"]
   },
   {
     "Model": "Astra (LatAm, Opel-based)",
-    "Bodies": [
-      "G 1999—2011"
-    ]
+    "Bodies": ["G 1999—2011"]
   },
   {
     "Model": "Vectra (Brazil, Opel-based)",
-    "Bodies": [
-      "C 2005—2011",
-      "B (local) 1996—2005"
-    ]
+    "Bodies": ["C 2005—2011", "B (local) 1996—2005"]
   },
   {
     "Model": "Zafira (Brazil, Opel-based)",
-    "Bodies": [
-      "A 2001—2012"
-    ]
+    "Bodies": ["A 2001—2012"]
   },
   {
     "Model": "Meriva (Brazil, Opel-based)",
-    "Bodies": [
-      "A 2002—2012"
-    ]
+    "Bodies": ["A 2002—2012"]
   },
   {
     "Model": "Spin (Brazil/ASEAN)",
-    "Bodies": [
-      "I 2012—Present (facelifts 2018, 2024)"
-    ]
+    "Bodies": ["I 2012—Present (facelifts 2018, 2024)"]
   },
   {
     "Model": "Monza (China) / Monza (US Classic)",
-    "Bodies": [
-      "Monza (China) 2019—Present",
-      "Monza (US) 1975—1980"
-    ]
+    "Bodies": ["Monza (China) 2019—Present", "Monza (US) 1975—1980"]
   },
   {
     "Model": "Cavalier",
-    "Bodies": [
-      "Cavalier (China/Mexico) 2016—Present",
-      "Cavalier (NA) 1982—2005"
-    ]
+    "Bodies": ["Cavalier (China/Mexico) 2016—Present", "Cavalier (NA) 1982—2005"]
   },
   {
     "Model": "Menlo (China, EV)",
-    "Bodies": [
-      "I (BEV) 2020—Present"
-    ]
+    "Bodies": ["I (BEV) 2020—Present"]
   },
   {
     "Model": "Seeker (China)",
-    "Bodies": [
-      "I 2022—Present"
-    ]
+    "Bodies": ["I 2022—Present"]
   },
   {
     "Model": "Groove (Global EM)",
-    "Bodies": [
-      "I (Baojun 510-based) 2020—Present"
-    ]
+    "Bodies": ["I (Baojun 510-based) 2020—Present"]
   },
   {
     "Model": "Orlando (China 2nd Gen)",
-    "Bodies": [
-      "II 2018—2023"
-    ]
+    "Bodies": ["II 2018—2023"]
   },
   {
     "Model": "Trailblazer (Brazil) — BOF",
-    "Bodies": [
-      "II (Colorado-based) 2012—2021"
-    ]
+    "Bodies": ["II (Colorado-based) 2012—2021"]
   },
   {
     "Model": "K5 Blazer / S-10 Blazer (LatAm)",
-    "Bodies": [
-      "S-10 Blazer 1995—2012",
-      "K5 Blazer 1969—1994"
-    ]
+    "Bodies": ["S-10 Blazer 1995—2012", "K5 Blazer 1969—1994"]
   },
   {
     "Model": "Bolt EV / Bolt EUV",
-    "Bodies": [
-      "Bolt EUV 2022—2025",
-      "Bolt EV 2017—2025"
-    ]
+    "Bodies": ["Bolt EUV 2022—2025", "Bolt EV 2017—2025"]
   },
   {
     "Model": "Captiva (Latin America 2nd Gen)",
-    "Bodies": [
-      "II (rebadged Baojun 530) 2019—Present"
-    ]
+    "Bodies": ["II (rebadged Baojun 530) 2019—Present"]
   },
   {
     "Model": "Lumina (Middle East/Australia sourced)",
-    "Bodies": [
-      "VT/VX/VY (Holden Commodore) 1998—2004",
-      "VZ/VE 2004—2011"
-    ]
+    "Bodies": ["VT/VX/VY (Holden Commodore) 1998—2004", "VZ/VE 2004—2011"]
   },
   {
     "Model": "Orlando (Global 1st Gen)",
-    "Bodies": [
-      "I 2011—2018"
-    ]
+    "Bodies": ["I 2011—2018"]
   },
   {
     "Model": "Cobalt (Global)",
-    "Bodies": [
-      "II (GSV platform, LatAm/Russia) 2011—2020",
-      "I (US) 2005—2010"
-    ]
+    "Bodies": ["II (GSV platform, LatAm/Russia) 2011—2020", "I (US) 2005—2010"]
   },
   {
     "Model": "Optra (Egypt/ME new-gen)",
-    "Bodies": [
-      "I (Baojun 630-based) 2014—Present"
-    ]
+    "Bodies": ["I (Baojun 630-based) 2014—Present"]
   }
 ]

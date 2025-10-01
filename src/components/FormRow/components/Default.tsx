@@ -2,10 +2,10 @@ import { TextField } from "@mui/material";
 import React from "react";
 
 type Props = {
-    value: string;
-    onChange: (value: string) => void;
-    placeholder: string;
-}
+  value: string;
+  onChange: (value: string) => void;
+  placeholder: string;
+};
 
 function Default({ value, onChange, placeholder }: Props) {
   return (
@@ -17,7 +17,7 @@ function Default({ value, onChange, placeholder }: Props) {
       variant="outlined"
       placeholder={placeholder}
     />
-  )
+  );
 }
 
 export default Default;

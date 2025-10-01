@@ -1,11 +1,12 @@
-import {Box, IconButton, Switch, TableCell, TableRow, Typography} from "@mui/material";
-import {COLUMNS} from "@/constants";
-import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
-import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
-import {getColumnSx, getIsColumnCopiable} from "@/helpers";
-import {ReactNode, useState} from "react";
-import type {Column, Row as RowType} from "@/types";
+import EditIcon from "@mui/icons-material/Edit";
+import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
+import { Box, IconButton, Switch, TableCell, TableRow, Typography } from "@mui/material";
+import { ReactNode, useState } from "react";
+
+import { COLUMNS } from "@/constants";
+import { getColumnSx, getIsColumnCopiable } from "@/helpers";
+import type { Column, Row as RowType } from "@/types";
 
 const label = { inputProps: { "aria-label": "Actions" } };
 
@@ -19,12 +20,7 @@ type Props = {
 const Row = ({ row, idx, onEdit, onDelete }: Props) => {
   const [hoveredColumn, setHoveredColumn] = useState<Column | null>(null);
   return (
-    <TableRow
-      hover
-      key={row.index}
-      onDoubleClick={() => onEdit(row.index)}
-      data-index={idx}
-    >
+    <TableRow hover key={row.index} onDoubleClick={() => onEdit(row.index)} data-index={idx}>
       {COLUMNS.map((col) => {
         let content: ReactNode;
 
@@ -50,18 +46,10 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
           case "actions":
             content = (
               <>
-                <IconButton
-                  aria-label="Edit"
-                  size="small"
-                  onClick={() => onEdit(row.index)}
-                >
+                <IconButton aria-label="Edit" size="small" onClick={() => onEdit(row.index)}>
                   <EditIcon fontSize="small" />
                 </IconButton>
-                <IconButton
-                  aria-label="Delete"
-                  size="small"
-                  onClick={() => onDelete(row.index)}
-                >
+                <IconButton aria-label="Delete" size="small" onClick={() => onDelete(row.index)}>
                   <DeleteIcon fontSize="small" />
                 </IconButton>
               </>
@@ -84,18 +72,23 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             onMouseLeave={() => setHoveredColumn(null)}
           >
             {content && (
-                <>
-                  <Typography component="p" fontSize={14}>
-                    {content}
-                  </Typography>
-                  {getIsColumnCopiable(col) && hoveredColumn === col &&
-                      <Box position="absolute" right={0} top="50%" sx={{transform: "translateY(-50%)"}}>
-                        <IconButton size="small" data-index={idx} data-column={col}>
-                            <UnfoldMoreIcon fontSize="small" />
-                        </IconButton>
-                      </Box>
-                  }
-                </>
+              <>
+                <Typography component="p" fontSize={14}>
+                  {content}
+                </Typography>
+                {getIsColumnCopiable(col) && hoveredColumn === col && (
+                  <Box
+                    position="absolute"
+                    right={0}
+                    top="50%"
+                    sx={{ transform: "translateY(-50%)" }}
+                  >
+                    <IconButton size="small" data-index={idx} data-column={col}>
+                      <UnfoldMoreIcon fontSize="small" />
+                    </IconButton>
+                  </Box>
+                )}
+              </>
             )}
           </TableCell>
         );

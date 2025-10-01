@@ -40,16 +40,11 @@
   },
   {
     "Model": "UX",
-    "Bodies": [
-      "ZA10 (Gen1) 2018—Present"
-    ]
+    "Bodies": ["ZA10 (Gen1) 2018—Present"]
   },
   {
     "Model": "NX",
-    "Bodies": [
-      "AZ20 (Gen2) 2021—Present",
-      "AZ10 (Gen1) 2014—2021"
-    ]
+    "Bodies": ["AZ20 (Gen2) 2021—Present", "AZ10 (Gen1) 2014—2021"]
   },
   {
     "Model": "RX",
@@ -63,61 +58,38 @@
   },
   {
     "Model": "RZ (EV)",
-    "Bodies": [
-      "AA10 (BEV) 2022—Present"
-    ]
+    "Bodies": ["AA10 (BEV) 2022—Present"]
   },
   {
     "Model": "GX",
-    "Bodies": [
-      "J250 (Gen3) 2024—Present",
-      "J150 (Gen2) 2009—2024",
-      "J120 (Gen1) 2002—2009"
-    ]
+    "Bodies": ["J250 (Gen3) 2024—Present", "J150 (Gen2) 2009—2024", "J120 (Gen1) 2002—2009"]
   },
   {
     "Model": "LX",
-    "Bodies": [
-      "J310 (Gen4) 2021—Present",
-      "J200 (Gen3) 2007—2021",
-      "J100 (Gen2) 1998—2007"
-    ]
+    "Bodies": ["J310 (Gen4) 2021—Present", "J200 (Gen3) 2007—2021", "J100 (Gen2) 1998—2007"]
   },
   {
     "Model": "CT",
-    "Bodies": [
-      "A10 (Gen1) 2010—2022"
-    ]
+    "Bodies": ["A10 (Gen1) 2010—2022"]
   },
   {
     "Model": "HS",
-    "Bodies": [
-      "ANF10 (Gen1) 2009—2018"
-    ]
+    "Bodies": ["ANF10 (Gen1) 2009—2018"]
   },
   {
     "Model": "LC",
-    "Bodies": [
-      "Z100 (Gen1) 2017—Present"
-    ]
+    "Bodies": ["Z100 (Gen1) 2017—Present"]
   },
   {
     "Model": "LFA",
-    "Bodies": [
-      "LFA10 (Gen1) 2010—2012"
-    ]
+    "Bodies": ["LFA10 (Gen1) 2010—2012"]
   },
   {
     "Model": "SC",
-    "Bodies": [
-      "Z40 (Gen2) 2001—2010",
-      "Z30 (Gen1) 1991—2000"
-    ]
+    "Bodies": ["Z40 (Gen2) 2001—2010", "Z30 (Gen1) 1991—2000"]
   },
   {
     "Model": "RC",
-    "Bodies": [
-      "GZ10 (Gen1) 2014—Present"
-    ]
+    "Bodies": ["GZ10 (Gen1) 2014—Present"]
   }
 ]

@@ -8,21 +8,21 @@ import { Column } from "@/types";
 const getColumnLabel = (col: Column) => {
   switch (col) {
     case "index":
-      return ""
+      return "";
     case "publish":
-      return ""
+      return "";
     case "actions":
-      return ""
+      return "";
     default:
-      return col
+      return col;
   }
-}
+};
 
 const Head = () => {
   return (
     <TableHead>
       <TableRow>
-        {COLUMNS.map(col => (
+        {COLUMNS.map((col) => (
           <TableCell
             padding="none"
             key={col}
@@ -38,7 +38,7 @@ const Head = () => {
         ))}
       </TableRow>
     </TableHead>
-  )
+  );
 };
 
 export default Head;

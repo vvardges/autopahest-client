@@ -14,7 +14,7 @@ function Wrapper({ children }) {
     >
       {children}
     </TableCell>
-  )
+  );
 }
 
 export default Wrapper;
