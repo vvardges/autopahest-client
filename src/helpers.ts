@@ -68,4 +68,4 @@ export const getColumnSx = (col: Column) => {
 };
 
 export const getIsColumnCopiable = (col: Column) =>
-  col !== "actions" && col !== "index" && col !== "publish" && col !== "images";
+  col !== "actions" && col !== "index" && col !== "publish";

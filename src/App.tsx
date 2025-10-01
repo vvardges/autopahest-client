@@ -1,16 +1,17 @@
 import { Paper, Table, TableContainer } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import Body from "@/components/Body";
 import FormRow from "@/components/FormRow";
 import Head from "@/components/Head";
 import Row from "@/components/Row";
 import supabase from "@/supabese";
-import type { Row as RowType } from "@/types";
+import type { Column, Row as RowType } from "@/types";
 
 function App() {
   const [rows, setRows] = useState<RowType[]>([]);
   const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
+  const [filters, setFilters] = useState<Partial<Record<Column, string>>>({});
 
   useEffect(() => {
     supabase
@@ -65,6 +66,23 @@ function App() {
       .then((res) => console.log(res));
   };
 
+  const handleSearch = useCallback((column: Column, query: string) => {
+    setFilters((prev) => ({ ...prev, [column]: query }));
+  }, []);
+
+  const filteredRows = useMemo(() => {
+    return rows.filter((row) => {
+      return Object.entries(filters).every(([key, value]) => {
+        if (!value) return true;
+
+        const itemValue = String(row[key as Column]).toLowerCase();
+        const filterValue = String(value).toLowerCase();
+
+        return itemValue.includes(filterValue);
+      });
+    });
+  }, [rows, filters]);
+
   return (
     <TableContainer component={Paper} sx={{ height: "100vh", overflow: "auto", width: "100%" }}>
       <Table
@@ -81,9 +99,9 @@ function App() {
           },
         }}
       >
-        <Head />
+        <Head onSearch={handleSearch} />
         <Body onDragEnd={handleCopy}>
-          {rows.map((row, index) =>
+          {filteredRows.map((row, index) =>
             editRowIdx === row.index ? (
               <FormRow
                 onAdd={handleAddRow}

@@ -1,24 +1,15 @@
 import { TableCell, TableHead, TableRow } from "@mui/material";
-import React from "react";
 
+import Search from "@/components/Head/components/Search";
 import { COLUMNS } from "@/constants";
-import { getColumnSx } from "@/helpers";
+import { getColumnSx, getIsColumnCopiable } from "@/helpers";
 import { Column } from "@/types";
 
-const getColumnLabel = (col: Column) => {
-  switch (col) {
-    case "index":
-      return "";
-    case "publish":
-      return "";
-    case "actions":
-      return "";
-    default:
-      return col;
-  }
+type Props = {
+  onSearch: (column: Column, query: string) => void;
 };
 
-const Head = () => {
+const Head = ({ onSearch }: Props) => {
   return (
     <TableHead>
       <TableRow>
@@ -29,11 +20,10 @@ const Head = () => {
             sx={{
               ...getColumnSx(col),
               zIndex: 3,
-              paddingLeft: "5px",
               textTransform: "uppercase",
             }}
           >
-            {getColumnLabel(col)}
+            {getIsColumnCopiable(col) && <Search column={col} onSearch={onSearch} />}
           </TableCell>
         ))}
       </TableRow>
