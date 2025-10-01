@@ -48,7 +48,7 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
   const [images, setImages] = useState<ImageItem[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
 
-  const searchImages = useCallback(async () => {
+  const searchImages = useCallback(async() => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
       console.warn("Missing env vars VITE_GOOGLE_CSE_API_KEY or VITE_GOOGLE_CSE_CX_ID");

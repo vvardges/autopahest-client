@@ -27,7 +27,7 @@ function Search({ column, onSearch }: Props) {
       slotProps={{
         input: {
           endAdornment: (
-            <InputAdornment position="start">
+            <InputAdornment position="end">
               <IconButton onClick={() => console.log("Search clicked")} size="small">
                 <ArrowDropUpIcon fontSize="small" />
               </IconButton>

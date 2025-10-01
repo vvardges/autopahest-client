@@ -1,7 +1,14 @@
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
-import { Box, IconButton, Switch, TableCell, TableRow, Typography } from "@mui/material";
+import {
+    Box,
+    IconButton,
+    Switch,
+    TableCell,
+    TableRow,
+    Typography
+} from "@mui/material";
 import { ReactNode, useState } from "react";
 
 import { COLUMNS } from "@/constants";
