@@ -5,12 +5,14 @@ type Props = {
     value: [];
     onChange: (value: {bodies: string[]}) => void;
     options: string[];
-    disabled: boolean;
 }
 
-function Body({ value, onChange, options, disabled }: Props) {
+function Body({ value, onChange, options }: Props) {
   return (
     <Autocomplete
+      autoSelect={true}
+      autoHighlight={true}
+      openOnFocus={true}
       size="small"
       multiple
       options={options}
@@ -19,7 +21,6 @@ function Body({ value, onChange, options, disabled }: Props) {
         onChange({ bodies: newValue });
       }}
       fullWidth
-      disabled={disabled}
       renderInput={(params) => (
         <TextField {...params} placeholder="Body" fullWidth/>
       )}

@@ -97,7 +97,6 @@ const FormRow = ({
               case "models":
                 return (
                   <Model
-                    disabled={!form.manufacturer}
                     options={modelOptions.map(item => item.Model)}
                     onChange={handleChange}
                     value={form.models as []}
@@ -113,7 +112,6 @@ const FormRow = ({
                         .filter(option => form?.models?.includes(option.Model))
                         .map(option => option.Bodies).flat()
                     }
-                    disabled={!form?.models?.length}
                   />
                 );
               case "name":

@@ -8,15 +8,17 @@ type Props = {
         bodies: string[];
     }) => void;
     options: string[];
-    disabled: boolean;
 }
 
-function Model({ value, onChange, options, disabled }: Props) {
+function Model({ value, onChange, options }: Props) {
   return (
     <Autocomplete
+      autoSelect={true}
+      autoHighlight={true}
+      openOnFocus={true}
       size="small"
+      tabIndex={1}
       multiple
-      disabled={disabled}
       options={options}
       value={value}
       onChange={(_event, newValue) => {
