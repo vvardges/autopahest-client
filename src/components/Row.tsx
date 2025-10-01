@@ -2,10 +2,10 @@ import {Box, IconButton, Switch, TableCell, TableRow, Typography} from "@mui/mat
 import {COLUMNS} from "@/constants";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
-import AddIcon from "@mui/icons-material/Add"
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import {getColumnSx, getIsColumnCopiable} from "@/helpers";
-import type { ReactNode } from "react";
-import type { Row as RowType } from "@/types";
+import {ReactNode, useState} from "react";
+import type {Column, Row as RowType} from "@/types";
 
 const label = { inputProps: { "aria-label": "Actions" } };
 
@@ -17,6 +17,7 @@ type Props = {
 };
 
 const Row = ({ row, idx, onEdit, onDelete }: Props) => {
+  const [hoveredColumn, setHoveredColumn] = useState<Column | null>(null);
   return (
     <TableRow
       hover
@@ -79,16 +80,18 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
               paddingLeft: "5px",
               ...getColumnSx(col),
             }}
+            onMouseEnter={() => setHoveredColumn(col)}
+            onMouseLeave={() => setHoveredColumn(null)}
           >
             {content && (
                 <>
-                  <Typography noWrap component="p" fontSize={14}>
+                  <Typography component="p" fontSize={14}>
                     {content}
                   </Typography>
-                  {getIsColumnCopiable(col) &&
-                      <Box position="absolute" right={0} bottom={0}>
+                  {getIsColumnCopiable(col) && hoveredColumn === col &&
+                      <Box position="absolute" right={0} top="50%" sx={{transform: "translateY(-50%)"}}>
                         <IconButton size="small" data-index={idx} data-column={col}>
-                            <AddIcon fontSize="small" />
+                            <UnfoldMoreIcon fontSize="small" />
                         </IconButton>
                       </Box>
                   }
