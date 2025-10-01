@@ -73,6 +73,7 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             sx={{
               position: "relative",
               paddingLeft: "5px",
+              overflow: "hidden",
               ...getColumnSx(col),
             }}
             onMouseEnter={() => setHoveredColumn(col)}
