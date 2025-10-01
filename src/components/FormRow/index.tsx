@@ -10,8 +10,8 @@ import {
     TableRow,
 } from "@mui/material";
 import {
-  useEffect,
-  useState,
+    useEffect, useRef,
+    useState,
 } from "react";
 
 import {
@@ -41,7 +41,7 @@ const FormRow = ({
   rowData,
   onCancel
 }: {
-  onAdd?: (row: Row) => void;
+  onAdd: (row: Row) => void;
   helperData: {
     name: Set<string>;
     brand: Set<string>;
@@ -51,9 +51,22 @@ const FormRow = ({
 }) => {
   const [form, setForm] = useState<Row>(rowData);
   const [modelOptions, setModelOptions] = useState<ModelOptions[]>([]);
-
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen(prev => !prev);
+    const ref = useRef<HTMLTableRowElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (ref.current && !ref.current.contains(event.target as Node)) {
+                onAdd(form)
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [form]);
 
   // Handle change for single values
   const handleChange =
@@ -76,7 +89,7 @@ const FormRow = ({
   }, [manufacturer]);
 
   return (
-    <TableRow>
+    <TableRow ref={ref}>
       {COLUMNS.map((col: Column) => (
         <TableCell padding="none" key={col} sx={getColumnSx(col)}>
           {(() => {

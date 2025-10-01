@@ -27,6 +27,7 @@ type Props = {
 function Origin({ value, onChange }: Props) {
   return (
     <Autocomplete
+      disablePortal
       size="small"
       selectOnFocus
       options={options}

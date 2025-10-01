@@ -10,6 +10,7 @@ import type { Row as RowType } from "@/types";
 
 function App() {
   const [rows, setRows] = useState<RowType[]>([]);
+  const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
 
   useEffect(() => {
     supabase.from("data").select("json").then(res => {
@@ -20,8 +21,6 @@ function App() {
       setRows(data);
     })
   }, []);
-
-  const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
 
   const handleEditRow = (index: number) => {
     setEditRowIdx(index);

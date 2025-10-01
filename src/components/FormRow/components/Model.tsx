@@ -13,6 +13,7 @@ type Props = {
 function Model({ value, onChange, options }: Props) {
   return (
     <Autocomplete
+      disablePortal
       autoSelect={true}
       autoHighlight={true}
       openOnFocus={true}

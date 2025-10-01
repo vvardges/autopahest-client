@@ -93,7 +93,7 @@ export default function Images({
   };
 
   return (
-    <Dialog open={true} onClose={toggle} fullWidth maxWidth="md">
+    <Dialog open={true} onClose={toggle} fullWidth maxWidth="md" disablePortal>
       <DialogTitle>Pick an Image</DialogTitle>
       <DialogContent>
         <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>

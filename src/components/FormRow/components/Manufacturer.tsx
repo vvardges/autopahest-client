@@ -21,6 +21,7 @@ function Manufacturer({ value, onChange }: Props) {
   }
   return (
     <Autocomplete
+      disablePortal
       size="small"
       autoSelect={true}
       autoHighlight={true}

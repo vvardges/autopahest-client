@@ -10,6 +10,7 @@ type Props = {
 function Name({ value, onChange, options }: Props) {
   return (
     <Autocomplete
+      disablePortal
       size="small"
       freeSolo
       options={options}
