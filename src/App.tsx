@@ -55,8 +55,9 @@ function App() {
   };
 
   const handleAddRow = (row: RowType) => {
+    const isFilled = Object.values(row).some((value) => String(value) !== "");
     const updatedRows = [...rows].map((r) =>
-      r.index === editRowIdx ? { ...row, _filled: true } : r,
+      r.index === editRowIdx ? { ...row, _filled: isFilled } : r,
     );
     setRows(updatedRows);
     setEditRowIdx(null);
