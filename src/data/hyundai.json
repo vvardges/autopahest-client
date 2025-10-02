@@ -2,195 +2,330 @@
   {
     "Model": "Elantra / Avante",
     "Bodies": [
-      "CN7 (Gen7) 2020—Present",
-      "AD (Gen6) 2015—2020",
-      "MD (Gen5) 2010—2015",
-      "HD (Gen4) 2006—2010",
-      "XD (Gen3) 2000—2006",
+      "CN7 (Gen7) Restyling 2023—Present",
+      "CN7 (Gen7) 2020—2023",
+      "AD (Gen6) Restyling 2018—2020",
+      "AD (Gen6) 2015—2018",
+      "MD (Gen5) Restyling 2013—2015",
+      "MD (Gen5) 2010—2013",
+      "HD (Gen4) Restyling 2009—2010",
+      "HD (Gen4) 2006—2009",
+      "XD (Gen3) Restyling 2003—2006",
+      "XD (Gen3) 2000—2003",
       "J2 (Gen2) 1995—2000",
       "J1 (Gen1) 1990—1995"
     ]
   },
   {
+    "Model": "Accent / Solaris / Verna",
+    "Bodies": [
+      "BN7 (Gen5) 2023—Present",
+      "HC (Gen4) Restyling 2020—2022",
+      "HC (Gen4) 2017—2020",
+      "RB (Gen3) Restyling 2014—2017",
+      "RB (Gen3) 2010—2014",
+      "MC (Gen2) Restyling 2008—2010",
+      "MC (Gen2) 2005—2008",
+      "LC (Gen1) Restyling 2003—2005",
+      "LC (Gen1) 1999—2003"
+    ]
+  },
+  {
     "Model": "Sonata",
     "Bodies": [
-      "DN8 (Gen8) 2020—Present",
-      "LF (Gen7) 2014—2019",
-      "YF (Gen6) 2009—2014",
-      "NF (Gen5) 2004—2009",
-      "EF (Gen4) 1998—2004",
+      "DN8 (Gen8) Restyling 2023—Present",
+      "DN8 (Gen8) 2019—2023",
+      "LF (Gen7) Restyling 2017—2019",
+      "LF (Gen7) 2014—2017",
+      "YF (Gen6) Restyling 2012—2014",
+      "YF (Gen6) 2009—2012",
+      "NF (Gen5) Restyling 2008—2009",
+      "NF (Gen5) 2004—2008",
+      "EF (Gen4) Restyling 2001—2004",
+      "EF (Gen4) 1998—2001",
       "III (Gen3) 1993—1998",
       "II (Gen2) 1988—1993",
       "I (Gen1) 1985—1988"
     ]
   },
   {
-    "Model": "Accent / Verna",
+    "Model": "i10 / Grand i10",
     "Bodies": [
-      "BN7 (Gen5) 2023—Present",
-      "HC (Gen4) 2017—2022",
-      "RB (Gen3) 2010—2017",
-      "MC (Gen2) 2005—2010",
-      "LC (Gen1) 1999—2005"
+      "AI3 (Gen3) Restyling 2023—Present",
+      "AI3 (Gen3) 2019—2023",
+      "IA (Gen2) Restyling 2016—2019",
+      "IA (Gen2) 2013—2016",
+      "PA (Gen1) Restyling 2010—2013",
+      "PA (Gen1) 2007—2010"
     ]
   },
   {
-    "Model": "Mistra (China)",
-    "Bodies": ["DU2 (Gen2) 2020—Present", "DU1 (Gen1) 2013—2020"]
-  },
-  {
-    "Model": "Lafesta (China)",
-    "Bodies": ["Gen1 2018—Present"]
-  },
-  {
-    "Model": "Celesta (China)",
-    "Bodies": ["Gen1 2017—2023"]
-  },
-  {
-    "Model": "Custo (China MPV)",
-    "Bodies": ["Gen1 2021—Present"]
-  },
-  {
-    "Model": "i10",
-    "Bodies": ["AI3 (Gen3) 2019—Present", "IA (Gen2) 2013—2019", "PA (Gen1) 2007—2013"]
-  },
-  {
     "Model": "i20",
-    "Bodies": ["BC3 (Gen3) 2020—Present", "IB (Gen2) 2014—2020", "PB (Gen1) 2008—2014"]
+    "Bodies": [
+      "BC3 (Gen3) Restyling 2023—Present",
+      "BC3 (Gen3) 2020—2023",
+      "IB (Gen2) Restyling 2018—2020",
+      "IB (Gen2) 2014—2018",
+      "PB (Gen1) Restyling 2012—2014",
+      "PB (Gen1) 2008—2012"
+    ]
   },
   {
-    "Model": "i30 / Elantra GT",
-    "Bodies": ["PD (Gen3) 2017—2025", "GD (Gen2) 2011—2017", "FD (Gen1) 2007—2011"]
+    "Model": "i30 / Elantra GT (hatch)",
+    "Bodies": [
+      "PD (Gen3) Restyling 2020—2025",
+      "PD (Gen3) 2017—2020",
+      "GD (Gen2) Restyling 2015—2017",
+      "GD (Gen2) 2011—2015",
+      "FD (Gen1) Restyling 2009—2011",
+      "FD (Gen1) 2007—2009"
+    ]
+  },
+  {
+    "Model": "i40",
+    "Bodies": [
+      "VF (Gen1) Restyling 2015—2019",
+      "VF (Gen1) 2011—2015"
+    ]
   },
   {
     "Model": "Veloster",
-    "Bodies": ["JS (Gen2) 2018—2022", "FS (Gen1) 2011—2018"]
+    "Bodies": [
+      "JS (Gen2) 2018—2022",
+      "FS (Gen1) Restyling 2015—2018",
+      "FS (Gen1) 2011—2015"
+    ]
   },
   {
     "Model": "Azera / Grandeur",
     "Bodies": [
       "GN7 (Gen7) 2022—Present",
-      "IG (Gen6) 2016—2022",
-      "HG (Gen5) 2011—2016",
-      "TG (Gen4) 2005—2011",
-      "XG (Gen3) 1998—2005",
+      "IG (Gen6) Restyling 2019—2022",
+      "IG (Gen6) 2016—2019",
+      "HG (Gen5) Restyling 2014—2016",
+      "HG (Gen5) 2011—2014",
+      "TG (Gen4) Restyling 2008—2011",
+      "TG (Gen4) 2005—2008",
+      "XG (Gen3) Restyling 2002—2005",
+      "XG (Gen3) 1998—2002",
       "L (Gen2) 1992—1998",
       "HG (Gen1) 1986—1992"
     ]
   },
   {
-    "Model": "Genesis (pre-Genesis brand)",
-    "Bodies": ["DH (Gen2) 2014—2016", "BH (Gen1) 2008—2013"]
+    "Model": "Genesis (sedan, pre-Genesis brand)",
+    "Bodies": [
+      "DH (Gen2) 2013—2016",
+      "BH (Gen1) Restyling 2011—2013",
+      "BH (Gen1) 2008—2011"
+    ]
   },
   {
     "Model": "Genesis Coupe",
-    "Bodies": ["BK2 (Facelift) 2012—2016", "BK1 (Gen1) 2008—2012"]
+    "Bodies": [
+      "BK2 (Facelift) 2012—2016",
+      "BK1 (Gen1) 2008—2012"
+    ]
+  },
+  {
+    "Model": "Equus / Centennial",
+    "Bodies": [
+      "VI (Gen2) 2009—2016",
+      "VI (Gen1) 1999—2008"
+    ]
+  },
+  {
+    "Model": "Getz",
+    "Bodies": [
+      "TB (Gen1) Restyling 2005—2011",
+      "TB (Gen1) 2002—2005"
+    ]
+  },
+  {
+    "Model": "Matrix",
+    "Bodies": [
+      "FC (Gen1) Restyling 2005—2010",
+      "FC (Gen1) 2001—2005"
+    ]
+  },
+  {
+    "Model": "Excel / Presto",
+    "Bodies": [
+      "X2 (Gen2) 1989—1994"
+    ]
+  },
+  {
+    "Model": "Atos / Atoz / Amica",
+    "Bodies": [
+      "MX (Gen1) Restyling 2003—2014",
+      "MX (Gen1) 1997—2003"
+    ]
   },
   {
     "Model": "Santa Fe",
     "Bodies": [
       "MX5 (Gen5) 2024—Present",
-      "TM (Gen4) 2018—2023",
-      "DM (Gen3) 2012—2018",
-      "CM (Gen2) 2006—2012",
-      "SM (Gen1) 2000—2006"
+      "TM (Gen4) Restyling 2020—2023",
+      "TM (Gen4) 2018—2020",
+      "DM (Gen3) Restyling 2015—2018",
+      "DM (Gen3) 2012—2015",
+      "CM (Gen2) Restyling 2010—2012",
+      "CM (Gen2) 2006—2010",
+      "SM (Gen1) Restyling 2003—2006",
+      "SM (Gen1) 2000—2003"
     ]
   },
   {
-    "Model": "Tucson",
+    "Model": "Tucson / ix35",
     "Bodies": [
-      "NX4 (Gen4) 2020—Present",
-      "TL (Gen3) 2015—2020",
-      "LM (Gen2) 2009—2015",
-      "JM (Gen1) 2004—2009"
+      "NX4 (Gen4) Restyling 2023—Present",
+      "NX4 (Gen4) 2020—2023",
+      "TL (Gen3) Restyling 2018—2020",
+      "TL (Gen3) 2015—2018",
+      "LM (Gen2) Restyling 2013—2015",
+      "LM (Gen2) 2009—2013",
+      "JM (Gen1) Restyling 2006—2009",
+      "JM (Gen1) 2004—2006"
     ]
   },
   {
     "Model": "Creta / ix25",
-    "Bodies": ["SU2 (Gen2) 2020—Present", "GS (Gen1) 2014—2020"]
+    "Bodies": [
+      "SU2 (Gen2) Restyling 2023—Present",
+      "SU2 (Gen2) 2020—2023",
+      "GS (Gen1) Restyling 2018—2020",
+      "GS (Gen1) 2014—2018"
+    ]
   },
   {
-    "Model": "Kona",
-    "Bodies": ["SX2 (Gen2) 2023—Present", "OS (Gen1) 2017—2023"]
+    "Model": "Alcazar",
+    "Bodies": [
+      "SU2L (Gen1) 2021—Present"
+    ]
+  },
+  {
+    "Model": "Kona / Kona Electric",
+    "Bodies": [
+      "SX2 (Gen2) Restyling 2024—Present",
+      "SX2 (Gen2) 2023—2024",
+      "OS (Gen1) Restyling 2020—2023",
+      "OS (Gen1) 2017—2020",
+      "Kona Electric (OS EV) 2018—2023"
+    ]
   },
   {
     "Model": "Palisade",
-    "Bodies": ["LX2 (Gen1) 2018—Present"]
+    "Bodies": [
+      "LX2 (Gen1) Restyling 2022—Present",
+      "LX2 (Gen1) 2018—2022"
+    ]
   },
   {
     "Model": "Venue",
-    "Bodies": ["QX (Gen1) 2019—Present"]
+    "Bodies": [
+      "QX (Gen1) Restyling 2022—Present",
+      "QX (Gen1) 2019—2022"
+    ]
   },
   {
     "Model": "Bayon",
-    "Bodies": ["BC3 Crossover (Gen1) 2021—Present"]
+    "Bodies": [
+      "BC3 (Gen1) Restyling 2023—Present",
+      "BC3 (Gen1) 2021—2023"
+    ]
+  },
+  {
+    "Model": "Casper",
+    "Bodies": [
+      "AX1 (Gen1) 2021—Present"
+    ]
+  },
+  {
+    "Model": "Exter",
+    "Bodies": [
+      "AI3X (Gen1) 2023—Present"
+    ]
   },
   {
     "Model": "Terracan",
-    "Bodies": ["HP (Gen1) 2001—2007"]
+    "Bodies": [
+      "HP (Gen1) Restyling 2004—2007",
+      "HP (Gen1) 2001—2004"
+    ]
   },
   {
     "Model": "Galloper",
-    "Bodies": ["I 1991—2003"]
+    "Bodies": [
+      "Gen2 1998—2003",
+      "Gen1 1991—1998"
+    ]
   },
   {
-    "Model": "H-1 / Starex / H-300",
-    "Bodies": ["TQ (Gen2) 2007—2021", "A1 (Gen1) 1997—2007"]
+    "Model": "Veracruz / ix55",
+    "Bodies": [
+      "EN (Gen1) Restyling 2012—2015",
+      "EN (Gen1) 2006—2012"
+    ]
   },
   {
     "Model": "Staria",
-    "Bodies": ["US4 (Gen1) 2021—Present"]
+    "Bodies": [
+      "US4 (Gen1) 2021—Present"
+    ]
   },
   {
-    "Model": "Porter / H100",
-    "Bodies": ["III 2004—Present", "II 1996—2004", "I 1986—1996"]
-  },
-  {
-    "Model": "Mighty",
-    "Bodies": ["III 2015—Present", "II 1997—2014", "I 1987—1997"]
-  },
-  {
-    "Model": "Pony",
-    "Bodies": ["II 1982—1990", "I 1975—1982"]
-  },
-  {
-    "Model": "Excel / Presto",
-    "Bodies": ["X2 (Gen2) 1989—1994", "X1 (Gen1) 1985—1989"]
-  },
-  {
-    "Model": "Getz",
-    "Bodies": ["TB (Gen1) 2002—2011"]
-  },
-  {
-    "Model": "Matrix",
-    "Bodies": ["FC (Gen1) 2001—2010"]
-  },
-  {
-    "Model": "ix20",
-    "Bodies": ["JC (Gen1) 2010—2019"]
-  },
-  {
-    "Model": "Entourage",
-    "Bodies": ["EP (Gen1) 2006—2009"]
+    "Model": "H-1 / Starex / i800",
+    "Bodies": [
+      "TQ (Gen2) Restyling 2018—2021",
+      "TQ (Gen2) 2007—2018",
+      "A1 (Gen1) Restyling 2004—2007",
+      "A1 (Gen1) 1997—2004"
+    ]
   },
   {
     "Model": "Trajet",
-    "Bodies": ["FO (Gen1) 1999—2008"]
+    "Bodies": [
+      "FO (Gen1) Restyling 2004—2008",
+      "FO (Gen1) 1999—2004"
+    ]
   },
   {
-    "Model": "Ioniq (Hybrid/EV)",
-    "Bodies": ["AE (Gen1) 2016—2022"]
+    "Model": "Entourage",
+    "Bodies": [
+      "EP (Gen1) 2006—2009"
+    ]
   },
   {
-    "Model": "Ioniq 5",
-    "Bodies": ["NE (BEV) 2021—Present"]
+    "Model": "ix20",
+    "Bodies": [
+      "JC (Gen1) Restyling 2015—2019",
+      "JC (Gen1) 2010—2015"
+    ]
   },
   {
-    "Model": "Ioniq 6",
-    "Bodies": ["CE (BEV) 2022—Present"]
+    "Model": "Ioniq (liftback HEV/PHEV/EV)",
+    "Bodies": [
+      "AE (Gen1) Restyling 2019—2022",
+      "AE (Gen1) 2016—2019"
+    ]
   },
   {
-    "Model": "Ioniq 7",
-    "Bodies": ["SE (BEV) 2025—Future"]
+    "Model": "Ioniq 5 (BEV)",
+    "Bodies": [
+      "NE (Gen1) Restyling 2024—Present",
+      "NE (Gen1) 2021—2024"
+    ]
+  },
+  {
+    "Model": "Ioniq 6 (BEV)",
+    "Bodies": [
+      "CE (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Nexo (FCEV)",
+    "Bodies": [
+      "FE (Gen1) 2018—Present"
+    ]
   }
 ]

@@ -1,236 +1,381 @@
 [
   {
-    "Model": "Corolla (E-series)",
+    "Model": "Corolla / Corolla Altis",
     "Bodies": [
-      "E210 (Gen12) 2018—Present",
-      "E170 (Gen11) 2012—2019",
-      "E140/E150 (Gen10) 2006—2013",
-      "E120/E130 (Gen9) 2000—2007",
-      "E110 (Gen8) 1995—2002",
-      "E100 (Gen7) 1991—1998",
-      "E90 (Gen6) 1987—1992",
-      "E80 (Gen5) 1983—1987",
-      "E70 (Gen4) 1979—1983",
-      "E30/E50 (Gen3) 1974—1979",
-      "E20 (Gen2) 1970—1974",
-      "E10 (Gen1) 1966—1970"
+      "E210 (Gen12) Restyling 2022—Present",
+      "E210 (Gen12) 2018—2022",
+      "E170 (Gen11) Restyling 2016—2019",
+      "E170 (Gen11) 2012—2016",
+      "E140/E150 (Gen10) Restyling 2010—2013",
+      "E140/E150 (Gen10) 2006—2010",
+      "E120/E130 (Gen9) Restyling 2004—2007",
+      "E120/E130 (Gen9) 2000—2004",
+      "E110 (Gen8) Restyling 1997—2002",
+      "E110 (Gen8) 1995—1997"
     ]
   },
   {
-    "Model": "Camry",
+    "Model": "Camry / Aurion",
     "Bodies": [
-      "XV70 (Gen8) 2017—Present (facelift 2020)",
-      "XV50 (Gen7) 2011—2019",
-      "XV40 (Gen6) 2006—2011",
-      "XV30 (Gen5) 2001—2006",
-      "XV20 (Gen4) 1996—2001",
-      "XV10 (Gen3) 1991—1996",
-      "V20 (Gen2) 1986—1991",
-      "V10 (Gen1) 1982—1986"
-    ]
-  },
-  {
-    "Model": "Crown",
-    "Bodies": [
-      "S220 (Gen15) 2018—2022",
-      "S210 (Gen14) 2012—2018",
-      "S200 (Gen13) 2008—2012",
-      "S180 (Gen12) 2003—2008",
-      "S170 (Gen11) 1999—2003",
-      "S150 (Gen10) 1995—1999",
-      "S140 (Gen9) 1991—1995",
-      "S130 (Gen8) 1987—1991",
-      "S120 (Gen7) 1983—1987",
-      "S110 (Gen6) 1979—1983",
-      "S100 (Gen5) 1974—1979",
-      "S80 (Gen4) 1971—1974",
-      "S50 (Gen3) 1967—1971",
-      "S40 (Gen2) 1962—1967",
-      "S30 (Gen1) 1955—1962"
-    ]
-  },
-  {
-    "Model": "Crown (Crossover/Global, 2022+)",
-    "Bodies": [
-      "S235 Crossover 2022—Present",
-      "S236 Sport (SUV-coupe) 2023—Present",
-      "S238 Sedan (FCEV/HEV JP) 2023—Present",
-      "S237 Estate (SUV) 2023—Present"
-    ]
-  },
-  {
-    "Model": "Avalon / Crown (CN)",
-    "Bodies": [
-      "XX50 Avalon 2018—2022",
-      "XX40 2012—2018",
-      "XX30 2005—2012",
-      "XX20 1999—2004",
-      "XX10 1994—1999"
+      "XV70 (Gen8) Restyling 2020—Present",
+      "XV70 (Gen8) 2017—2020",
+      "XV50 (Gen7) Restyling 2014—2017",
+      "XV50 (Gen7) 2011—2014",
+      "XV40 (Gen6) Restyling 2009—2011",
+      "XV40 (Gen6) 2006—2009",
+      "XV30 (Gen5) Restyling 2004—2006",
+      "XV30 (Gen5) 2001—2004",
+      "XV20 (Gen4) Restyling 1999—2001",
+      "XV20 (Gen4) 1996—1999",
+      "XV10 (Gen3) Restyling 1994—1996",
+      "XV10 (Gen3) 1991—1994",
+      "(Aurion XV40/XV50 aligned with Camry bodies) 2006—2017"
     ]
   },
   {
     "Model": "Yaris / Vitz / Vios / Yaris Ativ",
     "Bodies": [
-      "AC100 (Gen4) 2022—Present (ASEAN sedan)",
-      "MXPA10/15 (XP210) 2020—Present (hatch)",
-      "XP150 (ASEAN) 2013—2023",
-      "XP130 (Gen3 JP/EU) 2010—2020",
-      "XP90 (Gen2) 2005—2011",
-      "XP10 (Gen1) 1999—2005"
+      "XP210 (Hatch Gen4) 2020—Present",
+      "XP150 (ASEAN Sedan/HB) Restyling 2017—2023",
+      "XP150 (ASEAN Sedan/HB) 2013—2017",
+      "XP130 (Hatch Gen3) Restyling 2014—2020",
+      "XP130 (Hatch Gen3) 2010—2014",
+      "XP90 (Gen2) Restyling 2009—2011",
+      "XP90 (Gen2) 2005—2009",
+      "XP10 (Gen1) Restyling 2003—2005",
+      "XP10 (Gen1) 1999—2003"
     ]
   },
   {
     "Model": "Prius",
     "Bodies": [
       "XW60 (Gen5) 2022—Present",
-      "XW50 (Gen4) 2015—2022",
-      "XW30 (Gen3) 2009—2015",
-      "XW20 (Gen2) 2003—2009",
-      "XW10 (Gen1) 1997—2003"
+      "XW50 (Gen4) Restyling 2018—2022",
+      "XW50 (Gen4) 2015—2018",
+      "XW30 (Gen3) Restyling 2011—2015",
+      "XW30 (Gen3) 2009—2011",
+      "XW20 (Gen2) Restyling 2006—2009",
+      "XW20 (Gen2) 2003—2006"
     ]
   },
   {
-    "Model": "GR Corolla / GR Yaris / GR86 / Supra",
+    "Model": "Supra",
     "Bodies": [
-      "GR Corolla (E210) 2022—Present",
-      "GR Yaris (XP210) 2020—Present",
-      "GR86 (ZN8) 2021—Present",
-      "86 (ZN6) 2012—2021",
-      "Supra (A90/A91) 2019—Present",
-      "Supra (A80) 1993—2002",
-      "Supra (A70) 1986—1993",
-      "Celica (A20—T230) 1970—2006"
+      "A90/A91 (Gen5) 2019—Present",
+      "A80 (Gen4) 1993—2002"
     ]
   },
   {
-    "Model": "MR2",
-    "Bodies": ["W30 (Gen3) 1999—2007", "SW20 (Gen2) 1989—1999", "AW11 (Gen1) 1984—1989"]
+    "Model": "86 / GR86",
+    "Bodies": [
+      "ZN8 (GR86 Gen2) 2021—Present",
+      "ZN6 (GT86/86 Gen1) Restyling 2016—2021",
+      "ZN6 (GT86/86 Gen1) 2012—2016"
+    ]
   },
   {
     "Model": "C-HR",
-    "Bodies": ["AXU/AXH (Gen2 EU) 2023—Present", "AX10 (Gen1) 2016—2023"]
+    "Bodies": [
+      "AXU/AXH (Gen2 EU) 2023—Present",
+      "AX10 (Gen1) Restyling 2019—2023",
+      "AX10 (Gen1) 2016—2019"
+    ]
+  },
+  {
+    "Model": "bZ4X (BEV)",
+    "Bodies": [
+      "EA10 (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Mirai (FCEV)",
+    "Bodies": [
+      "JPD20 (Gen2) 2020—Present",
+      "JPD10 (Gen1) 2014—2020"
+    ]
   },
   {
     "Model": "RAV4",
     "Bodies": [
-      "XA50 (Gen5) 2018—Present",
-      "XA40 (Gen4) 2013—2018",
-      "XA30 (Gen3) 2005—2012",
-      "XA20 (Gen2) 2000—2005",
-      "XA10 (Gen1) 1994—2000"
+      "XA50 (Gen5) Restyling 2021—Present",
+      "XA50 (Gen5) 2018—2021",
+      "XA40 (Gen4) Restyling 2015—2018",
+      "XA40 (Gen4) 2013—2015",
+      "XA30 (Gen3) Restyling 2008—2012",
+      "XA30 (Gen3) 2005—2008",
+      "XA20 (Gen2) Restyling 2003—2005",
+      "XA20 (Gen2) 2000—2003",
+      "XA10 (Gen1) Restyling 1997—2000",
+      "XA10 (Gen1) 1994—1997"
     ]
   },
   {
     "Model": "Highlander / Kluger",
     "Bodies": [
-      "XU70 (Gen4) 2019—Present",
-      "XU50 (Gen3) 2013—2019",
-      "XU40 (Gen2) 2007—2013",
-      "XU20 (Gen1) 2000—2007"
+      "XU70 (Gen4) Restyling 2022—Present",
+      "XU70 (Gen4) 2019—2022",
+      "XU50 (Gen3) Restyling 2017—2019",
+      "XU50 (Gen3) 2013—2017",
+      "XU40 (Gen2) Restyling 2010—2013",
+      "XU40 (Gen2) 2007—2010",
+      "XU20 (Gen1) Restyling 2003—2007",
+      "XU20 (Gen1) 2000—2003"
     ]
   },
   {
-    "Model": "Land Cruiser",
+    "Model": "Land Cruiser (Station Wagon)",
     "Bodies": [
       "J300 (300 Series) 2021—Present",
-      "J200 (200 Series) 2007—2021",
-      "J100 (100 Series) 1998—2007",
-      "J80 (80 Series) 1990—1997",
-      "J60 (60 Series) 1980—1990",
-      "J40 (40 Series) 1960—1984",
-      "J20/J30 (20/30 Series) 1955—1960"
+      "J200 (200 Series) Restyling 2015—2021",
+      "J200 (200 Series) 2007—2015",
+      "J100 (100 Series) Restyling 2002—2007",
+      "J100 (100 Series) 1998—2002",
+      "J80 (80 Series) Restyling 1995—1997",
+      "J80 (80 Series) 1990—1995"
     ]
   },
   {
     "Model": "Land Cruiser Prado",
     "Bodies": [
       "J250 (Gen5) 2023—Present",
-      "J150 (Gen4) 2009—2023",
-      "J120 (Gen3) 2002—2009",
-      "J90 (Gen2) 1996—2002",
-      "J70 (Gen1) 1984—1996"
+      "J150 (Gen4) Restyling 2017—2023",
+      "J150 (Gen4) 2009—2017",
+      "J120 (Gen3) Restyling 2005—2009",
+      "J120 (Gen3) 2002—2005",
+      "J90 (Gen2) Restyling 1999—2002",
+      "J90 (Gen2) 1996—1999"
     ]
   },
   {
     "Model": "4Runner",
     "Bodies": [
-      "N280 (Gen5) 2009—Present",
-      "N210 (Gen4) 2002—2009",
-      "N185 (Gen3) 1995—2002",
-      "N130 (Gen2) 1989—1995",
-      "N60 (Gen1) 1984—1989"
+      "N280 (Gen5) Restyling 2014—Present",
+      "N280 (Gen5) 2009—2014",
+      "N210 (Gen4) Restyling 2006—2009",
+      "N210 (Gen4) 2002—2006",
+      "N185 (Gen3) Restyling 1999—2002",
+      "N185 (Gen3) 1995—1999"
     ]
   },
   {
     "Model": "Sequoia",
-    "Bodies": ["XK80 (Gen3) 2022—Present", "XK60 (Gen2) 2008—2022", "XK30 (Gen1) 2000—2007"]
+    "Bodies": [
+      "XK80 (Gen3) 2022—Present",
+      "XK60 (Gen2) Restyling 2018—2022",
+      "XK60 (Gen2) 2008—2018",
+      "XK30 (Gen1) Restyling 2005—2007",
+      "XK30 (Gen1) 2000—2005"
+    ]
   },
   {
     "Model": "Tacoma",
     "Bodies": [
-      "N400 (Gen4) 2024—Present",
-      "N300 (Gen3) 2015—2023",
-      "N220/N240 (Gen2) 2004—2015",
-      "N140 (Gen1) 1995—2004"
+      "N400 (Gen4) 2023—Present",
+      "N300 (Gen3) Restyling 2020—2023",
+      "N300 (Gen3) 2015—2020",
+      "N220/N240 (Gen2) Restyling 2011—2015",
+      "N220/N240 (Gen2) 2004—2011",
+      "N140 (Gen1) Restyling 1998—2004",
+      "N140 (Gen1) 1995—1998"
     ]
   },
   {
     "Model": "Tundra",
-    "Bodies": ["XK70 (Gen3) 2021—Present", "XK50 (Gen2) 2007—2021", "XK30 (Gen1) 1999—2006"]
+    "Bodies": [
+      "XK70 (Gen3) 2021—Present",
+      "XK50 (Gen2) Restyling 2014—2021",
+      "XK50 (Gen2) 2007—2014",
+      "XK30 (Gen1) Restyling 2003—2006",
+      "XK30 (Gen1) 1999—2003"
+    ]
   },
   {
     "Model": "Hilux",
     "Bodies": [
-      "AN120/130 (Gen8) 2015—Present",
-      "AN10/20/30 (Gen7) 2004—2015",
-      "N140—N180 (Gen6) 1997—2005",
-      "N80—N120 (Gen5) 1988—1997",
-      "N50—N70 (Gen4) 1978—1988",
-      "N20—N30 (Gen3) 1972—1978",
-      "N10 (Gen2) 1968—1972",
-      "N10 (Gen1) 1968"
+      "AN120/130 (Gen8) Restyling 2020—Present",
+      "AN120/130 (Gen8) 2015—2020",
+      "N140—N180 (Gen6) Restyling 2001—2005",
+      "N140—N180 (Gen6) 1997—2001",
+      "N80—N120 (Gen5) Restyling 1991—1997",
+      "N80—N120 (Gen5) 1988—1991"
     ]
   },
   {
     "Model": "Fortuner",
-    "Bodies": ["AN160 (Gen2) 2015—Present", "AN50/60 (Gen1) 2004—2015"]
+    "Bodies": [
+      "AN160 (Gen2) Restyling 2020—Present",
+      "AN160 (Gen2) 2015—2020",
+      "AN50/60 (Gen1) Restyling 2008—2011",
+      "AN50/60 (Gen1) 2004—2008"
+    ]
   },
   {
-    "Model": "Innova / Zenix",
+    "Model": "Innova / Zenix (HyCross)",
     "Bodies": [
-      "AN140 (Innova Crysta) 2016—2023",
-      "AG10 (Innova HyCross/Zenix) 2022—Present",
-      "AN40 (Gen1) 2004—2016"
+      "AG10 (HyCross/Zenix) 2022—Present",
+      "AN140 (Innova Crysta) Restyling 2020—2023",
+      "AN140 (Innova Crysta) 2016—2020",
+      "AN40 (Gen1) Restyling 2008—2016",
+      "AN40 (Gen1) 2004—2008"
     ]
   },
   {
     "Model": "Sienna",
     "Bodies": [
       "XL40 (Gen4 HEV) 2020—Present",
-      "XL30 (Gen3) 2010—2020",
-      "XL20 (Gen2) 2004—2010",
-      "XL10 (Gen1) 1997—2003"
+      "XL30 (Gen3) Restyling 2015—2020",
+      "XL30 (Gen3) 2010—2015",
+      "XL20 (Gen2) Restyling 2006—2010",
+      "XL20 (Gen2) 2004—2006",
+      "XL10 (Gen1) Restyling 2000—2003",
+      "XL10 (Gen1) 1997—2000"
     ]
   },
   {
     "Model": "Alphard / Vellfire",
     "Bodies": [
       "AH40 (Gen4) 2023—Present",
-      "AH30 (Gen3) 2015—2023",
-      "AH20 (Gen2) 2008—2015",
-      "AH10 (Gen1) 2002—2008"
+      "AH30 (Gen3) Restyling 2018—2023",
+      "AH30 (Gen3) 2015—2018",
+      "AH20 (Gen2) Restyling 2012—2015",
+      "AH20 (Gen2) 2008—2012",
+      "AH10 (Gen1) Restyling 2005—2008",
+      "AH10 (Gen1) 2002—2005"
     ]
   },
   {
-    "Model": "Proace / Proace City (EU JV)",
-    "Bodies": ["K0 (Proace) 2013—Present", "K9 (Proace City) 2019—Present"]
+    "Model": "Noah / Voxy / Esquire",
+    "Bodies": [
+      "R90 (Gen4) 2022—Present",
+      "R80 (Gen3) Restyling 2017—2022",
+      "R80 (Gen3) 2014—2017",
+      "R70 (Gen2) Restyling 2010—2014",
+      "R70 (Gen2) 2007—2010",
+      "R60 (Gen1) Restyling 2004—2007",
+      "R60 (Gen1) 2001—2004"
+    ]
   },
   {
-    "Model": "bZ Series (BEV)",
-    "Bodies": ["bZ4X (E-TNGA) 2022—Present", "bZ3 (China BEV sedan) 2023—Present"]
+    "Model": "Wish",
+    "Bodies": [
+      "AE20 (Gen2) 2009—2017",
+      "AE10 (Gen1) Restyling 2005—2009",
+      "AE10 (Gen1) 2003—2005"
+    ]
   },
   {
-    "Model": "Mirai (FCEV)",
-    "Bodies": ["JPD20 (Gen2) 2020—Present", "JPD10 (Gen1) 2014—2020"]
+    "Model": "Previa / Estima / Tarago",
+    "Bodies": [
+      "XR50 (Gen3) Restyling 2016—2019",
+      "XR50 (Gen3) 2006—2016",
+      "XR30/40 (Gen2) Restyling 2003—2006",
+      "XR30/40 (Gen2) 2000—2003",
+      "XR10/20 (Gen1) Restyling 1993—1999",
+      "XR10/20 (Gen1) 1990—1993"
+    ]
+  },
+  {
+    "Model": "Proace / Proace City",
+    "Bodies": [
+      "K0 (Proace) 2013—Present",
+      "K9 (Proace City) 2019—Present"
+    ]
+  },
+  {
+    "Model": "Hiace",
+    "Bodies": [
+      "H300 (Gen6) 2019—Present",
+      "H200 (Gen5) Restyling 2013—2019",
+      "H200 (Gen5) 2004—2013",
+      "H100 (Gen4) Restyling 1992—2004",
+      "H100 (Gen4) 1989—1992"
+    ]
+  },
+  {
+    "Model": "TownAce / LiteAce (Van/Truck)",
+    "Bodies": [
+      "S700 (Gen8) 2020—Present",
+      "S400 (Gen7) Restyling 2010—2020",
+      "S400 (Gen7) 2008—2010",
+      "R40/50 (Gen6) Restyling 1996—2007",
+      "R40/50 (Gen6) 1992—1996"
+    ]
+  },
+  {
+    "Model": "Crown (Japan traditional)",
+    "Bodies": [
+      "S220 (Gen15) 2018—2022",
+      "S210 (Gen14) Restyling 2015—2018",
+      "S210 (Gen14) 2012—2015",
+      "S200 (Gen13) Restyling 2010—2012",
+      "S200 (Gen13) 2008—2010",
+      "S180 (Gen12) Restyling 2005—2008",
+      "S180 (Gen12) 2003—2005",
+      "S170 (Gen11) Restyling 2001—2003",
+      "S170 (Gen11) 1999—2001",
+      "S150 (Gen10) Restyling 1997—1999",
+      "S150 (Gen10) 1995—1997"
+    ]
+  },
+  {
+    "Model": "Crown (Global family)",
+    "Bodies": [
+      "S235 Crossover 2022—Present",
+      "S236 Sport 2023—Present",
+      "S238 Sedan 2023—Present",
+      "S237 Estate (SUV) 2023—Present"
+    ]
+  },
+  {
+    "Model": "Mark X",
+    "Bodies": [
+      "X130 (Gen2) Restyling 2016—2019",
+      "X130 (Gen2) 2009—2016",
+      "X120 (Gen1) Restyling 2007—2009",
+      "X120 (Gen1) 2004—2007"
+    ]
+  },
+  {
+    "Model": "Avalon",
+    "Bodies": [
+      "XX50 (Gen5) 2018—2022",
+      "XX40 (Gen4) Restyling 2015—2018",
+      "XX40 (Gen4) 2012—2015",
+      "XX30 (Gen3) Restyling 2007—2012",
+      "XX30 (Gen3) 2005—2007",
+      "XX20 (Gen2) Restyling 2001—2004",
+      "XX20 (Gen2) 1999—2001",
+      "XX10 (Gen1) Restyling 1997—1999",
+      "XX10 (Gen1) 1994—1997"
+    ]
+  },
+  {
+    "Model": "bB / xB",
+    "Bodies": [
+      "QNC20 (Gen1) Restyling 2005—2016",
+      "QNC20 (Gen1) 2000—2005"
+    ]
+  },
+  {
+    "Model": "ist / Scion xA",
+    "Bodies": [
+      "NCP110 (Gen2) 2007—2016",
+      "NCP60 (Gen1) Restyling 2004—2007",
+      "NCP60 (Gen1) 2002—2004"
+    ]
+  },
+  {
+    "Model": "iQ",
+    "Bodies": [
+      "AJ10 (Gen1) 2008—2015"
+    ]
+  },
+  {
+    "Model": "Passo",
+    "Bodies": [
+      "M700 (Gen3) 2016—Present",
+      "M600 (Gen2) 2010—2016",
+      "M300 (Gen1) 2004—2010"
+    ]
   }
 ]

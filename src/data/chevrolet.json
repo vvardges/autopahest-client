@@ -1,200 +1,272 @@
 [
   {
-    "Model": "Corvette",
+    "Model": "Spark / Matiz / Beat",
     "Bodies": [
-      "C8 (Mid-Engine) 2020—Present",
-      "C7 Restyling 2019—2019",
-      "C7 2014—2019",
-      "C6 2005—2013",
-      "C5 1997—2004",
-      "C4 1984—1996",
-      "C3 1968—1982",
-      "C2 1963—1967",
-      "C1 1953—1962"
+      "M400 (Gen3) 2015—2022",
+      "M300 (Gen2) 2009—2015",
+      "M200/M250 (Daewoo Matiz Gen2) 2000—2009"
     ]
   },
   {
-    "Model": "Camaro",
+    "Model": "Spark EV",
     "Bodies": [
-      "VI (Alpha) 2016—2024",
-      "V (Zeta) Restyling 2010—2015",
-      "V (Zeta) 2009—2010",
-      "IV Restyling 1998—2002",
-      "IV 1993—1997",
-      "III 1982—1992",
-      "II 1970—1981",
-      "I 1967—1969"
+      "M300-EV (Gen1) 2013—2016"
     ]
   },
   {
-    "Model": "Malibu / Malibu XL (China)",
+    "Model": "Aveo / Sonic",
     "Bodies": [
-      "IX (US) 2016—2024",
-      "VIII (US) 2013—2015",
-      "VII (US) 2008—2012",
-      "VI (US) 2004—2007",
-      "V (US) 1997—2003",
-      "IV (US) 1993—1996",
-      "III (Classic) 1978—1983",
-      "II 1968—1972",
-      "I 1964—1967",
-      "Malibu XL (China) 2016—Present (facelifts 2019, 2023)"
+      "T300 (Gen2, Sonic) Restyling 2016—2020",
+      "T300 (Gen2, Sonic) 2011—2016",
+      "T250 (Gen1, Aveo) Restyling 2008—2011",
+      "T250 (Gen1, Aveo) 2006—2008",
+      "T200 (Gen0, Kalos) 2002—2006"
+    ]
+  },
+  {
+    "Model": "Sail (China/Global EMs)",
+    "Bodies": [
+      "Sail 3 (B311) 2014—2019",
+      "Sail (B300) 2010—2014",
+      "Sail (B305/B306, classic) 2005—2010"
+    ]
+  },
+  {
+    "Model": "Onix / Onix Plus (Brazil/Global GEM)",
+    "Bodies": [
+      "Jio/GEM (Gen2) 2019—Present",
+      "HB (Gen1) 2012—2019"
+    ]
+  },
+  {
+    "Model": "Cobalt (Brazil/Russia)",
+    "Bodies": [
+      "GSV (Gen1) Restyling 2015—2020",
+      "GSV (Gen1) 2011—2015"
+    ]
+  },
+  {
+    "Model": "Prisma (Brazil)",
+    "Bodies": [
+      "Gen2 (Onix sedan) 2013—2019",
+      "Gen1 2006—2012"
+    ]
+  },
+  {
+    "Model": "Cruze",
+    "Bodies": [
+      "J400 (Gen2) Restyling 2018—2023",
+      "J400 (Gen2) 2016—2018",
+      "J300 (Gen1) Restyling 2012—2016",
+      "J300 (Gen1) 2008—2012"
+    ]
+  },
+  {
+    "Model": "Malibu",
+    "Bodies": [
+      "Gen10 (V550) Restyling 2019—Present",
+      "Gen10 (V550) 2016—2019",
+      "Gen9 (V300) 2013—2015",
+      "Gen8 (V300) 2008—2012",
+      "Gen7 (V200) 2004—2007",
+      "Gen6 (GM2900) 1997—2003"
     ]
   },
   {
     "Model": "Impala",
     "Bodies": [
-      "X (E2XX) 2014—2020",
-      "IX (W-Body) 2006—2013",
-      "VIII 2000—2005",
-      "VII 1994—1996",
-      "VI 1977—1985",
-      "V 1971—1976",
-      "IV 1965—1970",
-      "III 1961—1964",
-      "II 1959—1960",
-      "I 1958—1958"
+      "Gen10 (E2XX) 2014—2020",
+      "Gen9 (W-body) Restyling 2006—2013",
+      "Gen9 (W-body) 2000—2005"
     ]
   },
   {
-    "Model": "Caprice / Caprice PPV / Middle East Caprice",
+    "Model": "Caprice (Middle East/PPV)",
     "Bodies": [
-      "PPV (US, Holden WM/WN) 2011—2017",
-      "Middle East Caprice (Holden WM/WN) 1999—2017",
-      "US Caprice 1965—1996"
+      "WM/WN (Holden-based) 2006—2017",
+      "VR/VS/WH (Holden-based) 1990—2006"
     ]
   },
   {
-    "Model": "SS (VF Commodore-based)",
-    "Bodies": ["I (Holden VF) 2014—2017"]
-  },
-  {
-    "Model": "Aveo / Kalos / Sonic",
+    "Model": "Camaro",
     "Bodies": [
-      "T300 (Sonic/Aveo) 2011—2020 (facelift 2016)",
-      "T250 (Aveo) 2005—2011",
-      "T200 (Kalos/Aveo) 2002—2008"
+      "Gen6 (Alpha) Restyling 2019—2024",
+      "Gen6 (Alpha) 2016—2019",
+      "Gen5 (Zeta) 2010—2015",
+      "Gen4 (F-body) Restyling 1998—2002",
+      "Gen4 (F-body) 1993—1997"
     ]
   },
   {
-    "Model": "Spark / Matiz / Beat (India)",
+    "Model": "Corvette",
     "Bodies": [
-      "M400 (Spark) 2015—2022 (facelift 2018)",
-      "M300 (Spark/Beat) 2009—2015",
-      "M150 (Matiz) 2005—2010",
-      "M100 (Matiz) 1998—2005"
+      "C8 (Mid-engine) Restyling 2023—Present",
+      "C8 (Mid-engine) 2020—2023",
+      "C7 Restyling 2017—2019",
+      "C7 2014—2016",
+      "C6 Restyling 2008—2013",
+      "C6 2005—2008",
+      "C5 Restyling 2001—2004",
+      "C5 1997—2001"
     ]
   },
   {
-    "Model": "Sail (China/India/Global)",
-    "Bodies": ["Sail III (B315) 2014—2019", "Sail II (B300) 2010—2014", "Sail I 2001—2009"]
-  },
-  {
-    "Model": "Onix / Onix Plus (LatAm/China)",
-    "Bodies": ["Onix II / Onix Plus (GM VSS-F) 2019—Present", "Onix I (Gamma) 2012—2019"]
-  },
-  {
-    "Model": "Prisma (LatAm)",
-    "Bodies": ["II (Onix sedan) 2013—2019", "I (Celta sedan) 2006—2012"]
-  },
-  {
-    "Model": "Celta (Brazil)",
-    "Bodies": ["I 2000—2015"]
-  },
-  {
-    "Model": "Agile (Argentina/Brazil)",
-    "Bodies": ["I 2009—2016"]
-  },
-  {
-    "Model": "Cruze",
+    "Model": "Volt (PHEV)",
     "Bodies": [
-      "J400 (Gen2, US) 2016—2019",
-      "J400 (Gen2, China) 2014—2023",
-      "J300 (Gen1, Global) 2008—2016"
+      "Gen2 (D2XX) 2016—2019",
+      "Gen1 (Delta II) Restyling 2013—2015",
+      "Gen1 (Delta II) 2010—2013"
     ]
   },
   {
-    "Model": "Optra / Lacetti / Nubira",
+    "Model": "Bolt EV / Bolt EUV",
     "Bodies": [
-      "Optra (Egypt/ME, GM Uzbekistan/SAIC) 2014—Present",
-      "Lacetti/Nubira (Daewoo J200) 2002—2013"
+      "EUV (BEV) 2021—2023",
+      "EV (BEV) Restyling 2021—2023",
+      "EV (BEV) 2017—2020"
     ]
-  },
-  {
-    "Model": "Epica / Evanda (Europe) / Tosca (Korea)",
-    "Bodies": ["Epica (V250) 2006—2011", "Evanda (V200) 2004—2005"]
-  },
-  {
-    "Model": "Tacuma / Rezzo",
-    "Bodies": ["I 2000—2008"]
-  },
-  {
-    "Model": "Orlando",
-    "Bodies": ["Gen2 (China) 2018—2023", "Gen1 (Global) 2011—2018"]
-  },
-  {
-    "Model": "Captiva",
-    "Bodies": [
-      "Gen2 (Baojun 530-based) 2018—Present (select markets)",
-      "C100/C140 (Opel Antara/Daewoo Winstorm) 2006—2018"
-    ]
-  },
-  {
-    "Model": "Trax / Tracker",
-    "Bodies": [
-      "Trax Gen2 (US) 2024—Present",
-      "Tracker Gen2 (China/LatAm) 2019—Present",
-      "Trax Gen1 (Global) 2013—2020 (facelift 2017)"
-    ]
-  },
-  {
-    "Model": "Equinox",
-    "Bodies": ["IV (US) 2025—Present", "III 2018—2024", "II 2010—2017", "I 2005—2009"]
   },
   {
     "Model": "Blazer",
     "Bodies": [
-      "Crossover (GM C1) 2019—Present",
-      "Mid-size SUV (S-10 Blazer) 1995—2005",
-      "Full-size K5 Blazer 1969—1994"
+      "CUV (Gen3) 2019—Present",
+      "S-10 Blazer (Gen2) Restyling 1998—2005",
+      "S-10 Blazer (Gen2) 1995—1998"
     ]
   },
   {
     "Model": "Blazer EV",
-    "Bodies": ["I (BEV, Ultium) 2024—Present"]
+    "Bodies": [
+      "BEV (Ultium) 2023—Present"
+    ]
   },
   {
-    "Model": "Trailblazer",
+    "Model": "Trailblazer (CUV, subcompact)",
     "Bodies": [
-      "Crossover (Subcompact, GM VSS-F) 2021—Present",
-      "Body-on-frame (GMT360) 2002—2009",
-      "Global BOF (Trailblazer/Colorado-based) 2012—2021"
+      "Gen2 (VSS-F) 2020—Present"
+    ]
+  },
+  {
+    "Model": "TrailBlazer (mid-size, BOF)",
+    "Bodies": [
+      "Brazil/Thailand (Colorado-based) 2012—2024",
+      "GMT360 (USA) 2002—2009"
+    ]
+  },
+  {
+    "Model": "Equinox",
+    "Bodies": [
+      "Gen3 (D2XX) Restyling 2021—2024",
+      "Gen3 (D2XX) 2018—2021",
+      "Gen2 (Theta) Restyling 2010—2017",
+      "Gen2 (Theta) 2009—2010",
+      "Gen1 (Theta) Restyling 2006—2009",
+      "Gen1 (Theta) 2004—2006"
+    ]
+  },
+  {
+    "Model": "Equinox EV",
+    "Bodies": [
+      "BEV (Ultium) 2024—Present"
+    ]
+  },
+  {
+    "Model": "Traverse",
+    "Bodies": [
+      "Gen3 2024—Present",
+      "Gen2 Restyling 2021—2023",
+      "Gen2 2018—2021",
+      "Gen1 Restyling 2013—2017",
+      "Gen1 2009—2012"
+    ]
+  },
+  {
+    "Model": "Trax / Tracker (Global B-SUV)",
+    "Bodies": [
+      "Gen2 (Crossover) 2023—Present",
+      "Gen1 (Gamma II) Restyling 2016—2022",
+      "Gen1 (Gamma II) 2013—2016"
+    ]
+  },
+  {
+    "Model": "Tracker (China/Brazil current)",
+    "Bodies": [
+      "GEM (Gen2 CN/BR) 2019—Present"
     ]
   },
   {
     "Model": "Tahoe",
     "Bodies": [
-      "V (T1XX) 2021—Present",
-      "IV (K2XX) 2015—2020",
-      "III (GMT900) 2007—2014",
-      "II (GMT800) 2000—2006",
-      "I (GMT400) 1995—1999"
+      "T1U (Gen5) 2021—Present",
+      "K2U (Gen4) 2015—2020",
+      "GMT900 (Gen3) 2007—2014",
+      "GMT800 (Gen2) 2000—2006",
+      "GMT400 (Gen1) 1995—2000"
     ]
   },
   {
     "Model": "Suburban",
     "Bodies": [
-      "XIII (T1XX) 2021—Present",
-      "XII (K2XX) 2015—2020",
-      "XI (GMT900) 2007—2014",
-      "X (GMT800) 2000—2006",
-      "IX (GMT400) 1992—1999"
+      "T1U (Gen12) 2021—Present",
+      "K2U (Gen11) 2015—2020",
+      "GMT900 (Gen10) 2007—2014",
+      "GMT800 (Gen9) 2000—2006",
+      "GMT400 (Gen8) 1992—2000"
+    ]
+  },
+  {
+    "Model": "Captiva",
+    "Bodies": [
+      "CN202 (Gen2, Baojun 530-based) 2019—Present",
+      "C100/C140 (Gen1) Restyling 2011—2018",
+      "C100/C140 (Gen1) 2006—2011"
+    ]
+  },
+  {
+    "Model": "Orlando (MPV)",
+    "Bodies": [
+      "CN (Gen2 China) 2018—2023",
+      "J309 (Gen1) 2011—2018"
+    ]
+  },
+  {
+    "Model": "Spin (MPV, Brazil/ASEAN)",
+    "Bodies": [
+      "Gen1 Restyling 2018—Present",
+      "Gen1 2012—2018"
+    ]
+  },
+  {
+    "Model": "Lova / Lova RV (China)",
+    "Bodies": [
+      "Lova RV (hatch/MPV) 2016—2019",
+      "Lova (sedan) 2006—2011"
+    ]
+  },
+  {
+    "Model": "Cavalier (China/Mexico)",
+    "Bodies": [
+      "Gen2 (CN) 2016—2023",
+      "Gen1 (rebadged older J-body legacy in MX) 1995—2005"
+    ]
+  },
+  {
+    "Model": "Monza (China)",
+    "Bodies": [
+      "Gen1 2019—Present"
+    ]
+  },
+  {
+    "Model": "Menlo (China EV)",
+    "Bodies": [
+      "BEV (Gen1) 2020—Present"
     ]
   },
   {
     "Model": "Silverado 1500",
     "Bodies": [
-      "T1XX (Gen4) 2019—Present (refresh 2022)",
+      "T1XX (Gen4) Restyling 2022—Present",
+      "T1XX (Gen4) 2019—2022",
       "K2XX (Gen3) 2014—2018",
       "GMT900 (Gen2) 2007—2013",
       "GMT800 (Gen1) 1999—2006"
@@ -203,156 +275,48 @@
   {
     "Model": "Silverado HD (2500/3500)",
     "Bodies": [
-      "T1XX (Gen4) 2020—Present (refresh 2024)",
-      "Gen3 2015—2019",
-      "Gen2 2007—2014",
-      "Gen1 2001—2006"
+      "T1 (Gen4) Restyling 2024—Present",
+      "T1 (Gen4) 2020—2024",
+      "K2 (Gen3) 2015—2019",
+      "GMT900 (Gen2) 2007—2014",
+      "GMT800 (Gen1) 2001—2006"
     ]
   },
   {
-    "Model": "Colorado (US) / S10 (LatAm)",
+    "Model": "Colorado (NA) / S-10 (BR) / D-Max-based (global)",
     "Bodies": [
-      "Colorado Gen3 (US) 2023—Present",
-      "Colorado Gen2 (US) 2015—2022",
-      "Colorado Gen1 (US) 2004—2012",
-      "S10 (Brazil/LatAm) 2012—2023 (facelifts 2016, 2020)",
-      "S10 (Brazil) 1995—2011"
+      "Gen3 (NA) 2023—Present",
+      "Gen2 (NA) 2015—2022",
+      "Gen1 (NA) 2004—2012",
+      "S-10 (Brazil Gen2) 2012—Present",
+      "S-10 (Brazil Gen1) 1995—2012"
     ]
   },
   {
-    "Model": "Montana (Brazil)",
-    "Bodies": ["III (VSS-F) 2023—Present", "II 2011—2021", "I 2003—2010"]
+    "Model": "Montana (Brazil) / Tornado (MX)",
+    "Bodies": [
+      "Gen3 (Crossover pickup) 2023—Present",
+      "Gen2 2010—2023",
+      "Gen1 2003—2010"
+    ]
   },
   {
     "Model": "Avalanche",
-    "Bodies": ["II (GMT900) 2007—2013", "I (GMT800) 2001—2006"]
+    "Bodies": [
+      "GMT900 (Gen2) 2007—2013",
+      "GMT800 (Gen1) 2001—2006"
+    ]
   },
   {
     "Model": "HHR",
-    "Bodies": ["I 2006—2011"]
+    "Bodies": [
+      "Gen1 2005—2011"
+    ]
   },
   {
-    "Model": "SSR",
-    "Bodies": ["I 2003—2006"]
-  },
-  {
-    "Model": "Astro / Safari",
-    "Bodies": ["I 1985—2005"]
-  },
-  {
-    "Model": "Express / Express Cutaway",
-    "Bodies": ["I 1996—Present"]
-  },
-  {
-    "Model": "Uplander",
-    "Bodies": ["I 2005—2009"]
-  },
-  {
-    "Model": "Venture",
-    "Bodies": ["I 1997—2005"]
-  },
-  {
-    "Model": "Captiva Sport (US Fleet)",
-    "Bodies": ["I (Saturn Vue rebadge) 2012—2014"]
-  },
-  {
-    "Model": "Niva (Russia)",
-    "Bodies": ["I 2002—2020"]
-  },
-  {
-    "Model": "Lanos (CIS/Egypt)",
-    "Bodies": ["I 2004—2017"]
-  },
-  {
-    "Model": "Tavera (India)",
-    "Bodies": ["I 2004—2017"]
-  },
-  {
-    "Model": "Beat (India)",
-    "Bodies": ["I (M300-based) 2010—2017"]
-  },
-  {
-    "Model": "Enjoy (India)",
-    "Bodies": ["I (Wuling Hongguang-based) 2013—2017"]
-  },
-  {
-    "Model": "Corsa (LatAm, Opel-based)",
-    "Bodies": ["B/Corsa II 2002—2012", "Classic (facelift) 2010—2016"]
-  },
-  {
-    "Model": "Astra (LatAm, Opel-based)",
-    "Bodies": ["G 1999—2011"]
-  },
-  {
-    "Model": "Vectra (Brazil, Opel-based)",
-    "Bodies": ["C 2005—2011", "B (local) 1996—2005"]
-  },
-  {
-    "Model": "Zafira (Brazil, Opel-based)",
-    "Bodies": ["A 2001—2012"]
-  },
-  {
-    "Model": "Meriva (Brazil, Opel-based)",
-    "Bodies": ["A 2002—2012"]
-  },
-  {
-    "Model": "Spin (Brazil/ASEAN)",
-    "Bodies": ["I 2012—Present (facelifts 2018, 2024)"]
-  },
-  {
-    "Model": "Monza (China) / Monza (US Classic)",
-    "Bodies": ["Monza (China) 2019—Present", "Monza (US) 1975—1980"]
-  },
-  {
-    "Model": "Cavalier",
-    "Bodies": ["Cavalier (China/Mexico) 2016—Present", "Cavalier (NA) 1982—2005"]
-  },
-  {
-    "Model": "Menlo (China, EV)",
-    "Bodies": ["I (BEV) 2020—Present"]
-  },
-  {
-    "Model": "Seeker (China)",
-    "Bodies": ["I 2022—Present"]
-  },
-  {
-    "Model": "Groove (Global EM)",
-    "Bodies": ["I (Baojun 510-based) 2020—Present"]
-  },
-  {
-    "Model": "Orlando (China 2nd Gen)",
-    "Bodies": ["II 2018—2023"]
-  },
-  {
-    "Model": "Trailblazer (Brazil) — BOF",
-    "Bodies": ["II (Colorado-based) 2012—2021"]
-  },
-  {
-    "Model": "K5 Blazer / S-10 Blazer (LatAm)",
-    "Bodies": ["S-10 Blazer 1995—2012", "K5 Blazer 1969—1994"]
-  },
-  {
-    "Model": "Bolt EV / Bolt EUV",
-    "Bodies": ["Bolt EUV 2022—2025", "Bolt EV 2017—2025"]
-  },
-  {
-    "Model": "Captiva (Latin America 2nd Gen)",
-    "Bodies": ["II (rebadged Baojun 530) 2019—Present"]
-  },
-  {
-    "Model": "Lumina (Middle East/Australia sourced)",
-    "Bodies": ["VT/VX/VY (Holden Commodore) 1998—2004", "VZ/VE 2004—2011"]
-  },
-  {
-    "Model": "Orlando (Global 1st Gen)",
-    "Bodies": ["I 2011—2018"]
-  },
-  {
-    "Model": "Cobalt (Global)",
-    "Bodies": ["II (GSV platform, LatAm/Russia) 2011—2020", "I (US) 2005—2010"]
-  },
-  {
-    "Model": "Optra (Egypt/ME new-gen)",
-    "Bodies": ["I (Baojun 630-based) 2014—Present"]
+    "Model": "Captiva Sport (US fleet)",
+    "Bodies": [
+      "Saturn Vue/Antara-based 2012—2015"
+    ]
   }
 ]

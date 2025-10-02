@@ -1,159 +1,93 @@
 [
   {
-    "Model": "Willys MB / Ford GPW (Military)",
-    "Bodies": ["MB/GPW 1941—1945"]
-  },
-  {
-    "Model": "CJ Series (Civilian Jeep)",
+    "Model": "Wrangler",
     "Bodies": [
-      "CJ-2A 1945—1949",
-      "CJ-3A 1948—1953",
-      "CJ-3B 1953—1968",
-      "CJ-5 1954—1983",
-      "CJ-6 1955—1975",
-      "CJ-7 1976—1986",
-      "CJ-8 Scrambler 1981—1986"
+      "JL (Gen4) Restyling 2023—Present",
+      "JL (Gen4) 2018—2023",
+      "JK (Gen3) Restyling 2011—2018",
+      "JK (Gen3) 2007—2011",
+      "TJ (Gen2) Restyling 2003—2006",
+      "TJ (Gen2) 1996—2003",
+      "YJ (Gen1) Restyling 1992—1996",
+      "YJ (Gen1) 1986—1992"
     ]
-  },
-  {
-    "Model": "DJ (Dispatcher, 2WD)",
-    "Bodies": ["DJ-3A 1956—1965", "DJ-5/6 1965—1984"]
-  },
-  {
-    "Model": "FC (Forward Control)",
-    "Bodies": ["FC-150 / FC-170 1956—1965"]
-  },
-  {
-    "Model": "Jeepster / Commando",
-    "Bodies": ["Jeepster VJ 1948—1951", "Commando C101 1966—1971", "Commando C104 1972—1973"]
-  },
-  {
-    "Model": "Wagoneer / Grand Wagoneer (SJ)",
-    "Bodies": ["SJ (Wagoneer) 1963—1991", "SJ (Grand Wagoneer) 1984—1991"]
-  },
-  {
-    "Model": "Wagoneer / Grand Wagoneer (WS)",
-    "Bodies": ["WS (Wagoneer/Grand Wagoneer) 2021—Present"]
-  },
-  {
-    "Model": "Wagoneer S (EV)",
-    "Bodies": ["BEV (STLA Large) 2025—Present"]
-  },
-  {
-    "Model": "Recon (EV)",
-    "Bodies": ["BEV (STLA Large) 2025—Future"]
-  },
-  {
-    "Model": "Cherokee (SJ)",
-    "Bodies": ["SJ (2-door full-size) 1974—1983"]
-  },
-  {
-    "Model": "Cherokee (XJ)",
-    "Bodies": ["XJ 1984—2001 (NA)", "XJ 1984—2014 (China/Global CKD)"]
-  },
-  {
-    "Model": "Cherokee / Liberty (KJ/KK, NA = Liberty)",
-    "Bodies": ["KJ 2002—2007", "KK 2008—2012"]
-  },
-  {
-    "Model": "Cherokee (KL)",
-    "Bodies": ["KL 2013—2023 (NA)", "KL 2014—2023 (EU/China)"]
   },
   {
     "Model": "Grand Cherokee",
     "Bodies": [
-      "ZJ 1993—1998",
-      "WJ 1999—2004",
-      "WK 2005—2010",
-      "WK2 2011—2021",
-      "WL (2-row) 2022—Present",
-      "WL (Grand Cherokee L, 3-row) 2021—Present"
+      "WL (Gen5) 2021—Present",
+      "WK2 (Gen4) Restyling 2013—2021",
+      "WK2 (Gen4) 2010—2013",
+      "WK (Gen3) Restyling 2008—2010",
+      "WK (Gen3) 2005—2008",
+      "WJ (Gen2) Restyling 2002—2004",
+      "WJ (Gen2) 1999—2002",
+      "ZJ (Gen1) Restyling 1996—1998",
+      "ZJ (Gen1) 1992—1996"
     ]
   },
   {
-    "Model": "Grand Cherokee 4xe (PHEV)",
-    "Bodies": ["WL PHEV 2022—Present"]
-  },
-  {
-    "Model": "Wrangler",
-    "Bodies": ["YJ 1987—1995", "TJ 1997—2006", "JK 2007—2018", "JL 2018—Present (facelift 2024)"]
-  },
-  {
-    "Model": "Wrangler 4xe (PHEV)",
-    "Bodies": ["JL PHEV 2021—Present"]
-  },
-  {
-    "Model": "Gladiator (JT)",
-    "Bodies": ["JT 2020—Present (facelift 2024)"]
-  },
-  {
-    "Model": "Comanche (MJ)",
-    "Bodies": ["MJ 1986—1992"]
-  },
-  {
-    "Model": "J-Series / Gladiator (SJ pickup)",
-    "Bodies": ["J10/J20 (Gladiator) 1963—1988"]
-  },
-  {
-    "Model": "Commander (XK, NA)",
-    "Bodies": ["XK/XH 2006—2010"]
-  },
-  {
-    "Model": "Grand Commander (China)",
-    "Bodies": ["K8 2018—2022", "Grand Commander PHEV 2019—2022"]
-  },
-  {
-    "Model": "Commander (Latin America/India)",
+    "Model": "Cherokee / Liberty",
     "Bodies": [
-      "H1 (Compass-derived) 2021—Present",
-      "Meridian (India, Compass-derived) 2022—Present"
+      "KL (Gen5) Restyling 2019—2023",
+      "KL (Gen5) 2013—2019",
+      "KK (Liberty Gen2) Restyling 2011—2013",
+      "KK (Liberty Gen2) 2008—2011",
+      "KJ (Liberty Gen1) Restyling 2005—2008",
+      "KJ (Liberty Gen1) 2001—2005",
+      "XJ (Cherokee Gen2) Restyling 1997—2001",
+      "XJ (Cherokee Gen2) 1993—1997"
     ]
   },
   {
     "Model": "Compass",
-    "Bodies": ["MK49 (Gen1) 2007—2016", "MP/M6 (Gen2) 2017—Present (facelift 2021)"]
-  },
-  {
-    "Model": "Compass 4xe (PHEV, EU/China)",
-    "Bodies": ["MP/M6 PHEV 2020—Present"]
+    "Bodies": [
+      "MP (Gen2) Restyling 2021—Present",
+      "MP (Gen2) 2017—2021",
+      "MK (Gen1) Restyling 2011—2017",
+      "MK (Gen1) 2006—2011"
+    ]
   },
   {
     "Model": "Patriot",
-    "Bodies": ["MK74 2007—2017"]
+    "Bodies": [
+      "MK (Gen1) Restyling 2011—2017",
+      "MK (Gen1) 2006—2011"
+    ]
   },
   {
     "Model": "Renegade",
-    "Bodies": ["BU 2014—Present (facelifts 2018, 2022)"]
-  },
-  {
-    "Model": "Renegade 4xe (PHEV, EU)",
-    "Bodies": ["BU PHEV 2020—Present"]
-  },
-  {
-    "Model": "Avenger (Europe)",
-    "Bodies": ["BEV (STLA Small) 2023—Present", "ICE/MHEV (selected markets) 2023—Present"]
-  },
-  {
-    "Model": "Liberty (NA name for KJ/KK)",
-    "Bodies": ["KJ 2002—2007", "KK 2008—2012"]
-  },
-  {
-    "Model": "Willys Station Wagon / Utility / Panel",
-    "Bodies": ["Station Wagon 1946—1965", "Utility Truck/Panel 1947—1965"]
-  },
-  {
-    "Model": "Forward Control Military / M715-Series",
-    "Bodies": ["M715/M724/M725 1967—1969"]
-  },
-  {
-    "Model": "Freedom / Beijing-Jeep (China historic)",
-    "Bodies": ["BJ2020/BJ212 derivatives 1984—2005 (licensing era)"]
-  },
-  {
-    "Model": "Other regional / special",
     "Bodies": [
-      "Troller T4 (Brazilian subsidiary) 2014—2021",
-      "Mahindra Jeep derivatives (license-built) 1954—2010s"
+      "BU (Gen1) Restyling 2018—Present",
+      "BU (Gen1) 2014—2018"
+    ]
+  },
+  {
+    "Model": "Commander / Grand Commander",
+    "Bodies": [
+      "K8 (Grand Commander China) 2018—2023",
+      "XK (Commander Gen1) Restyling 2008—2010",
+      "XK (Commander Gen1) 2005—2008"
+    ]
+  },
+  {
+    "Model": "Wagoneer / Grand Wagoneer",
+    "Bodies": [
+      "WS (Gen2) 2022—Present",
+      "SJ (Gen1) Restyling 1990—1991",
+      "SJ (Gen1) 1963—1990"
+    ]
+  },
+  {
+    "Model": "Gladiator",
+    "Bodies": [
+      "JT (Gen1) 2019—Present"
+    ]
+  },
+  {
+    "Model": "Commander PHEV (Latin America)",
+    "Bodies": [
+      "MP (Gen1) 2021—Present"
     ]
   }
 ]

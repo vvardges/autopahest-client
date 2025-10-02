@@ -1,204 +1,228 @@
 [
   {
-    "Model": "Sunny / Sentra / Sylphy",
+    "Model": "Micra / March",
     "Bodies": [
-      "B18 (Sylphy IV) 2019—Present",
-      "B17 (Sylphy III) 2012—2019",
-      "B16 (Sentra VII) 2006—2012",
-      "B15 (Sentra VI) 2000—2006",
-      "B14 (Sentra V) 1995—1999",
-      "B13 (Sentra IV) 1990—1994",
-      "B12 (Sunny III) 1985—1990",
-      "B11 (Sunny II) 1982—1986",
-      "B310 (Sunny I) 1977—1981"
+      "K14 (Gen5) 2017—2023",
+      "K13 (Gen4) Restyling 2013—2017",
+      "K13 (Gen4) 2010—2013",
+      "K12 (Gen3) Restyling 2005—2010",
+      "K12 (Gen3) 2002—2005",
+      "K11 (Gen2) Restyling 1998—2002",
+      "K11 (Gen2) 1992—1998"
+    ]
+  },
+  {
+    "Model": "Note",
+    "Bodies": [
+      "E13 (Gen3) 2020—Present",
+      "E12 (Gen2) Restyling 2016—2020",
+      "E12 (Gen2) 2012—2016",
+      "E11 (Gen1) Restyling 2008—2012",
+      "E11 (Gen1) 2004—2008"
+    ]
+  },
+  {
+    "Model": "Almera / Pulsar / Tiida",
+    "Bodies": [
+      "C13 (Pulsar EU) 2014—2018",
+      "N17 (Almera Sedan) 2012—2018",
+      "C11 (Tiida) Restyling 2008—2011",
+      "C11 (Tiida) 2004—2008",
+      "N16 (Almera Gen2) Restyling 2003—2006",
+      "N16 (Almera Gen2) 2000—2003",
+      "N15 (Pulsar/Almera Gen1) Restyling 1995—2000",
+      "N15 (Pulsar/Almera Gen1) 1994—1995"
+    ]
+  },
+  {
+    "Model": "Sentra / Sylphy / Bluebird",
+    "Bodies": [
+      "B18 (Gen8) 2019—Present",
+      "B17 (Gen7) Restyling 2016—2019",
+      "B17 (Gen7) 2012—2016",
+      "B16 (Gen6) Restyling 2010—2012",
+      "B16 (Gen6) 2006—2010",
+      "B15 (Gen5) Restyling 2000—2006",
+      "B15 (Gen5) 1999—2000"
     ]
   },
   {
     "Model": "Altima / Teana",
     "Bodies": [
-      "L34 (Gen6) 2019—Present",
-      "L33 (Gen5) 2013—2018",
-      "L32 (Gen4) 2007—2012",
-      "L31 (Gen3) 2002—2006",
-      "U13 (Gen2) 1998—2001",
-      "U13 (Gen1) 1992—1997"
+      "L34 (Gen6) 2018—Present",
+      "L33 (Gen5) Restyling 2015—2018",
+      "L33 (Gen5) 2013—2015",
+      "L32 (Gen4) Restyling 2010—2013",
+      "L32 (Gen4) 2007—2010",
+      "L31 (Gen3) Restyling 2004—2007",
+      "L31 (Gen3) 2001—2004"
     ]
   },
   {
     "Model": "Maxima",
     "Bodies": [
       "A36 (Gen8) 2015—2023",
-      "A35 (Gen7) 2008—2014",
-      "A34 (Gen6) 2003—2008",
-      "A33 (Gen5) 1999—2003",
-      "A32 (Gen4) 1995—1999",
-      "J30 (Gen3) 1989—1994",
-      "U11 (Gen2) 1985—1988",
-      "810 (Gen1) 1977—1984"
+      "A35 (Gen7) Restyling 2012—2015",
+      "A35 (Gen7) 2008—2012",
+      "A34 (Gen6) Restyling 2004—2008",
+      "A34 (Gen6) 2003—2004",
+      "A33 (Gen5) Restyling 2000—2003",
+      "A33 (Gen5) 1999—2000"
     ]
-  },
-  {
-    "Model": "Micra / March",
-    "Bodies": [
-      "K14 (Gen5) 2016—2023",
-      "K13 (Gen4) 2010—2016",
-      "K12 (Gen3) 2002—2010",
-      "K11 (Gen2) 1992—2002",
-      "K10 (Gen1) 1982—1992"
-    ]
-  },
-  {
-    "Model": "Leaf (EV)",
-    "Bodies": ["ZE1 (Gen2) 2018—Present", "ZE0 (Gen1) 2010—2017"]
-  },
-  {
-    "Model": "Ariya (EV)",
-    "Bodies": ["FE0 (Gen1) 2022—Present"]
   },
   {
     "Model": "Skyline / Infiniti Q50",
     "Bodies": [
-      "V37 (Gen13) 2014—Present",
-      "V36 (Gen12) 2006—2014",
-      "V35 (Gen11) 2001—2007",
-      "R34 (Gen10) 1998—2002",
-      "R33 (Gen9) 1993—1998",
-      "R32 (Gen8) 1989—1994",
-      "R31 (Gen7) 1985—1990",
-      "R30 (Gen6) 1981—1985",
-      "C210 (Gen5) 1977—1981",
-      "C110 (Gen4) 1972—1977",
-      "C10 (Gen3) 1968—1972",
-      "S50 (Gen2) 1963—1968",
-      "ALSI-1 (Gen1) 1957—1963"
+      "V37 (Gen13) Restyling 2020—Present",
+      "V37 (Gen13) 2014—2020",
+      "V36 (Gen12) Restyling 2009—2014",
+      "V36 (Gen12) 2006—2009",
+      "V35 (Gen11) Restyling 2003—2006",
+      "V35 (Gen11) 2001—2003"
     ]
   },
   {
     "Model": "GT-R",
     "Bodies": [
-      "R35 2007—Present",
-      "R34 1999—2002",
-      "R33 1995—1998",
-      "R32 1989—1994",
-      "C110 1973",
-      "PGC10/KPGC10 1969—1972"
+      "R35 (Gen6) Restyling 2017—Present",
+      "R35 (Gen6) 2007—2017",
+      "R34 (Gen5) Restyling 1999—2002",
+      "R34 (Gen5) 1998—1999"
     ]
   },
   {
-    "Model": "Z / Fairlady Z",
+    "Model": "370Z / 350Z / Fairlady Z",
     "Bodies": [
-      "RZ34 (400Z) 2022—Present",
-      "Z34 (370Z) 2009—2020",
-      "Z33 (350Z) 2002—2009",
-      "Z32 (300ZX) 1989—2000",
-      "Z31 (300ZX) 1983—1989",
-      "S130 (280ZX) 1978—1983",
-      "S30 (240Z/260Z/280Z) 1969—1978"
+      "Z34 (370Z) Restyling 2012—2020",
+      "Z34 (370Z) 2008—2012",
+      "Z33 (350Z) Restyling 2005—2008",
+      "Z33 (350Z) 2002—2005"
     ]
   },
   {
-    "Model": "Patrol / Armada",
+    "Model": "Z (400Z)",
     "Bodies": [
-      "Y62 (Gen6) 2010—Present",
-      "Y61 (Gen5) 1997—2016",
-      "Y60 (Gen4) 1987—1997",
-      "160 (Gen3) 1980—1987",
-      "60 (Gen2) 1960—1980",
-      "4W60 (Gen1) 1951—1960"
+      "Z34 (Gen7) 2022—Present"
     ]
   },
   {
-    "Model": "Navara / Frontier / NP300",
+    "Model": "Leaf (EV)",
     "Bodies": [
-      "D23 (Gen3) 2014—Present",
-      "D40 (Gen2) 2004—2014",
-      "D22 (Gen1) 1997—2004",
-      "D21 (Hardbody) 1986—1997",
-      "720 1980—1986",
-      "620 1972—1979",
-      "520/521 1965—1972"
+      "ZE1 (Gen2) Restyling 2022—Present",
+      "ZE1 (Gen2) 2017—2022",
+      "ZE0 (Gen1) Restyling 2013—2017",
+      "ZE0 (Gen1) 2010—2013"
     ]
   },
   {
-    "Model": "Titan",
-    "Bodies": ["A61 (Gen2) 2016—2024", "A60 (Gen1) 2003—2015"]
+    "Model": "Ariya (EV)",
+    "Bodies": [
+      "FE0 (Gen1) 2022—Present"
+    ]
   },
   {
-    "Model": "X-Trail / Rogue",
+    "Model": "Juke",
     "Bodies": [
-      "T33 (Gen4) 2021—Present",
-      "T32 (Gen3) 2013—2021",
-      "T31 (Gen2) 2007—2013",
-      "T30 (Gen1) 2000—2007"
+      "F16 (Gen2) 2019—Present",
+      "F15 (Gen1) Restyling 2014—2019",
+      "F15 (Gen1) 2010—2014"
     ]
   },
   {
     "Model": "Qashqai / Rogue Sport",
-    "Bodies": ["J12 (Gen3) 2021—Present", "J11 (Gen2) 2013—2021", "J10 (Gen1) 2006—2013"]
+    "Bodies": [
+      "J12 (Gen3) 2021—Present",
+      "J11 (Gen2) Restyling 2017—2021",
+      "J11 (Gen2) 2013—2017",
+      "J10 (Gen1) Restyling 2010—2013",
+      "J10 (Gen1) 2006—2010"
+    ]
   },
   {
-    "Model": "Juke",
-    "Bodies": ["F16 (Gen2) 2019—Present", "F15 (Gen1) 2010—2019"]
+    "Model": "Rogue / X-Trail",
+    "Bodies": [
+      "T33 (Gen4) 2021—Present",
+      "T32 (Gen3) Restyling 2017—2021",
+      "T32 (Gen3) 2013—2017",
+      "T31 (Gen2) Restyling 2010—2013",
+      "T31 (Gen2) 2007—2010",
+      "T30 (Gen1) Restyling 2003—2007",
+      "T30 (Gen1) 2000—2003"
+    ]
   },
   {
     "Model": "Murano",
-    "Bodies": ["Z52 (Gen3) 2015—Present", "Z51 (Gen2) 2009—2014", "Z50 (Gen1) 2002—2008"]
+    "Bodies": [
+      "Z52 (Gen3) Restyling 2019—Present",
+      "Z52 (Gen3) 2015—2019",
+      "Z51 (Gen2) Restyling 2010—2015",
+      "Z51 (Gen2) 2007—2010",
+      "Z50 (Gen1) Restyling 2005—2007",
+      "Z50 (Gen1) 2002—2005"
+    ]
   },
   {
     "Model": "Pathfinder",
     "Bodies": [
       "R53 (Gen5) 2022—Present",
-      "R52 (Gen4) 2013—2021",
-      "R51 (Gen3) 2005—2012",
-      "R50 (Gen2) 1996—2004",
-      "WD21 (Gen1) 1985—1995"
+      "R52 (Gen4) Restyling 2017—2022",
+      "R52 (Gen4) 2012—2017",
+      "R51 (Gen3) Restyling 2008—2012",
+      "R51 (Gen3) 2005—2008",
+      "R50 (Gen2) Restyling 1999—2005",
+      "R50 (Gen2) 1995—1999"
+    ]
+  },
+  {
+    "Model": "Patrol / Armada",
+    "Bodies": [
+      "Y62 (Gen6) Restyling 2020—Present",
+      "Y62 (Gen6) 2010—2020",
+      "Y61 (Gen5) Restyling 2004—2010",
+      "Y61 (Gen5) 1997—2004"
     ]
   },
   {
     "Model": "Terra",
-    "Bodies": ["D23 (Gen1) 2018—Present"]
-  },
-  {
-    "Model": "Armada (North America)",
-    "Bodies": ["Y62 (Gen2) 2017—Present", "TA60 (Gen1) 2004—2015"]
-  },
-  {
-    "Model": "Quest",
     "Bodies": [
-      "RE52 (Gen4) 2011—2017",
-      "E52 (Gen3) 2004—2009",
-      "V42 (Gen2) 1998—2002",
-      "V40 (Gen1) 1993—1998"
+      "D23 (Gen1) Restyling 2021—Present",
+      "D23 (Gen1) 2018—2021"
     ]
   },
   {
-    "Model": "Elgrand",
-    "Bodies": ["E52 (Gen3) 2010—Present", "E51 (Gen2) 2002—2010", "E50 (Gen1) 1997—2002"]
+    "Model": "Navara / Frontier",
+    "Bodies": [
+      "D23 (Gen4) Restyling 2021—Present",
+      "D23 (Gen4) 2014—2021",
+      "D40 (Gen3) Restyling 2010—2014",
+      "D40 (Gen3) 2004—2010",
+      "D22 (Gen2) Restyling 2001—2004",
+      "D22 (Gen2) 1997—2001"
+    ]
   },
   {
-    "Model": "Caravan / NV350",
+    "Model": "Titan",
     "Bodies": [
-      "E26 (Gen5) 2012—Present",
-      "E25 (Gen4) 2001—2012",
-      "E24 (Gen3) 1986—2001",
-      "E23 (Gen2) 1980—1986",
-      "E20 (Gen1) 1973—1980"
+      "A61 (Gen2) Restyling 2020—Present",
+      "A61 (Gen2) 2016—2020",
+      "A60 (Gen1) Restyling 2008—2015",
+      "A60 (Gen1) 2003—2008"
     ]
   },
   {
     "Model": "NV200 / Evalia",
-    "Bodies": ["M20 (Gen1) 2009—Present"]
+    "Bodies": [
+      "M20 (Gen1) Restyling 2015—2021",
+      "M20 (Gen1) 2009—2015"
+    ]
   },
   {
-    "Model": "Townstar (EV)",
-    "Bodies": ["XFK (BEV) 2022—Present"]
-  },
-  {
-    "Model": "Primastar / Interstar / NV300",
-    "Bodies": ["X82 (Gen2) 2014—Present", "X83 (Gen1) 2001—2014"]
-  },
-  {
-    "Model": "Urvan / King Van",
-    "Bodies": ["E24/E25 (Asia) 1987—Present"]
+    "Model": "Caravan / Urvan",
+    "Bodies": [
+      "E26 (Gen6) Restyling 2017—Present",
+      "E26 (Gen6) 2012—2017",
+      "E25 (Gen5) Restyling 2004—2012",
+      "E25 (Gen5) 2001—2004"
+    ]
   }
 ]

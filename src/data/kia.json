@@ -1,180 +1,248 @@
 [
   {
-    "Model": "Rio / Pride / K2",
+    "Model": "Rio / Pride",
     "Bodies": [
       "FB (Gen4) 2017—2023",
-      "UB (Gen3) 2011—2017",
-      "JB (Gen2) 2005—2011",
+      "UB (Gen3) Restyling 2015—2017",
+      "UB (Gen3) 2011—2015",
+      "JB (Gen2) Restyling 2009—2011",
+      "JB (Gen2) 2005—2009",
       "DC (Gen1) 2000—2005",
-      "Pride (Gen1) 1987—2000"
+      "Pride (Gen1 facelift) 1993—2000"
     ]
   },
   {
-    "Model": "Ceed / Cee'd / K3 (China)",
-    "Bodies": ["CD (Gen3) 2018—Present", "JD (Gen2) 2012—2018", "ED (Gen1) 2006—2012"]
+    "Model": "Picanto / Morning",
+    "Bodies": [
+      "JA (Gen3) Restyling 2023—Present",
+      "JA (Gen3) 2017—2023",
+      "TA (Gen2) Restyling 2015—2017",
+      "TA (Gen2) 2011—2015",
+      "SA (Gen1) Restyling 2008—2011",
+      "SA (Gen1) 2004—2008"
+    ]
   },
   {
-    "Model": "Forte / Cerato / K3",
+    "Model": "Ceed / Cee'd",
     "Bodies": [
-      "BD (Gen4) 2018—Present",
-      "YD (Gen3) 2013—2018",
-      "TD (Gen2) 2008—2013",
-      "LD (Gen1) 2003—2008"
+      "CD (Gen3) Restyling 2021—Present",
+      "CD (Gen3) 2018—2021",
+      "JD (Gen2) Restyling 2015—2018",
+      "JD (Gen2) 2012—2015",
+      "ED (Gen1) Restyling 2009—2012",
+      "ED (Gen1) 2006—2009"
+    ]
+  },
+  {
+    "Model": "Cerato / Forte / K3",
+    "Bodies": [
+      "BD (Gen4) Restyling 2021—Present",
+      "BD (Gen4) 2018—2021",
+      "YD (Gen3) Restyling 2016—2018",
+      "YD (Gen3) 2013—2016",
+      "TD (Gen2) Restyling 2011—2013",
+      "TD (Gen2) 2008—2011",
+      "LD (Gen1) Restyling 2006—2008",
+      "LD (Gen1) 2003—2006"
     ]
   },
   {
     "Model": "Optima / K5",
     "Bodies": [
-      "DL3 (Gen5) 2020—Present",
-      "JF (Gen4) 2015—2020",
-      "TF (Gen3) 2010—2015",
+      "DL3 (Gen5) Restyling 2023—Present",
+      "DL3 (Gen5) 2019—2023",
+      "JF (Gen4) Restyling 2018—2020",
+      "JF (Gen4) 2015—2018",
+      "TF (Gen3) Restyling 2013—2015",
+      "TF (Gen3) 2010—2013",
       "MG (Gen2) 2005—2010",
       "MS (Gen1) 2000—2005"
     ]
   },
   {
-    "Model": "Stinger",
-    "Bodies": ["CK (Gen1) 2017—2023"]
-  },
-  {
-    "Model": "K7 / Cadenza",
-    "Bodies": ["YG (Gen3) 2016—2021", "VG (Gen2) 2010—2016", "GH (Gen1) 2009—2010"]
+    "Model": "Cadenza / K7",
+    "Bodies": [
+      "YG (Gen3) Restyling 2019—2021",
+      "YG (Gen3) 2016—2019",
+      "VG (Gen2) Restyling 2013—2016",
+      "VG (Gen2) 2010—2013",
+      "GH (Gen1) 2009—2010"
+    ]
   },
   {
     "Model": "K9 / K900 / Quoris",
-    "Bodies": ["RJ (Gen2) 2018—2022", "KH (Gen1) 2012—2018"]
+    "Bodies": [
+      "RJ (Gen2) Restyling 2021—2022",
+      "RJ (Gen2) 2018—2021",
+      "KH (Gen1) Restyling 2015—2018",
+      "KH (Gen1) 2012—2015"
+    ]
   },
   {
-    "Model": "Picanto / Morning",
-    "Bodies": ["JA (Gen3) 2017—Present", "TA (Gen2) 2011—2017", "SA (Gen1) 2004—2011"]
+    "Model": "Stinger",
+    "Bodies": [
+      "CK (Gen1) Restyling 2020—2023",
+      "CK (Gen1) 2017—2020"
+    ]
   },
   {
     "Model": "Soul",
-    "Bodies": ["SK3 (Gen3) 2019—Present", "PS (Gen2) 2014—2019", "AM (Gen1) 2008—2013"]
+    "Bodies": [
+      "SK3 (Gen3) Restyling 2023—Present",
+      "SK3 (Gen3) 2019—2023",
+      "PS (Gen2) Restyling 2016—2019",
+      "PS (Gen2) 2014—2016",
+      "AM (Gen1) Restyling 2011—2013",
+      "AM (Gen1) 2008—2011"
+    ]
   },
   {
-    "Model": "Niro (Hybrid/EV/PHEV)",
-    "Bodies": ["SG2 (Gen2) 2022—Present", "DE (Gen1) 2016—2022"]
-  },
-  {
-    "Model": "EV3",
-    "Bodies": ["EV3 (BEV) 2025—Future"]
-  },
-  {
-    "Model": "EV4",
-    "Bodies": ["EV4 (BEV) 2025—Future"]
-  },
-  {
-    "Model": "EV5",
-    "Bodies": ["MV (BEV) 2024—Present"]
-  },
-  {
-    "Model": "EV6",
-    "Bodies": ["CV (BEV) 2021—Present"]
-  },
-  {
-    "Model": "EV9",
-    "Bodies": ["MV (BEV) 2023—Present"]
+    "Model": "Niro (HEV/PHEV/EV)",
+    "Bodies": [
+      "SG2 (Gen2) 2022—Present",
+      "DE (Gen1) Restyling 2019—2022",
+      "DE (Gen1) 2016—2019"
+    ]
   },
   {
     "Model": "Seltos",
-    "Bodies": ["SP2 (Gen1) 2019—Present"]
-  },
-  {
-    "Model": "Sportage",
     "Bodies": [
-      "NQ5 (Gen5) 2021—Present",
-      "QL (Gen4) 2015—2021",
-      "SL (Gen3) 2010—2015",
-      "JE (Gen2) 2004—2010",
-      "NB (Gen1) 1993—2004"
+      "SP2 (Gen1) Restyling 2022—Present",
+      "SP2 (Gen1) 2019—2022"
     ]
   },
   {
-    "Model": "Sportage Hybrid / PHEV",
-    "Bodies": ["NQ5H (HEV/PHEV) 2022—Present"]
-  },
-  {
-    "Model": "Sorento",
+    "Model": "Sportage / KX5 (China)",
     "Bodies": [
-      "MQ4 (Gen4) 2020—Present",
-      "UM (Gen3) 2015—2020",
-      "XM (Gen2) 2009—2015",
-      "BL (Gen1) 2002—2009"
+      "NQ5 (Gen5) Restyling 2023—Present",
+      "NQ5 (Gen5) 2021—2023",
+      "QL (Gen4) Restyling 2018—2021",
+      "QL (Gen4) 2015—2018",
+      "SL (Gen3) Restyling 2013—2015",
+      "SL (Gen3) 2010—2013",
+      "JE (Gen2) Restyling 2008—2010",
+      "JE (Gen2) 2004—2008",
+      "NB (Gen1) Restyling 2002—2004",
+      "NB (Gen1) 1993—2002"
     ]
   },
   {
-    "Model": "Sorento Hybrid / PHEV",
-    "Bodies": ["MQ4H (HEV/PHEV) 2021—Present"]
+    "Model": "Sorento / KX7 (China)",
+    "Bodies": [
+      "MQ4 (Gen4) Restyling 2024—Present",
+      "MQ4 (Gen4) 2020—2024",
+      "UM (Gen3) Restyling 2017—2020",
+      "UM (Gen3) 2015—2017",
+      "XM (Gen2) Restyling 2012—2015",
+      "XM (Gen2) 2009—2012",
+      "BL (Gen1) Restyling 2006—2009",
+      "BL (Gen1) 2002—2006"
+    ]
   },
   {
     "Model": "Telluride",
-    "Bodies": ["ON (Gen1) 2019—Present"]
+    "Bodies": [
+      "ON (Gen1) Restyling 2022—Present",
+      "ON (Gen1) 2019—2022"
+    ]
   },
   {
     "Model": "Mohave / Borrego",
-    "Bodies": ["HM (Gen1) 2008—Present"]
-  },
-  {
-    "Model": "Carens / Rondo",
     "Bodies": [
-      "RP (Gen4) 2022—Present",
-      "RP (Gen3) 2013—2019",
-      "UN (Gen2) 2006—2012",
-      "FC (Gen1) 1999—2006"
+      "HM (Gen1) Restyling 2019—Present",
+      "HM (Gen1) 2008—2019"
     ]
   },
   {
     "Model": "Carnival / Sedona",
     "Bodies": [
-      "KA4 (Gen4) 2020—Present",
-      "YP (Gen3) 2015—2020",
-      "VQ (Gen2) 2006—2014",
-      "GQ (Gen1) 1998—2005"
+      "KA4 (Gen4) Restyling 2023—Present",
+      "KA4 (Gen4) 2020—2023",
+      "YP (Gen3) Restyling 2018—2020",
+      "YP (Gen3) 2015—2018",
+      "VQ (Gen2) Restyling 2010—2014",
+      "VQ (Gen2) 2006—2010",
+      "GQ (Gen1) Restyling 2001—2005",
+      "GQ (Gen1) 1998—2001"
     ]
   },
   {
-    "Model": "Carnival Hybrid",
-    "Bodies": ["KA4H (HEV) 2024—Present"]
+    "Model": "Carens / Rondo",
+    "Bodies": [
+      "RP (Gen4, MPV) 2022—Present",
+      "RP (Gen3, MPV) 2013—2019",
+      "UN (Gen2, MPV) Restyling 2010—2012",
+      "UN (Gen2, MPV) 2006—2010",
+      "FC (Gen1) Restyling 2002—2006",
+      "FC (Gen1) 1999—2002"
+    ]
   },
   {
-    "Model": "Ray",
-    "Bodies": ["TAM (Gen1) 2011—Present"]
+    "Model": "Ray / Ray EV",
+    "Bodies": [
+      "TAM (Gen1) Restyling 2023—Present",
+      "TAM (Gen1) 2011—2023",
+      "TAM-EV (BEV) 2023—Present"
+    ]
   },
   {
-    "Model": "Ray EV",
-    "Bodies": ["TAM-EV (BEV) 2023—Present"]
+    "Model": "EV5 (BEV)",
+    "Bodies": [
+      "MV (Gen1) 2023—Present"
+    ]
   },
   {
-    "Model": "KX Cross / Pegas / Pegas (China)",
-    "Bodies": ["Gen1 2017—Present"]
+    "Model": "EV6 (BEV)",
+    "Bodies": [
+      "CV (Gen1) Restyling 2024—Present",
+      "CV (Gen1) 2021—2024"
+    ]
+  },
+  {
+    "Model": "EV9 (BEV)",
+    "Bodies": [
+      "MV2 (Gen1) 2023—Present"
+    ]
+  },
+  {
+    "Model": "Soul EV (e-Soul)",
+    "Bodies": [
+      "SK3-EV (Gen3 BEV) 2019—Present",
+      "PS-EV (Gen2 BEV) 2014—2019"
+    ]
+  },
+  {
+    "Model": "KX3 (China)",
+    "Bodies": [
+      "Gen1 2015—2019"
+    ]
   },
   {
     "Model": "Pegas / Soluto",
-    "Bodies": ["Gen1 2017—Present"]
-  },
-  {
-    "Model": "KX3 / Seltos (China)",
-    "Bodies": ["Gen1 2015—2019"]
-  },
-  {
-    "Model": "KX5 / Sportage (China)",
-    "Bodies": ["Gen1 2016—2021"]
-  },
-  {
-    "Model": "KX7 / Sorento (China)",
-    "Bodies": ["Gen1 2017—2021"]
+    "Bodies": [
+      "Gen1 2017—Present"
+    ]
   },
   {
     "Model": "Opirus / Amanti",
-    "Bodies": ["GH (Gen1) 2003—2010"]
+    "Bodies": [
+      "GH (Gen1) Restyling 2006—2010",
+      "GH (Gen1) 2003—2006"
+    ]
   },
   {
     "Model": "Enterprise",
-    "Bodies": ["Gen1 1998—2002"]
+    "Bodies": [
+      "Gen1 1998—2002"
+    ]
   },
   {
-    "Model": "Bongo / K-Series",
-    "Bodies": ["K3 (Gen3) 2004—Present", "K2 (Gen2) 1997—2004", "K1 (Gen1) 1980—1997"]
+    "Model": "Bongo / K-Series (LCV)",
+    "Bodies": [
+      "K3 (Gen3) Restyling 2012—Present",
+      "K3 (Gen3) 2004—2012",
+      "K2 (Gen2) 1997—2004",
+      "K1 (Gen1 facelift) 1990—1997"
+    ]
   }
 ]

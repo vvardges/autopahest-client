@@ -1,246 +1,243 @@
 [
   {
-    "Model": "Mustang",
+    "Model": "Fiesta",
     "Bodies": [
-      "S650 (Gen7) 2024—Present",
-      "S550 (Gen6) 2015—2023",
-      "S197 II (Gen5 Facelift) 2010—2014",
-      "S197 I (Gen5) 2005—2009",
-      "SN95 II (Gen4 Facelift) 1999—2004",
-      "SN95 I (Gen4) 1994—1998",
-      "Fox Body (Gen3) 1979—1993",
-      "Gen2 1974—1978",
-      "Gen1 1964—1973"
+      "Mk7 (Gen7) Restyling 2022—2023",
+      "Mk7 (Gen7) 2017—2022",
+      "Mk6 (Gen6) Restyling 2013—2017",
+      "Mk6 (Gen6) 2008—2013",
+      "Mk5 (Gen5) Restyling 2005—2008",
+      "Mk5 (Gen5) 2002—2005",
+      "Mk4 (Gen4) Restyling 1999—2002",
+      "Mk4 (Gen4) 1995—1999"
     ]
-  },
-  {
-    "Model": "F-150",
-    "Bodies": [
-      "P702 (Gen14) 2021—Present",
-      "P552 (Gen13) 2015—2020",
-      "P415 (Gen12) 2009—2014",
-      "P221 (Gen11) 2004—2008",
-      "P190 (Gen10) 1997—2003",
-      "Gen9 1992—1996",
-      "Gen8 1987—1991",
-      "Gen7 1980—1986",
-      "Gen6 1973—1979",
-      "Gen5 1967—1972",
-      "Gen4 1961—1966",
-      "Gen3 1957—1960",
-      "Gen2 1953—1956",
-      "Gen1 1948—1952"
-    ]
-  },
-  {
-    "Model": "Ranger",
-    "Bodies": [
-      "T6.2 (Gen5) 2022—Present",
-      "T6 (Gen4) 2011—2022",
-      "PJ/PK (Gen3) 2006—2011",
-      "Gen2 1993—2005",
-      "Gen1 1983—1992"
-    ]
-  },
-  {
-    "Model": "Bronco",
-    "Bodies": [
-      "Gen6 2021—Present",
-      "Gen5 1992—1996",
-      "Gen4 1987—1991",
-      "Gen3 1980—1986",
-      "Gen2 1978—1979",
-      "Gen1 1966—1977"
-    ]
-  },
-  {
-    "Model": "Bronco Sport",
-    "Bodies": ["Gen1 2021—Present"]
-  },
-  {
-    "Model": "Escape / Kuga (Global)",
-    "Bodies": ["Gen4 2020—Present", "Gen3 2013—2019", "Gen2 2008—2012", "Gen1 2001—2007"]
-  },
-  {
-    "Model": "Explorer",
-    "Bodies": [
-      "U625 (Gen6) 2020—Present",
-      "U502 (Gen5) 2011—2019",
-      "U251 (Gen4) 2006—2010",
-      "U152 (Gen3) 2002—2005",
-      "UN150 (Gen2) 1995—2001",
-      "UN46 (Gen1) 1991—1994"
-    ]
-  },
-  {
-    "Model": "Expedition",
-    "Bodies": [
-      "U553 (Gen4) 2018—Present",
-      "U324 (Gen3) 2007—2017",
-      "U222 (Gen2) 2003—2006",
-      "U215 (Gen1) 1997—2002"
-    ]
-  },
-  {
-    "Model": "Edge / Endura",
-    "Bodies": ["Gen2 2015—2023", "Gen1 2007—2014"]
-  },
-  {
-    "Model": "EcoSport",
-    "Bodies": ["Gen2 2012—2023", "Gen1 2003—2012"]
   },
   {
     "Model": "Focus",
     "Bodies": [
-      "C519 (Gen4) 2018—2025",
-      "C346 (Gen3) 2011—2018",
-      "C307 (Gen2) 2004—2011",
-      "C170 (Gen1) 1998—2004"
-    ]
-  },
-  {
-    "Model": "Fiesta",
-    "Bodies": [
-      "Gen7 2017—2023",
-      "Gen6 2008—2017",
-      "Gen5 2002—2008",
-      "Gen4 1995—2002",
-      "Gen3 1989—1995",
-      "Gen2 1983—1989",
-      "Gen1 1976—1983"
+      "Mk4 (Gen4) Restyling 2022—2025",
+      "Mk4 (Gen4) 2018—2022",
+      "Mk3 (Gen3) Restyling 2014—2018",
+      "Mk3 (Gen3) 2011—2014",
+      "Mk2 (Gen2) Restyling 2008—2011",
+      "Mk2 (Gen2) 2004—2008",
+      "Mk1 (Gen1) Restyling 2001—2004",
+      "Mk1 (Gen1) 1998—2001"
     ]
   },
   {
     "Model": "Mondeo / Fusion",
     "Bodies": [
-      "CD542E (Gen5 China) 2022—Present",
-      "CD391 (Gen4) 2013—2022",
-      "CD345 (Gen3) 2007—2012",
-      "CD132 (Gen2) 2000—2006",
-      "CDW27 (Gen1) 1993—1999"
+      "Mk5 (Gen5, China) 2022—Present",
+      "Mk4 (Gen4) Restyling 2019—2022",
+      "Mk4 (Gen4) 2014—2019",
+      "Mk3 (Gen3) Restyling 2010—2014",
+      "Mk3 (Gen3) 2007—2010",
+      "Mk2 (Gen2) Restyling 2003—2007",
+      "Mk2 (Gen2) 2000—2003",
+      "Mk1 (Gen1) Restyling 1996—2000",
+      "Mk1 (Gen1) 1993—1996"
     ]
   },
   {
     "Model": "Taurus",
     "Bodies": [
-      "Gen7 (China) 2016—2022",
-      "Gen6 (D3) 2010—2019",
+      "Gen7 (China) 2015—2022",
+      "Gen6 2010—2019",
       "Gen5 2008—2009",
-      "Gen4 2000—2007",
-      "Gen3 1996—1999",
-      "Gen2 1992—1995",
-      "Gen1 1986—1991"
+      "Gen4 Restyling 2003—2007",
+      "Gen4 1999—2003",
+      "Gen3 Restyling 1996—1999",
+      "Gen3 1995—1996",
+      "Gen2 Restyling 1992—1995",
+      "Gen2 1991—1992"
     ]
   },
   {
-    "Model": "Crown Victoria",
-    "Bodies": ["Gen2 1998—2012", "Gen1 1992—1997"]
-  },
-  {
-    "Model": "Galaxy / S-Max",
-    "Bodies": ["Gen3 2015—2023", "Gen2 2006—2014", "Gen1 1995—2005"]
-  },
-  {
-    "Model": "Transit / Transit Custom",
+    "Model": "Mustang",
     "Bodies": [
-      "Transit VN5 (Gen8) 2013—Present",
-      "Gen7 2000—2013",
-      "Gen6 1986—2000",
-      "Gen5 1978—1985",
-      "Gen4 1971—1977",
-      "Gen3 1965—1970",
-      "Gen2 1963—1964",
-      "Gen1 1953—1962"
-    ]
-  },
-  {
-    "Model": "Transit Connect",
-    "Bodies": ["Gen3 2024—Present", "Gen2 2014—2023", "Gen1 2002—2013"]
-  },
-  {
-    "Model": "Maverick",
-    "Bodies": ["Gen2 (Pickup) 2022—Present", "Gen1 (Compact Car) 1970—1977"]
-  },
-  {
-    "Model": "Courier / Bantam",
-    "Bodies": [
-      "Gen4 (Brazil) 1998—2013",
-      "Gen3 (South Africa) 1986—2007",
-      "Gen2 1978—1985",
-      "Gen1 1972—1977"
+      "S650 (Gen7) 2024—Present",
+      "S550 (Gen6) Restyling 2018—2023",
+      "S550 (Gen6) 2015—2018",
+      "S197 (Gen5) Restyling 2010—2014",
+      "S197 (Gen5) 2005—2010",
+      "SN95 (Gen4) Restyling 1999—2004",
+      "SN95 (Gen4) 1994—1999",
+      "Fox (Gen3) Restyling 1990—1993"
     ]
   },
   {
     "Model": "Ka / Figo",
-    "Bodies": ["Ka+ / Figo Gen3 2015—2021", "Ka Gen2 2008—2016", "Ka Gen1 1996—2008"]
+    "Bodies": [
+      "Gen3 2014—2021",
+      "Gen2 2008—2014",
+      "Gen1 Restyling 2002—2008",
+      "Gen1 1996—2002"
+    ]
+  },
+  {
+    "Model": "EcoSport",
+    "Bodies": [
+      "BK (Gen2) Restyling 2018—2022",
+      "BK (Gen2) 2012—2018",
+      "BV (Gen1) Restyling 2007—2012",
+      "BV (Gen1) 2003—2007"
+    ]
   },
   {
     "Model": "Puma",
-    "Bodies": ["Crossover Gen2 2020—Present", "Coupe Gen1 1997—2002"]
-  },
-  {
-    "Model": "Everest / Endeavour",
     "Bodies": [
-      "Gen4 (T6.2) 2022—Present",
-      "Gen3 (T6) 2015—2022",
-      "Gen2 2006—2014",
-      "Gen1 2003—2006"
+      "Gen2 (Crossover) Restyling 2024—Present",
+      "Gen2 (Crossover) 2020—2024",
+      "Gen1 (Coupe) 1997—2002"
     ]
   },
   {
-    "Model": "Territory (China / LatAm / ASEAN)",
-    "Bodies": ["Gen2 2022—Present", "Gen1 2018—2021"]
-  },
-  {
-    "Model": "Figo Aspire / Ikon (India)",
-    "Bodies": ["Figo Aspire 2015—2021", "Ikon 1999—2011"]
-  },
-  {
-    "Model": "Falcon (Australia)",
+    "Model": "Kuga / Escape",
     "Bodies": [
-      "FG X (Gen7) 2014—2016",
-      "FG (Gen6) 2008—2014",
-      "BF (Gen5) 2005—2008",
-      "BA (Gen4) 2002—2005",
-      "AU (Gen3) 1998—2002",
-      "EL/EF (Gen2) 1994—1998",
-      "EB/ED (Gen1) 1991—1994"
+      "CX482 (Gen4) 2023—Present",
+      "CX482 (Gen4) 2020—2023",
+      "C520 (Gen3) Restyling 2017—2020",
+      "C520 (Gen3) 2012—2017",
+      "C394 (Gen2) Restyling 2010—2012",
+      "C394 (Gen2) 2008—2010",
+      "C394 (Gen1) 2000—2008"
     ]
   },
   {
-    "Model": "Mustang Mach-E",
-    "Bodies": ["CX727 (BEV) 2021—Present"]
+    "Model": "Edge",
+    "Bodies": [
+      "Gen2 Restyling 2019—2023",
+      "Gen2 2015—2019",
+      "Gen1 Restyling 2011—2014",
+      "Gen1 2007—2011"
+    ]
   },
   {
-    "Model": "F-150 Lightning",
-    "Bodies": ["P702 (BEV) 2022—Present"]
+    "Model": "Explorer",
+    "Bodies": [
+      "U625 (Gen6) Restyling 2023—Present",
+      "U625 (Gen6) 2020—2023",
+      "U502 (Gen5) Restyling 2016—2020",
+      "U502 (Gen5) 2011—2016",
+      "U251 (Gen4) Restyling 2006—2010",
+      "U251 (Gen4) 2002—2006",
+      "U152 (Gen3) Restyling 1998—2002",
+      "U152 (Gen3) 1995—1998"
+    ]
   },
   {
-    "Model": "E-Transit",
-    "Bodies": ["Full-size (BEV) 2022—Present"]
+    "Model": "Expedition",
+    "Bodies": [
+      "U553 (Gen4) Restyling 2022—Present",
+      "U553 (Gen4) 2018—2022",
+      "U324 (Gen3) Restyling 2015—2017",
+      "U324 (Gen3) 2007—2015",
+      "U222 (Gen2) Restyling 2003—2007",
+      "U222 (Gen2) 1997—2003"
+    ]
   },
   {
-    "Model": "E-Transit Custom",
-    "Bodies": ["Medium van (BEV) 2024—Present"]
+    "Model": "Bronco",
+    "Bodies": [
+      "U725 (Gen6) 2021—Present",
+      "Gen5 1992—1996"
+    ]
   },
   {
-    "Model": "E-Tourneo Custom",
-    "Bodies": ["Passenger van (BEV) 2024—Present"]
+    "Model": "Bronco Sport",
+    "Bodies": [
+      "CX430 (Gen1) 2021—Present"
+    ]
   },
   {
-    "Model": "Explorer (Europe, EV)",
-    "Bodies": ["MEB-based (BEV) 2024—Present"]
+    "Model": "Everest",
+    "Bodies": [
+      "U704 (Gen3) 2022—Present",
+      "U375 (Gen2) Restyling 2018—2022",
+      "U375 (Gen2) 2015—2018",
+      "U268 (Gen1) Restyling 2007—2015",
+      "U268 (Gen1) 2003—2007"
+    ]
   },
   {
-    "Model": "Capri (Europe, EV)",
-    "Bodies": ["MEB-based (BEV) 2024—Present"]
+    "Model": "Ranger",
+    "Bodies": [
+      "P703 (Gen5) 2022—Present",
+      "T6 (Gen4) Restyling 2019—2022",
+      "T6 (Gen4) 2011—2019",
+      "PJ/PK (Gen3) Restyling 2006—2011",
+      "PJ/PK (Gen3) 1998—2006"
+    ]
   },
   {
-    "Model": "E-Transit Courier",
-    "Bodies": ["Compact van (BEV) 2024—Present"]
+    "Model": "F-150",
+    "Bodies": [
+      "P702 (Gen14) Restyling 2024—Present",
+      "P702 (Gen14) 2021—2024",
+      "P552 (Gen13) Restyling 2018—2020",
+      "P552 (Gen13) 2015—2018",
+      "P415 (Gen12) Restyling 2009—2014",
+      "P415 (Gen12) 2004—2009",
+      "P375 (Gen11) Restyling 2001—2003",
+      "P375 (Gen11) 1997—2001"
+    ]
   },
   {
-    "Model": "E-Tourneo Courier",
-    "Bodies": ["Compact MPV (BEV) 2024—Present"]
+    "Model": "F-Series Super Duty (F-250/350/450)",
+    "Bodies": [
+      "P558 (Gen4) Restyling 2023—Present",
+      "P558 (Gen4) 2017—2023",
+      "P473 (Gen3) Restyling 2011—2017",
+      "P473 (Gen3) 2008—2011",
+      "P356 (Gen2) Restyling 2005—2007",
+      "P356 (Gen2) 1999—2005"
+    ]
+  },
+  {
+    "Model": "Maverick",
+    "Bodies": [
+      "C2 (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Transit Connect",
+    "Bodies": [
+      "Gen2 Restyling 2019—2023",
+      "Gen2 2013—2019",
+      "Gen1 Restyling 2006—2013",
+      "Gen1 2002—2006"
+    ]
+  },
+  {
+    "Model": "Transit",
+    "Bodies": [
+      "Gen4 (EU) Restyling 2019—Present",
+      "Gen4 (EU) 2014—2019",
+      "Gen3 (EU) Restyling 2006—2013",
+      "Gen3 (EU) 2000—2006",
+      "Gen2 (NA) Restyling 1997—2000",
+      "Gen2 (NA) 1992—1997"
+    ]
+  },
+  {
+    "Model": "E-Series (Econoline)",
+    "Bodies": [
+      "Gen4 Restyling 2008—2014",
+      "Gen4 1992—2008"
+    ]
+  },
+  {
+    "Model": "Lightning (F-150 EV)",
+    "Bodies": [
+      "BEV (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Mustang Mach-E (EV)",
+    "Bodies": [
+      "CUV (Gen1) Restyling 2023—Present",
+      "CUV (Gen1) 2021—2023"
+    ]
   }
 ]

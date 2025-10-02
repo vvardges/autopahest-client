@@ -2,100 +2,258 @@
   {
     "Model": "Mazda2 / Demio",
     "Bodies": [
-      "DJ/DL (Gen4) 2014—Present (facelifts 2019, 2023)",
-      "DE (Gen3) 2007—2014",
-      "DY (Gen2) 2002—2007",
-      "DW (Gen1) 1996—2002"
+      "DJ/DL (Gen4) Restyling 2023—Present",
+      "DJ/DL (Gen4) 2014—2023",
+      "DE (Gen3) Restyling 2010—2014",
+      "DE (Gen3) 2007—2010",
+      "DY (Gen2) Restyling 2005—2007",
+      "DY (Gen2) 2002—2005",
+      "DW (Gen1) Restyling 1999—2002",
+      "DW (Gen1) 1996—1999"
+    ]
+  },
+  {
+    "Model": "Mazda2 Hybrid",
+    "Bodies": [
+      "Hybrid (XP210-based) 2022—Present"
     ]
   },
   {
     "Model": "Mazda3 / Axela",
     "Bodies": [
-      "BP (Gen4) 2019—Present",
-      "BM/BN (Gen3) 2013—2019",
-      "BL (Gen2) 2009—2013",
-      "BK (Gen1) 2003—2009"
+      "BP (Gen4) Restyling 2023—Present",
+      "BP (Gen4) 2019—2023",
+      "BM/BN (Gen3) Restyling 2016—2019",
+      "BM/BN (Gen3) 2013—2016",
+      "BL (Gen2) Restyling 2011—2013",
+      "BL (Gen2) 2009—2011",
+      "BK (Gen1) Restyling 2006—2008",
+      "BK (Gen1) 2003—2006"
     ]
   },
   {
     "Model": "Mazda6 / Atenza",
-    "Bodies": ["GJ/GL (Gen3) 2012—2023", "GH (Gen2) 2007—2012", "GG/GY (Gen1) 2002—2008"]
-  },
-  {
-    "Model": "Mazda5 / Premacy",
-    "Bodies": ["CW (Gen2) 2010—2018", "CR (Gen1) 2005—2010"]
-  },
-  {
-    "Model": "Mazda CX-3",
-    "Bodies": ["DK (Gen1) 2015—Present"]
-  },
-  {
-    "Model": "Mazda CX-30",
-    "Bodies": ["DM (Gen1) 2019—Present"]
-  },
-  {
-    "Model": "Mazda CX-5",
-    "Bodies": ["KF (Gen2) 2017—Present", "KE (Gen1) 2012—2017"]
-  },
-  {
-    "Model": "Mazda CX-50",
-    "Bodies": ["TA (Gen1) 2022—Present"]
-  },
-  {
-    "Model": "Mazda CX-60 / CX-70 / CX-80 / CX-90",
-    "Bodies": ["KH/KK (Large Platform) 2022—Present"]
-  },
-  {
-    "Model": "Mazda CX-7",
-    "Bodies": ["ER (Gen1) 2006—2012"]
-  },
-  {
-    "Model": "Mazda CX-8",
-    "Bodies": ["KG (Gen1) 2017—Present"]
-  },
-  {
-    "Model": "Mazda CX-9",
-    "Bodies": ["TC (Gen2) 2016—2023", "TB (Gen1) 2006—2015"]
+    "Bodies": [
+      "GJ/GL (Gen3) Restyling 2018—2023",
+      "GJ/GL (Gen3) Restyling 2015—2018",
+      "GJ/GL (Gen3) 2012—2015",
+      "GH (Gen2) Restyling 2010—2012",
+      "GH (Gen2) 2007—2010",
+      "GG/GY (Gen1) Restyling 2005—2008",
+      "GG/GY (Gen1) 2002—2005"
+    ]
   },
   {
     "Model": "MX-5 / Roadster / Miata",
     "Bodies": [
-      "ND (Gen4) 2015—Present",
-      "NC (Gen3) 2005—2015",
-      "NB (Gen2) 1998—2005",
-      "NA (Gen1) 1989—1997"
+      "ND (Gen4) Restyling 2019—Present",
+      "ND (Gen4) 2015—2019",
+      "NC (Gen3) Restyling 2009—2015",
+      "NC (Gen3) 2005—2009",
+      "NB (Gen2) Restyling 2001—2005",
+      "NB (Gen2) 1998—2001",
+      "NA (Gen1) Restyling 1994—1997",
+      "NA (Gen1) 1989—1994"
     ]
   },
   {
     "Model": "RX-7",
-    "Bodies": ["FD (Gen3) 1991—2002", "FC (Gen2) 1985—1991", "SA/FB (Gen1) 1978—1985"]
+    "Bodies": [
+      "FD (Gen3) Restyling 1999—2002",
+      "FD (Gen3) 1991—1998"
+    ]
   },
   {
     "Model": "RX-8",
-    "Bodies": ["SE (Gen1) 2003—2012"]
+    "Bodies": [
+      "SE (Gen1) Restyling 2008—2012",
+      "SE (Gen1) 2003—2008"
+    ]
   },
   {
-    "Model": "Mazda2 Hybrid (rebadged Yaris EU)",
-    "Bodies": ["Hybrid (XP210-based) 2022—Present"]
+    "Model": "CX-3",
+    "Bodies": [
+      "DK (Gen1) Restyling 2018—2021",
+      "DK (Gen1) 2015—2018"
+    ]
   },
   {
-    "Model": "Mazda3 Hybrid / e-Skyactiv X",
-    "Bodies": ["BP MHEV 2019—Present"]
+    "Model": "CX-30",
+    "Bodies": [
+      "DM (Gen1) Restyling 2023—Present",
+      "DM (Gen1) 2019—2023"
+    ]
   },
   {
-    "Model": "MX-30 (EV/PHEV)",
-    "Bodies": ["DR (BEV/REx) 2020—Present"]
+    "Model": "CX-5",
+    "Bodies": [
+      "KF (Gen2) Restyling 2021—Present",
+      "KF (Gen2) 2017—2021",
+      "KE (Gen1) Restyling 2015—2017",
+      "KE (Gen1) 2012—2015"
+    ]
   },
   {
-    "Model": "Bongo / Brawny (LCV)",
-    "Bodies": ["SK/SD/UN series 1966—Present"]
+    "Model": "CX-50",
+    "Bodies": [
+      "TA (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "CX-60",
+    "Bodies": [
+      "KH (Gen1) 2022—Present"
+    ]
+  },
+  {
+    "Model": "CX-70",
+    "Bodies": [
+      "KK (Gen1) 2024—Present"
+    ]
+  },
+  {
+    "Model": "CX-80",
+    "Bodies": [
+      "KK-EU (Gen1) 2024—Present"
+    ]
+  },
+  {
+    "Model": "CX-90",
+    "Bodies": [
+      "KK (Gen1) 2023—Present"
+    ]
+  },
+  {
+    "Model": "CX-7",
+    "Bodies": [
+      "ER (Gen1) Restyling 2009—2012",
+      "ER (Gen1) 2006—2009"
+    ]
+  },
+  {
+    "Model": "CX-8",
+    "Bodies": [
+      "KG (Gen1) Restyling 2020—Present",
+      "KG (Gen1) 2017—2020"
+    ]
+  },
+  {
+    "Model": "CX-9",
+    "Bodies": [
+      "TC (Gen2) Restyling 2019—2023",
+      "TC (Gen2) 2016—2019",
+      "TB (Gen1) Restyling 2010—2015",
+      "TB (Gen1) 2006—2010"
+    ]
+  },
+  {
+    "Model": "Mazda MPV",
+    "Bodies": [
+      "LY (Gen3) Restyling 2008—2016",
+      "LY (Gen3) 2006—2008",
+      "LW (Gen2) Restyling 2003—2006",
+      "LW (Gen2) 1999—2003"
+    ]
+  },
+  {
+    "Model": "Premacy / Mazda5",
+    "Bodies": [
+      "CW (Gen2) Restyling 2013—2018",
+      "CW (Gen2) 2010—2013",
+      "CR (Gen1) Restyling 2007—2010",
+      "CR (Gen1) 2005—2007"
+    ]
+  },
+  {
+    "Model": "Tribute",
+    "Bodies": [
+      "CU (Gen2) 2007—2011",
+      "EP (Gen1) Restyling 2004—2007",
+      "EP (Gen1) 2000—2004"
+    ]
+  },
+  {
+    "Model": "Millenia / Eunos 800",
+    "Bodies": [
+      "TA (Gen1) Restyling 1997—2002",
+      "TA (Gen1) 1993—1997"
+    ]
+  },
+  {
+    "Model": "Xedos 6",
+    "Bodies": [
+      "CA (Gen1) Restyling 1997—1999",
+      "CA (Gen1) 1992—1997"
+    ]
+  },
+  {
+    "Model": "Xedos 9 / Eunos 800 (EU)",
+    "Bodies": [
+      "TA (Gen1) Restyling 1997—2000",
+      "TA (Gen1) 1993—1997"
+    ]
+  },
+  {
+    "Model": "626 / Capella",
+    "Bodies": [
+      "GF/GW (Gen5) Restyling 2000—2002",
+      "GF/GW (Gen5) 1997—2000",
+      "GE (Gen4) Restyling 1994—1997",
+      "GE (Gen4) 1991—1994"
+    ]
+  },
+  {
+    "Model": "323 / Protegé / Familia",
+    "Bodies": [
+      "BJ (Gen8) Restyling 2001—2003",
+      "BJ (Gen8) 1998—2001",
+      "BA (Gen7) Restyling 1996—1998",
+      "BA (Gen7) 1994—1996"
+    ]
+  },
+  {
+    "Model": "MX-3",
+    "Bodies": [
+      "EC (Gen1) Restyling 1994—1998",
+      "EC (Gen1) 1991—1994"
+    ]
+  },
+  {
+    "Model": "MX-6",
+    "Bodies": [
+      "GE (Gen2) Restyling 1994—1997",
+      "GE (Gen2) 1991—1994"
+    ]
+  },
+  {
+    "Model": "Cosmo (Eunos Cosmo)",
+    "Bodies": [
+      "JC (Gen3) 1990—1996"
+    ]
+  },
+  {
+    "Model": "Bongo / Brawny (LCV/MPV)",
+    "Bodies": [
+      "SK/SD (Gen4 JP) Restyling 1999—2010",
+      "SK/SD (Gen4 JP) 1995—1999",
+      "UN (Gen5 rebadge) 2010—Present"
+    ]
   },
   {
     "Model": "BT-50",
     "Bodies": [
       "TF (Gen3, Isuzu-based) 2020—Present",
-      "UR (Gen2) 2011—2020",
-      "UP/UN (Gen1) 2006—2011"
+      "UR (Gen2) Restyling 2015—2020",
+      "UR (Gen2) 2011—2015",
+      "UN/UP (Gen1) Restyling 2009—2011",
+      "UN/UP (Gen1) 2006—2009"
+    ]
+  },
+  {
+    "Model": "MX-30 (EV / REx)",
+    "Bodies": [
+      "DR (Gen1) Restyling 2023—Present",
+      "DR (Gen1) 2020—2023"
     ]
   }
 ]
