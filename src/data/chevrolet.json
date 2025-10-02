@@ -9,9 +9,7 @@
   },
   {
     "Model": "Spark EV",
-    "Bodies": [
-      "M300-EV (Gen1) 2013—2016"
-    ]
+    "Bodies": ["M300-EV (Gen1) 2013—2016"]
   },
   {
     "Model": "Aveo / Sonic",
@@ -33,24 +31,15 @@
   },
   {
     "Model": "Onix / Onix Plus (Brazil/Global GEM)",
-    "Bodies": [
-      "Jio/GEM (Gen2) 2019—Present",
-      "HB (Gen1) 2012—2019"
-    ]
+    "Bodies": ["Jio/GEM (Gen2) 2019—Present", "HB (Gen1) 2012—2019"]
   },
   {
     "Model": "Cobalt (Brazil/Russia)",
-    "Bodies": [
-      "GSV (Gen1) Restyling 2015—2020",
-      "GSV (Gen1) 2011—2015"
-    ]
+    "Bodies": ["GSV (Gen1) Restyling 2015—2020", "GSV (Gen1) 2011—2015"]
   },
   {
     "Model": "Prisma (Brazil)",
-    "Bodies": [
-      "Gen2 (Onix sedan) 2013—2019",
-      "Gen1 2006—2012"
-    ]
+    "Bodies": ["Gen2 (Onix sedan) 2013—2019", "Gen1 2006—2012"]
   },
   {
     "Model": "Cruze",
@@ -136,15 +125,11 @@
   },
   {
     "Model": "Blazer EV",
-    "Bodies": [
-      "BEV (Ultium) 2023—Present"
-    ]
+    "Bodies": ["BEV (Ultium) 2023—Present"]
   },
   {
     "Model": "Trailblazer (CUV, subcompact)",
-    "Bodies": [
-      "Gen2 (VSS-F) 2020—Present"
-    ]
+    "Bodies": ["Gen2 (VSS-F) 2020—Present"]
   },
   {
     "Model": "TrailBlazer (mid-size, BOF)",
@@ -166,9 +151,7 @@
   },
   {
     "Model": "Equinox EV",
-    "Bodies": [
-      "BEV (Ultium) 2024—Present"
-    ]
+    "Bodies": ["BEV (Ultium) 2024—Present"]
   },
   {
     "Model": "Traverse",
@@ -190,9 +173,7 @@
   },
   {
     "Model": "Tracker (China/Brazil current)",
-    "Bodies": [
-      "GEM (Gen2 CN/BR) 2019—Present"
-    ]
+    "Bodies": ["GEM (Gen2 CN/BR) 2019—Present"]
   },
   {
     "Model": "Tahoe",
@@ -224,24 +205,15 @@
   },
   {
     "Model": "Orlando (MPV)",
-    "Bodies": [
-      "CN (Gen2 China) 2018—2023",
-      "J309 (Gen1) 2011—2018"
-    ]
+    "Bodies": ["CN (Gen2 China) 2018—2023", "J309 (Gen1) 2011—2018"]
   },
   {
     "Model": "Spin (MPV, Brazil/ASEAN)",
-    "Bodies": [
-      "Gen1 Restyling 2018—Present",
-      "Gen1 2012—2018"
-    ]
+    "Bodies": ["Gen1 Restyling 2018—Present", "Gen1 2012—2018"]
   },
   {
     "Model": "Lova / Lova RV (China)",
-    "Bodies": [
-      "Lova RV (hatch/MPV) 2016—2019",
-      "Lova (sedan) 2006—2011"
-    ]
+    "Bodies": ["Lova RV (hatch/MPV) 2016—2019", "Lova (sedan) 2006—2011"]
   },
   {
     "Model": "Cavalier (China/Mexico)",
@@ -252,15 +224,11 @@
   },
   {
     "Model": "Monza (China)",
-    "Bodies": [
-      "Gen1 2019—Present"
-    ]
+    "Bodies": ["Gen1 2019—Present"]
   },
   {
     "Model": "Menlo (China EV)",
-    "Bodies": [
-      "BEV (Gen1) 2020—Present"
-    ]
+    "Bodies": ["BEV (Gen1) 2020—Present"]
   },
   {
     "Model": "Silverado 1500",
@@ -302,21 +270,14 @@
   },
   {
     "Model": "Avalanche",
-    "Bodies": [
-      "GMT900 (Gen2) 2007—2013",
-      "GMT800 (Gen1) 2001—2006"
-    ]
+    "Bodies": ["GMT900 (Gen2) 2007—2013", "GMT800 (Gen1) 2001—2006"]
   },
   {
     "Model": "HHR",
-    "Bodies": [
-      "Gen1 2005—2011"
-    ]
+    "Bodies": ["Gen1 2005—2011"]
   },
   {
     "Model": "Captiva Sport (US fleet)",
-    "Bodies": [
-      "Saturn Vue/Antara-based 2012—2015"
-    ]
+    "Bodies": ["Saturn Vue/Antara-based 2012—2015"]
   }
 ]

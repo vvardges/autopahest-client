@@ -22,7 +22,9 @@ function Body({ value, onChange, options }: Props) {
         onChange({ bodies: newValue });
       }}
       fullWidth
-      renderInput={(params) => <TextField {...params} placeholder="Body" fullWidth />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder="Body" fullWidth />
+      )}
       disableCloseOnSelect
     />
   );

@@ -79,10 +79,7 @@
   },
   {
     "Model": "UX",
-    "Bodies": [
-      "ZA10 (Gen1) Restyling 2022—Present",
-      "ZA10 (Gen1) 2018—2022"
-    ]
+    "Bodies": ["ZA10 (Gen1) Restyling 2022—Present", "ZA10 (Gen1) 2018—2022"]
   },
   {
     "Model": "GX",
@@ -107,10 +104,7 @@
   },
   {
     "Model": "RC",
-    "Bodies": [
-      "XC10 (Gen1) Restyling 2019—2023",
-      "XC10 (Gen1) 2014—2019"
-    ]
+    "Bodies": ["XC10 (Gen1) Restyling 2019—2023", "XC10 (Gen1) 2014—2019"]
   },
   {
     "Model": "SC",
@@ -122,34 +116,22 @@
   },
   {
     "Model": "LC",
-    "Bodies": [
-      "Z100 (Gen1) Restyling 2020—Present",
-      "Z100 (Gen1) 2017—2020"
-    ]
+    "Bodies": ["Z100 (Gen1) Restyling 2020—Present", "Z100 (Gen1) 2017—2020"]
   },
   {
     "Model": "LFA",
-    "Bodies": [
-      "LFA10 (Gen1) 2010—2012"
-    ]
+    "Bodies": ["LFA10 (Gen1) 2010—2012"]
   },
   {
     "Model": "HS",
-    "Bodies": [
-      "ANF10 (Gen1) 2009—2018"
-    ]
+    "Bodies": ["ANF10 (Gen1) 2009—2018"]
   },
   {
     "Model": "CT",
-    "Bodies": [
-      "A10 (Gen1) Restyling 2014—2022",
-      "A10 (Gen1) 2011—2014"
-    ]
+    "Bodies": ["A10 (Gen1) Restyling 2014—2022", "A10 (Gen1) 2011—2014"]
   },
   {
     "Model": "RZ (BEV)",
-    "Bodies": [
-      "A10E (Gen1) 2023—Present"
-    ]
+    "Bodies": ["A10E (Gen1) 2023—Present"]
   }
 ]

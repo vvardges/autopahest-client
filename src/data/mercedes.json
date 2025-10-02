@@ -279,7 +279,11 @@
   },
   {
     "Model": "GL-Class",
-    "Bodies": ["II (X166) 2012—2016", "I (X164) Restyling 2009—2012", "I (X164) 2006—2009"]
+    "Bodies": [
+      "II (X166) 2012—2016",
+      "I (X164) Restyling 2009—2012",
+      "I (X164) 2006—2009"
+    ]
   },
   {
     "Model": "GL-Class AMG",
@@ -313,35 +317,67 @@
   },
   {
     "Model": "GLC",
-    "Bodies": ["II (X254) 2022—2025", "I (X253) Restyling 2019—2022", "I (X253) 2015—2019"]
+    "Bodies": [
+      "II (X254) 2022—2025",
+      "I (X253) Restyling 2019—2022",
+      "I (X253) 2015—2019"
+    ]
   },
   {
     "Model": "GLC AMG",
-    "Bodies": ["II (X254) 2023—2025", "I (X253) Restyling 2019—2022", "I (X253) 2016—2019"]
+    "Bodies": [
+      "II (X254) 2023—2025",
+      "I (X253) Restyling 2019—2022",
+      "I (X253) 2016—2019"
+    ]
   },
   {
     "Model": "GLC Coupe",
-    "Bodies": ["II (C254) 2023—2025", "I (C253) Restyling 2019—2023", "I (C253) 2016—2019"]
+    "Bodies": [
+      "II (C254) 2023—2025",
+      "I (C253) Restyling 2019—2023",
+      "I (C253) 2016—2019"
+    ]
   },
   {
     "Model": "GLC Coupe AMG",
-    "Bodies": ["II (C254) 2023—2025", "I (C253) Restyling 2019—2023", "I (C253) 2016—2019"]
+    "Bodies": [
+      "II (C254) 2023—2025",
+      "I (C253) Restyling 2019—2023",
+      "I (C253) 2016—2019"
+    ]
   },
   {
     "Model": "GLE",
-    "Bodies": ["II (V167) Restyling 2023—2025", "II (V167) 2018—2024", "I (W166) 2015—2018"]
+    "Bodies": [
+      "II (V167) Restyling 2023—2025",
+      "II (V167) 2018—2024",
+      "I (W166) 2015—2018"
+    ]
   },
   {
     "Model": "GLE AMG",
-    "Bodies": ["II (V167) Restyling 2023—2025", "II (V167) 2019—2023", "I (W166) 2015—2019"]
+    "Bodies": [
+      "II (V167) Restyling 2023—2025",
+      "II (V167) 2019—2023",
+      "I (W166) 2015—2019"
+    ]
   },
   {
     "Model": "GLE Coupe",
-    "Bodies": ["II (C167) Restyling 2023—2025", "II (C167) 2019—2023", "I (C292) 2015—2019"]
+    "Bodies": [
+      "II (C167) Restyling 2023—2025",
+      "II (C167) 2019—2023",
+      "I (C292) 2015—2019"
+    ]
   },
   {
     "Model": "GLE Coupe AMG",
-    "Bodies": ["II (C167) Restyling 2023—2025", "II (C167) 2019—2023", "I (C292) 2015—2019"]
+    "Bodies": [
+      "II (C167) Restyling 2023—2025",
+      "II (C167) 2019—2023",
+      "I (C292) 2015—2019"
+    ]
   },
   {
     "Model": "GLK-Class",
@@ -349,11 +385,19 @@
   },
   {
     "Model": "GLS",
-    "Bodies": ["II (X167) Restyling 2023—2025", "II (X167) 2019—2024", "I (X166) 2015—2019"]
+    "Bodies": [
+      "II (X167) Restyling 2023—2025",
+      "II (X167) 2019—2024",
+      "I (X166) 2015—2019"
+    ]
   },
   {
     "Model": "GLS AMG",
-    "Bodies": ["II (X167) Restyling 2023—2025", "II (X167) 2020—2023", "I (X166) 2015—2019"]
+    "Bodies": [
+      "II (X167) Restyling 2023—2025",
+      "II (X167) 2020—2023",
+      "I (X166) 2015—2019"
+    ]
   },
   {
     "Model": "M-Class",
@@ -400,7 +444,11 @@
   },
   {
     "Model": "Maybach S-Class",
-    "Bodies": ["II (Z223) 2021—2025", "I (X222) Restyling 2017—2021", "I (X222) 2014—2017"]
+    "Bodies": [
+      "II (Z223) 2021—2025",
+      "I (X222) Restyling 2017—2021",
+      "I (X222) 2014—2017"
+    ]
   },
   {
     "Model": "Maybach SL",
@@ -412,7 +460,11 @@
   },
   {
     "Model": "R-Class",
-    "Bodies": ["I Restyling 2 2010—2017", "I Restyling 2007—2010", "I 2005—2007"]
+    "Bodies": [
+      "I Restyling 2 2010—2017",
+      "I Restyling 2007—2010",
+      "I 2005—2007"
+    ]
   },
   {
     "Model": "R-Class AMG",

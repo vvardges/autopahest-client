@@ -73,7 +73,11 @@ function App() {
     handleSaveToDB(updatedRows);
   };
 
-  const handleCopy = <K extends keyof RowType>(start: number, end: number, columns: K[]) => {
+  const handleCopy = <K extends keyof RowType>(
+    start: number,
+    end: number,
+    columns: K[],
+  ) => {
     const newRows = [...rows];
     for (let i = start + 1; i <= end; i++) {
       for (const column of columns) {
@@ -130,7 +134,10 @@ function App() {
   }, [rows, filters, sort]);
 
   return (
-    <TableContainer component={Paper} sx={{ height: "100vh", overflow: "auto", width: "100%" }}>
+    <TableContainer
+      component={Paper}
+      sx={{ height: "100vh", overflow: "auto", width: "100%" }}
+    >
       <Table
         size="small"
         stickyHeader
@@ -155,10 +162,14 @@ function App() {
                 key={row.index}
                 helperData={{
                   name: new Set(
-                    rows.filter((row) => row.name.trim() !== "").map((row) => row.name),
+                    rows
+                      .filter((row) => row.name.trim() !== "")
+                      .map((row) => row.name),
                   ),
                   brand: new Set(
-                    rows.filter((row) => row.brand.trim() !== "").map((row) => row.brand),
+                    rows
+                      .filter((row) => row.brand.trim() !== "")
+                      .map((row) => row.brand),
                   ),
                 }}
                 rowData={row}

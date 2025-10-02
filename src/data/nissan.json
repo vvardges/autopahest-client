@@ -101,9 +101,7 @@
   },
   {
     "Model": "Z (400Z)",
-    "Bodies": [
-      "Z34 (Gen7) 2022—Present"
-    ]
+    "Bodies": ["Z34 (Gen7) 2022—Present"]
   },
   {
     "Model": "Leaf (EV)",
@@ -116,9 +114,7 @@
   },
   {
     "Model": "Ariya (EV)",
-    "Bodies": [
-      "FE0 (Gen1) 2022—Present"
-    ]
+    "Bodies": ["FE0 (Gen1) 2022—Present"]
   },
   {
     "Model": "Juke",
@@ -184,10 +180,7 @@
   },
   {
     "Model": "Terra",
-    "Bodies": [
-      "D23 (Gen1) Restyling 2021—Present",
-      "D23 (Gen1) 2018—2021"
-    ]
+    "Bodies": ["D23 (Gen1) Restyling 2021—Present", "D23 (Gen1) 2018—2021"]
   },
   {
     "Model": "Navara / Frontier",
@@ -211,10 +204,7 @@
   },
   {
     "Model": "NV200 / Evalia",
-    "Bodies": [
-      "M20 (Gen1) Restyling 2015—2021",
-      "M20 (Gen1) 2009—2015"
-    ]
+    "Bodies": ["M20 (Gen1) Restyling 2015—2021", "M20 (Gen1) 2009—2015"]
   },
   {
     "Model": "Caravan / Urvan",

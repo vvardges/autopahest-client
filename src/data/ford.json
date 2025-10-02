@@ -139,16 +139,11 @@
   },
   {
     "Model": "Bronco",
-    "Bodies": [
-      "U725 (Gen6) 2021—Present",
-      "Gen5 1992—1996"
-    ]
+    "Bodies": ["U725 (Gen6) 2021—Present", "Gen5 1992—1996"]
   },
   {
     "Model": "Bronco Sport",
-    "Bodies": [
-      "CX430 (Gen1) 2021—Present"
-    ]
+    "Bodies": ["CX430 (Gen1) 2021—Present"]
   },
   {
     "Model": "Everest",
@@ -196,9 +191,7 @@
   },
   {
     "Model": "Maverick",
-    "Bodies": [
-      "C2 (Gen1) 2022—Present"
-    ]
+    "Bodies": ["C2 (Gen1) 2022—Present"]
   },
   {
     "Model": "Transit Connect",
@@ -222,22 +215,14 @@
   },
   {
     "Model": "E-Series (Econoline)",
-    "Bodies": [
-      "Gen4 Restyling 2008—2014",
-      "Gen4 1992—2008"
-    ]
+    "Bodies": ["Gen4 Restyling 2008—2014", "Gen4 1992—2008"]
   },
   {
     "Model": "Lightning (F-150 EV)",
-    "Bodies": [
-      "BEV (Gen1) 2022—Present"
-    ]
+    "Bodies": ["BEV (Gen1) 2022—Present"]
   },
   {
     "Model": "Mustang Mach-E (EV)",
-    "Bodies": [
-      "CUV (Gen1) Restyling 2023—Present",
-      "CUV (Gen1) 2021—2023"
-    ]
+    "Bodies": ["CUV (Gen1) Restyling 2023—Present", "CUV (Gen1) 2021—2023"]
   }
 ]

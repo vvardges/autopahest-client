@@ -26,7 +26,9 @@ function Model({ value, onChange, options }: Props) {
         });
       }}
       fullWidth
-      renderInput={(params) => <TextField {...params} placeholder="Models" fullWidth />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder="Models" fullWidth />
+      )}
       disableCloseOnSelect
     />
   );

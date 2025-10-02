@@ -60,10 +60,7 @@
   },
   {
     "Model": "Supra",
-    "Bodies": [
-      "A90/A91 (Gen5) 2019—Present",
-      "A80 (Gen4) 1993—2002"
-    ]
+    "Bodies": ["A90/A91 (Gen5) 2019—Present", "A80 (Gen4) 1993—2002"]
   },
   {
     "Model": "86 / GR86",
@@ -83,16 +80,11 @@
   },
   {
     "Model": "bZ4X (BEV)",
-    "Bodies": [
-      "EA10 (Gen1) 2022—Present"
-    ]
+    "Bodies": ["EA10 (Gen1) 2022—Present"]
   },
   {
     "Model": "Mirai (FCEV)",
-    "Bodies": [
-      "JPD20 (Gen2) 2020—Present",
-      "JPD10 (Gen1) 2014—2020"
-    ]
+    "Bodies": ["JPD20 (Gen2) 2020—Present", "JPD10 (Gen1) 2014—2020"]
   },
   {
     "Model": "RAV4",
@@ -276,10 +268,7 @@
   },
   {
     "Model": "Proace / Proace City",
-    "Bodies": [
-      "K0 (Proace) 2013—Present",
-      "K9 (Proace City) 2019—Present"
-    ]
+    "Bodies": ["K0 (Proace) 2013—Present", "K9 (Proace City) 2019—Present"]
   },
   {
     "Model": "Hiace",
@@ -351,10 +340,7 @@
   },
   {
     "Model": "bB / xB",
-    "Bodies": [
-      "QNC20 (Gen1) Restyling 2005—2016",
-      "QNC20 (Gen1) 2000—2005"
-    ]
+    "Bodies": ["QNC20 (Gen1) Restyling 2005—2016", "QNC20 (Gen1) 2000—2005"]
   },
   {
     "Model": "ist / Scion xA",
@@ -366,9 +352,7 @@
   },
   {
     "Model": "iQ",
-    "Bodies": [
-      "AJ10 (Gen1) 2008—2015"
-    ]
+    "Bodies": ["AJ10 (Gen1) 2008—2015"]
   },
   {
     "Model": "Passo",

@@ -7,5 +7,5 @@ export default {
   trailingComma: "all",
   arrowParens: "always",
   endOfLine: "lf",
-  printWidth: 100,
+  printWidth: 80,
 };

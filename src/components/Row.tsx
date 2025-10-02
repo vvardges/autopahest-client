@@ -1,7 +1,14 @@
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
-import { Box, IconButton, Switch, TableCell, TableRow, Typography } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  Switch,
+  TableCell,
+  TableRow,
+  Typography,
+} from "@mui/material";
 import { ReactNode, useState } from "react";
 
 import { COLUMNS } from "@/constants";
@@ -20,7 +27,12 @@ type Props = {
 const Row = ({ row, idx, onEdit, onDelete }: Props) => {
   const [hoveredColumn, setHoveredColumn] = useState<Column | null>(null);
   return (
-    <TableRow hover key={row.index} onDoubleClick={() => onEdit(row.index)} data-index={idx}>
+    <TableRow
+      hover
+      key={row.index}
+      onDoubleClick={() => onEdit(row.index)}
+      data-index={idx}
+    >
       {COLUMNS.map((col) => {
         let content: ReactNode;
 
@@ -46,10 +58,18 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
           case "actions":
             content = (
               <>
-                <IconButton aria-label="Edit" size="small" onClick={() => onEdit(row.index)}>
+                <IconButton
+                  aria-label="Edit"
+                  size="small"
+                  onClick={() => onEdit(row.index)}
+                >
                   <EditIcon fontSize="small" />
                 </IconButton>
-                <IconButton aria-label="Delete" size="small" onClick={() => onDelete(row.index)}>
+                <IconButton
+                  aria-label="Delete"
+                  size="small"
+                  onClick={() => onDelete(row.index)}
+                >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
               </>

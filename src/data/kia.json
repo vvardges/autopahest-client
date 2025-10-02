@@ -80,10 +80,7 @@
   },
   {
     "Model": "Stinger",
-    "Bodies": [
-      "CK (Gen1) Restyling 2020—2023",
-      "CK (Gen1) 2017—2020"
-    ]
+    "Bodies": ["CK (Gen1) Restyling 2020—2023", "CK (Gen1) 2017—2020"]
   },
   {
     "Model": "Soul",
@@ -106,10 +103,7 @@
   },
   {
     "Model": "Seltos",
-    "Bodies": [
-      "SP2 (Gen1) Restyling 2022—Present",
-      "SP2 (Gen1) 2019—2022"
-    ]
+    "Bodies": ["SP2 (Gen1) Restyling 2022—Present", "SP2 (Gen1) 2019—2022"]
   },
   {
     "Model": "Sportage / KX5 (China)",
@@ -141,17 +135,11 @@
   },
   {
     "Model": "Telluride",
-    "Bodies": [
-      "ON (Gen1) Restyling 2022—Present",
-      "ON (Gen1) 2019—2022"
-    ]
+    "Bodies": ["ON (Gen1) Restyling 2022—Present", "ON (Gen1) 2019—2022"]
   },
   {
     "Model": "Mohave / Borrego",
-    "Bodies": [
-      "HM (Gen1) Restyling 2019—Present",
-      "HM (Gen1) 2008—2019"
-    ]
+    "Bodies": ["HM (Gen1) Restyling 2019—Present", "HM (Gen1) 2008—2019"]
   },
   {
     "Model": "Carnival / Sedona",
@@ -187,54 +175,35 @@
   },
   {
     "Model": "EV5 (BEV)",
-    "Bodies": [
-      "MV (Gen1) 2023—Present"
-    ]
+    "Bodies": ["MV (Gen1) 2023—Present"]
   },
   {
     "Model": "EV6 (BEV)",
-    "Bodies": [
-      "CV (Gen1) Restyling 2024—Present",
-      "CV (Gen1) 2021—2024"
-    ]
+    "Bodies": ["CV (Gen1) Restyling 2024—Present", "CV (Gen1) 2021—2024"]
   },
   {
     "Model": "EV9 (BEV)",
-    "Bodies": [
-      "MV2 (Gen1) 2023—Present"
-    ]
+    "Bodies": ["MV2 (Gen1) 2023—Present"]
   },
   {
     "Model": "Soul EV (e-Soul)",
-    "Bodies": [
-      "SK3-EV (Gen3 BEV) 2019—Present",
-      "PS-EV (Gen2 BEV) 2014—2019"
-    ]
+    "Bodies": ["SK3-EV (Gen3 BEV) 2019—Present", "PS-EV (Gen2 BEV) 2014—2019"]
   },
   {
     "Model": "KX3 (China)",
-    "Bodies": [
-      "Gen1 2015—2019"
-    ]
+    "Bodies": ["Gen1 2015—2019"]
   },
   {
     "Model": "Pegas / Soluto",
-    "Bodies": [
-      "Gen1 2017—Present"
-    ]
+    "Bodies": ["Gen1 2017—Present"]
   },
   {
     "Model": "Opirus / Amanti",
-    "Bodies": [
-      "GH (Gen1) Restyling 2006—2010",
-      "GH (Gen1) 2003—2006"
-    ]
+    "Bodies": ["GH (Gen1) Restyling 2006—2010", "GH (Gen1) 2003—2006"]
   },
   {
     "Model": "Enterprise",
-    "Bodies": [
-      "Gen1 1998—2002"
-    ]
+    "Bodies": ["Gen1 1998—2002"]
   },
   {
     "Model": "Bongo / K-Series (LCV)",

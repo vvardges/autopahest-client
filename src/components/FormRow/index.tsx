@@ -73,7 +73,9 @@ const FormRow = ({
   const manufacturer = form.manufacturer;
   useEffect(() => {
     if (!manufacturer) return;
-    import(`../../data/${manufacturer}.json`).then((res) => setModelOptions(res.default));
+    import(`../../data/${manufacturer}.json`).then((res) =>
+      setModelOptions(res.default),
+    );
   }, [manufacturer]);
 
   return (
@@ -87,11 +89,20 @@ const FormRow = ({
               case "index":
                 return rowData.index;
               case "manufacturer":
-                return <Manufacturer value={form.manufacturer as string} onChange={handleChange} />;
+                return (
+                  <Manufacturer
+                    value={form.manufacturer as string}
+                    onChange={handleChange}
+                  />
+                );
               case "models":
                 return (
                   <Model
-                    options={form.manufacturer ? modelOptions.map((item) => item.Model) : []}
+                    options={
+                      form.manufacturer
+                        ? modelOptions.map((item) => item.Model)
+                        : []
+                    }
                     onChange={handleChange}
                     value={form.models as []}
                   />
@@ -104,7 +115,9 @@ const FormRow = ({
                     options={
                       form.models.length > 0
                         ? modelOptions
-                            .filter((option) => form?.models?.includes(option.Model))
+                            .filter((option) =>
+                              form?.models?.includes(option.Model),
+                            )
                             .map((option) => option.Bodies)
                             .flat()
                         : []
@@ -120,7 +133,12 @@ const FormRow = ({
                   />
                 );
               case "description":
-                return <Description value={form.description as string} onChange={handleChange} />;
+                return (
+                  <Description
+                    value={form.description as string}
+                    onChange={handleChange}
+                  />
+                );
               case "brand":
                 return (
                   <Brand
@@ -130,9 +148,13 @@ const FormRow = ({
                   />
                 );
               case "price":
-                return <Price value={form.price as string} onChange={handleChange} />;
+                return (
+                  <Price value={form.price as string} onChange={handleChange} />
+                );
               case "origin":
-                return <Origin value={String(form.origin)} onChange={handleChange} />;
+                return (
+                  <Origin value={String(form.origin)} onChange={handleChange} />
+                );
               case "images":
                 return (
                   <>
@@ -151,10 +173,18 @@ const FormRow = ({
               case "actions":
                 return (
                   <>
-                    <IconButton aria-label="Save" size="small" onClick={() => handleSave(form)}>
+                    <IconButton
+                      aria-label="Save"
+                      size="small"
+                      onClick={() => handleSave(form)}
+                    >
                       <SaveIcon fontSize="small" />
                     </IconButton>
-                    <IconButton aria-label="Cancel" size="small" onClick={onCancel}>
+                    <IconButton
+                      aria-label="Cancel"
+                      size="small"
+                      onClick={onCancel}
+                    >
                       <CloseIcon fontSize="small" />
                     </IconButton>
                   </>

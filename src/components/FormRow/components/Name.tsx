@@ -16,7 +16,9 @@ function Name({ value, onChange, options }: Props) {
       freeSolo
       options={options}
       fullWidth
-      renderInput={(params) => <TextField {...params} placeholder={"Name"} fullWidth multiline />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder={"Name"} fullWidth multiline />
+      )}
       onChange={(_e, value) => onChange({ name: value as string })}
       inputValue={value}
       onInputChange={(_e, value) => onChange({ name: value })}

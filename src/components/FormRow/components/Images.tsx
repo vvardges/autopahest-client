@@ -42,7 +42,11 @@ type ImageItem = {
 const API_KEY = import.meta.env.VITE_GOOGLE_CSE_API_KEY as string;
 const CX_ID = import.meta.env.VITE_GOOGLE_CSE_CX_ID as string;
 
-export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePickerProps) {
+export default function Images({
+  onSelect,
+  defaultValue,
+  toggle,
+}: GoogleImagePickerProps) {
   const [query, setQuery] = useState<string>(defaultValue);
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState<ImageItem[]>([]);
@@ -51,7 +55,9 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
   const searchImages = useCallback(async () => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
-      console.warn("Missing env vars VITE_GOOGLE_CSE_API_KEY or VITE_GOOGLE_CSE_CX_ID");
+      console.warn(
+        "Missing env vars VITE_GOOGLE_CSE_API_KEY or VITE_GOOGLE_CSE_CX_ID",
+      );
       return;
     }
     setLoading(true);
@@ -76,7 +82,9 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
   }, [searchImages]);
 
   const toggleSelect = (url: string) => {
-    setSelected((prev) => (prev.includes(url) ? prev.filter((u) => u !== url) : [...prev, url]));
+    setSelected((prev) =>
+      prev.includes(url) ? prev.filter((u) => u !== url) : [...prev, url],
+    );
   };
 
   const handleSave = () => {
@@ -90,7 +98,11 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
     <Dialog open={true} onClose={toggle} fullWidth maxWidth="md" disablePortal>
       <DialogTitle>Pick an Image</DialogTitle>
       <DialogContent>
-        <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>
+        <Stack
+          direction="row"
+          spacing={2}
+          divider={<Divider orientation="vertical" flexItem />}
+        >
           <Box flex={1}>
             <div style={{ display: "flex", gap: "10px", marginBottom: "16px" }}>
               <TextField
@@ -120,7 +132,9 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
                         outline: isSelected ? "3px solid #1976d2" : "none",
                         borderRadius: 8,
                       }}
-                      title={isSelected ? "Click to unselect" : "Click to select"}
+                      title={
+                        isSelected ? "Click to unselect" : "Click to select"
+                      }
                     >
                       <img
                         src={img.link}
@@ -142,12 +156,22 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
           </Box>
           <Box width={220}>
             <strong>Selected</strong>
-            <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 8 }}>
+            <div
+              style={{
+                marginTop: 8,
+                display: "flex",
+                flexDirection: "column",
+                gap: 8,
+              }}
+            >
               {selected.length === 0 ? (
                 <span style={{ color: "#666" }}>No images selected</span>
               ) : (
                 selected.map((url) => (
-                  <div key={url} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <div
+                    key={url}
+                    style={{ display: "flex", alignItems: "center", gap: 8 }}
+                  >
                     <img
                       src={url}
                       alt="selected"
@@ -159,7 +183,11 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
                         border: "1px solid #eee",
                       }}
                     />
-                    <Button size="small" variant="outlined" onClick={() => toggleSelect(url)}>
+                    <Button
+                      size="small"
+                      variant="outlined"
+                      onClick={() => toggleSelect(url)}
+                    >
                       Remove
                     </Button>
                   </div>
@@ -171,7 +199,11 @@ export default function Images({ onSelect, defaultValue, toggle }: GoogleImagePi
       </DialogContent>
       <DialogActions>
         <Button onClick={toggle}>Cancel</Button>
-        <Button variant="contained" onClick={handleSave} disabled={selected.length === 0}>
+        <Button
+          variant="contained"
+          onClick={handleSave}
+          disabled={selected.length === 0}
+        >
           Save
         </Button>
       </DialogActions>

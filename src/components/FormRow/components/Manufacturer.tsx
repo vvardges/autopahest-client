@@ -16,7 +16,11 @@ const options = [
 
 type Props = {
   value: string;
-  onChange: (value: { manufacturer: string; models: string[]; bodies: string[] }) => void;
+  onChange: (value: {
+    manufacturer: string;
+    models: string[];
+    bodies: string[];
+  }) => void;
 };
 
 function Manufacturer({ value, onChange }: Props) {
@@ -37,7 +41,9 @@ function Manufacturer({ value, onChange }: Props) {
       value={value}
       onChange={(_event, newValue) => handleChange(newValue as string)}
       fullWidth
-      renderInput={(params) => <TextField {...params} placeholder="Manufacturer" fullWidth />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder="Manufacturer" fullWidth />
+      )}
     />
   );
 }

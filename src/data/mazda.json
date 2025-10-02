@@ -14,9 +14,7 @@
   },
   {
     "Model": "Mazda2 Hybrid",
-    "Bodies": [
-      "Hybrid (XP210-based) 2022—Present"
-    ]
+    "Bodies": ["Hybrid (XP210-based) 2022—Present"]
   },
   {
     "Model": "Mazda3 / Axela",
@@ -58,31 +56,19 @@
   },
   {
     "Model": "RX-7",
-    "Bodies": [
-      "FD (Gen3) Restyling 1999—2002",
-      "FD (Gen3) 1991—1998"
-    ]
+    "Bodies": ["FD (Gen3) Restyling 1999—2002", "FD (Gen3) 1991—1998"]
   },
   {
     "Model": "RX-8",
-    "Bodies": [
-      "SE (Gen1) Restyling 2008—2012",
-      "SE (Gen1) 2003—2008"
-    ]
+    "Bodies": ["SE (Gen1) Restyling 2008—2012", "SE (Gen1) 2003—2008"]
   },
   {
     "Model": "CX-3",
-    "Bodies": [
-      "DK (Gen1) Restyling 2018—2021",
-      "DK (Gen1) 2015—2018"
-    ]
+    "Bodies": ["DK (Gen1) Restyling 2018—2021", "DK (Gen1) 2015—2018"]
   },
   {
     "Model": "CX-30",
-    "Bodies": [
-      "DM (Gen1) Restyling 2023—Present",
-      "DM (Gen1) 2019—2023"
-    ]
+    "Bodies": ["DM (Gen1) Restyling 2023—Present", "DM (Gen1) 2019—2023"]
   },
   {
     "Model": "CX-5",
@@ -95,47 +81,31 @@
   },
   {
     "Model": "CX-50",
-    "Bodies": [
-      "TA (Gen1) 2022—Present"
-    ]
+    "Bodies": ["TA (Gen1) 2022—Present"]
   },
   {
     "Model": "CX-60",
-    "Bodies": [
-      "KH (Gen1) 2022—Present"
-    ]
+    "Bodies": ["KH (Gen1) 2022—Present"]
   },
   {
     "Model": "CX-70",
-    "Bodies": [
-      "KK (Gen1) 2024—Present"
-    ]
+    "Bodies": ["KK (Gen1) 2024—Present"]
   },
   {
     "Model": "CX-80",
-    "Bodies": [
-      "KK-EU (Gen1) 2024—Present"
-    ]
+    "Bodies": ["KK-EU (Gen1) 2024—Present"]
   },
   {
     "Model": "CX-90",
-    "Bodies": [
-      "KK (Gen1) 2023—Present"
-    ]
+    "Bodies": ["KK (Gen1) 2023—Present"]
   },
   {
     "Model": "CX-7",
-    "Bodies": [
-      "ER (Gen1) Restyling 2009—2012",
-      "ER (Gen1) 2006—2009"
-    ]
+    "Bodies": ["ER (Gen1) Restyling 2009—2012", "ER (Gen1) 2006—2009"]
   },
   {
     "Model": "CX-8",
-    "Bodies": [
-      "KG (Gen1) Restyling 2020—Present",
-      "KG (Gen1) 2017—2020"
-    ]
+    "Bodies": ["KG (Gen1) Restyling 2020—Present", "KG (Gen1) 2017—2020"]
   },
   {
     "Model": "CX-9",
@@ -174,24 +144,15 @@
   },
   {
     "Model": "Millenia / Eunos 800",
-    "Bodies": [
-      "TA (Gen1) Restyling 1997—2002",
-      "TA (Gen1) 1993—1997"
-    ]
+    "Bodies": ["TA (Gen1) Restyling 1997—2002", "TA (Gen1) 1993—1997"]
   },
   {
     "Model": "Xedos 6",
-    "Bodies": [
-      "CA (Gen1) Restyling 1997—1999",
-      "CA (Gen1) 1992—1997"
-    ]
+    "Bodies": ["CA (Gen1) Restyling 1997—1999", "CA (Gen1) 1992—1997"]
   },
   {
     "Model": "Xedos 9 / Eunos 800 (EU)",
-    "Bodies": [
-      "TA (Gen1) Restyling 1997—2000",
-      "TA (Gen1) 1993—1997"
-    ]
+    "Bodies": ["TA (Gen1) Restyling 1997—2000", "TA (Gen1) 1993—1997"]
   },
   {
     "Model": "626 / Capella",
@@ -213,23 +174,15 @@
   },
   {
     "Model": "MX-3",
-    "Bodies": [
-      "EC (Gen1) Restyling 1994—1998",
-      "EC (Gen1) 1991—1994"
-    ]
+    "Bodies": ["EC (Gen1) Restyling 1994—1998", "EC (Gen1) 1991—1994"]
   },
   {
     "Model": "MX-6",
-    "Bodies": [
-      "GE (Gen2) Restyling 1994—1997",
-      "GE (Gen2) 1991—1994"
-    ]
+    "Bodies": ["GE (Gen2) Restyling 1994—1997", "GE (Gen2) 1991—1994"]
   },
   {
     "Model": "Cosmo (Eunos Cosmo)",
-    "Bodies": [
-      "JC (Gen3) 1990—1996"
-    ]
+    "Bodies": ["JC (Gen3) 1990—1996"]
   },
   {
     "Model": "Bongo / Brawny (LCV/MPV)",
@@ -251,9 +204,6 @@
   },
   {
     "Model": "MX-30 (EV / REx)",
-    "Bodies": [
-      "DR (Gen1) Restyling 2023—Present",
-      "DR (Gen1) 2020—2023"
-    ]
+    "Bodies": ["DR (Gen1) Restyling 2023—Present", "DR (Gen1) 2020—2023"]
   }
 ]

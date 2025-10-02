@@ -32,7 +32,10 @@ export default tseslint.config(
     rules: {
       "no-multiple-empty-lines": ["error", { max: 1 }],
       ...reactHooks.configs.recommended.rules,
-      "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
       "import/extensions": [
         "error",
         "ignorePackages",

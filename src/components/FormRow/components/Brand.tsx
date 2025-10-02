@@ -15,7 +15,9 @@ function Brand({ value, onChange, options }: Props) {
       freeSolo
       options={options}
       fullWidth
-      renderInput={(params) => <TextField {...params} placeholder={"Brand"} fullWidth />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder={"Brand"} fullWidth />
+      )}
       onChange={(_e, value) => onChange({ brand: value })}
       inputValue={value}
       onInputChange={(_e, value) => onChange({ brand: value })}

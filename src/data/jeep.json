@@ -50,17 +50,11 @@
   },
   {
     "Model": "Patriot",
-    "Bodies": [
-      "MK (Gen1) Restyling 2011—2017",
-      "MK (Gen1) 2006—2011"
-    ]
+    "Bodies": ["MK (Gen1) Restyling 2011—2017", "MK (Gen1) 2006—2011"]
   },
   {
     "Model": "Renegade",
-    "Bodies": [
-      "BU (Gen1) Restyling 2018—Present",
-      "BU (Gen1) 2014—2018"
-    ]
+    "Bodies": ["BU (Gen1) Restyling 2018—Present", "BU (Gen1) 2014—2018"]
   },
   {
     "Model": "Commander / Grand Commander",
@@ -80,14 +74,10 @@
   },
   {
     "Model": "Gladiator",
-    "Bodies": [
-      "JT (Gen1) 2019—Present"
-    ]
+    "Bodies": ["JT (Gen1) 2019—Present"]
   },
   {
     "Model": "Commander PHEV (Latin America)",
-    "Bodies": [
-      "MP (Gen1) 2021—Present"
-    ]
+    "Bodies": ["MP (Gen1) 2021—Present"]
   }
 ]

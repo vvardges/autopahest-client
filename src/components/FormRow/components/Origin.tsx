@@ -258,7 +258,9 @@ function Origin({ value, onChange }: Props) {
         onChange({ origin: newValue as string });
       }}
       fullWidth
-      renderInput={(params) => <TextField {...params} placeholder="Origin" fullWidth />}
+      renderInput={(params) => (
+        <TextField {...params} placeholder="Origin" fullWidth />
+      )}
       disableClearable={true}
     />
   );
