@@ -37,6 +37,9 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
         let content: ReactNode;
 
         switch (col) {
+          case "index":
+            content = idx + 1;
+            break;
           case "models":
           case "bodies":
             content = row[col].join(", ");
