@@ -47,6 +47,17 @@
     ]
   },
   {
+    "Model": "Versa / Sunny / Latio",
+    "Bodies": [
+      "N18 (Gen4) 2019—Present",
+      "N17 (Gen3) Restyling 2015—2019",
+      "N17 (Gen3) 2011—2015",
+      "C11 (Gen2) Restyling 2008—2011",
+      "C11 (Gen2) 2006—2008",
+      "N16 (Gen1) 2000—2006"
+    ]
+  },
+  {
     "Model": "Altima / Teana",
     "Bodies": [
       "L34 (Gen6) 2018—Present",
@@ -122,6 +133,13 @@
       "F16 (Gen2) 2019—Present",
       "F15 (Gen1) Restyling 2014—2019",
       "F15 (Gen1) 2010—2014"
+    ]
+  },
+  {
+    "Model": "Kicks",
+    "Bodies": [
+      "P15 (Gen1) Restyling 2020—Present",
+      "P15 (Gen1) 2016—2020"
     ]
   },
   {

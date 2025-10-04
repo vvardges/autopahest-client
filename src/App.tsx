@@ -83,8 +83,8 @@ function App() {
     for (let i = start + 1; i <= end; i++) {
       for (const column of columns) {
         newRows[i][column] = rows[start][column];
-        newRows[i]._filled = true;
       }
+      newRows[i]._filled = true;
     }
     setRows(newRows);
     handleSaveToDB(newRows);

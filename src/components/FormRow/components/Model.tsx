@@ -11,8 +11,6 @@ function Model({ value, onChange, options }: Props) {
   return (
     <Autocomplete
       disablePortal
-      autoSelect={true}
-      autoHighlight={true}
       openOnFocus={true}
       size="small"
       tabIndex={1}
