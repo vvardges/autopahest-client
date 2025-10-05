@@ -133,10 +133,11 @@ const FormRow = ({
                   />
                 );
               case "description":
+              case "english":
                 return (
                   <Description
-                    value={form.description as string}
-                    onChange={handleChange}
+                    value={form[col] as string}
+                    onChange={(val) => handleChange({ [col]: val })}
                   />
                 );
               case "brand":

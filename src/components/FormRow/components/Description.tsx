@@ -3,17 +3,17 @@ import React from "react";
 
 type Props = {
   value: string;
-  onChange: (value: { description: string }) => void;
+  onChange: (arg0: string) => void;
 };
 
 function Description({ value, onChange }: Props) {
   return (
     <TextField
       size="small"
-      label="Description"
+      placeholder="Enter value"
       multiline
       maxRows={4}
-      onChange={(e) => onChange({ description: e.target.value })}
+      onChange={(e) => onChange(e.target.value)}
       value={value}
     />
   );
