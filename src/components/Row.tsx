@@ -2,11 +2,14 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
 import {
-    Box, Chip,
-    IconButton, Stack,
-    Switch,
-    TableCell,
-    TableRow,
+  Box,
+  Chip,
+  IconButton,
+  Stack,
+  Switch,
+  TableCell,
+  TableRow,
+  Typography,
 } from "@mui/material";
 import { ReactNode, useState } from "react";
 
@@ -42,11 +45,11 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
           case "models":
           case "bodies":
             content = (
-                <Stack gap="4px">
-                    {row[col].map((label, index) =>
-                        (<Chip key={index} label={label} size="small" />))
-                    }
-                </Stack>
+              <Stack gap="4px">
+                {row[col].map((label, index) => (
+                  <Chip key={index} label={label} size="small" />
+                ))}
+              </Stack>
             );
             break;
           case "images":
@@ -83,8 +86,11 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
               </>
             );
             break;
-          default:
+          case "english":
             content = row[col];
+            break;
+          default:
+            content = <Typography noWrap>{row[col]}</Typography>;
         }
 
         const isColumnCopiable = getIsColumnCopiable(col);
