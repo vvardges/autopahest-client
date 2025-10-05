@@ -1,5 +1,5 @@
-import { Table } from "@mui/material";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { Paper, Table, TableContainer } from "@mui/material";
+import { JSX, useCallback, useEffect, useMemo, useState } from "react";
 
 import Body from "@/components/Body";
 import FormRow from "@/components/FormRow";
@@ -40,7 +40,13 @@ import type { Column, Row as RowType } from "@/types";
 //         .then((res) => console.log(res));
 // }
 
-function MainTable({ tab }: { tab: number }) {
+function MainTable({
+  tab,
+  tabsComponent,
+}: {
+  tab: number;
+  tabsComponent: JSX.Element;
+}) {
   const { state: rows, setState: setRows } = useUndoRedo<RowType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
@@ -149,57 +155,61 @@ function MainTable({ tab }: { tab: number }) {
       });
   }, [rows, filters, sort]);
 
-  if (isLoading) return <div>Loading...</div>;
-
   return (
-    <Table
-      size="small"
-      stickyHeader
-      sx={{
-        tableLayout: "fixed",
-        borderCollapse: "collapse",
-        "& td, & th": {
-          borderRight: "1px solid #515151",
-        },
-        "& td:last-child, & th:last-child": {
-          borderRight: "none",
-        },
-      }}
+    <TableContainer
+      component={Paper}
+      sx={{ height: "100vh", overflow: "auto", width: "100%" }}
     >
-      <Head onSearch={handleSearch} onSort={handleSort} />
-      <Body onDragEnd={handleCopy}>
-        {filteredRows.map((row, index) =>
-          editRowIdx === row.index ? (
-            <FormRow
-              onAdd={handleAddRow}
-              onCancel={handleCancelEdit}
-              key={row.index}
-              helperData={{
-                name: new Set(
-                  rows
-                    .filter((row) => row.name.trim() !== "")
-                    .map((row) => row.name),
-                ),
-                brand: new Set(
-                  rows
-                    .filter((row) => row.brand.trim() !== "")
-                    .map((row) => row.brand),
-                ),
-              }}
-              rowData={row}
-            />
-          ) : (
-            <Row
-              key={row.index}
-              idx={index}
-              row={row}
-              onEdit={handleEditRow}
-              onDelete={handleDeleteRow}
-            />
-          ),
-        )}
-      </Body>
-    </Table>
+      {tabsComponent}
+      <Table
+        size="small"
+        stickyHeader
+        sx={{
+          tableLayout: "fixed",
+          borderCollapse: "collapse",
+          "& td, & th": {
+            borderRight: "1px solid #515151",
+          },
+          "& td:last-child, & th:last-child": {
+            borderRight: "none",
+          },
+        }}
+      >
+        <Head onSearch={handleSearch} onSort={handleSort} />
+        <Body onDragEnd={handleCopy} isLoading={isLoading}>
+          {filteredRows.map((row, index) =>
+            editRowIdx === row.index ? (
+              <FormRow
+                onAdd={handleAddRow}
+                onCancel={handleCancelEdit}
+                key={row.index}
+                helperData={{
+                  name: new Set(
+                    rows
+                      .filter((row) => row.name.trim() !== "")
+                      .map((row) => row.name),
+                  ),
+                  brand: new Set(
+                    rows
+                      .filter((row) => row.brand.trim() !== "")
+                      .map((row) => row.brand),
+                  ),
+                }}
+                rowData={row}
+              />
+            ) : (
+              <Row
+                key={row.index}
+                idx={index}
+                row={row}
+                onEdit={handleEditRow}
+                onDelete={handleDeleteRow}
+              />
+            ),
+          )}
+        </Body>
+      </Table>
+    </TableContainer>
   );
 }
 

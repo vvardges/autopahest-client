@@ -1,4 +1,4 @@
-import { TableBody } from "@mui/material";
+import { Skeleton, TableBody, TableCell, TableRow } from "@mui/material";
 import type { MouseEvent, ReactNode } from "react";
 import { useState } from "react";
 
@@ -8,13 +8,30 @@ import { Column } from "@/types";
 type Props = {
   children: ReactNode;
   onDragEnd: (start: number, end: number, column: Column[]) => void;
+  isLoading?: boolean;
 };
 
-const Body = ({ children, onDragEnd }: Props) => {
+const LoadingSkeleton = ({ rows = 20, cols = COLUMNS.length }) => (
+  <TableBody>
+    {Array.from({ length: rows }).map((_, r) => (
+      <TableRow key={r}>
+        {Array.from({ length: cols }).map((_, c) => (
+          <TableCell key={c}>
+            <Skeleton variant="text" width="80%" height={60} />
+          </TableCell>
+        ))}
+      </TableRow>
+    ))}
+  </TableBody>
+);
+
+const Body = ({ children, onDragEnd, isLoading }: Props) => {
   const [isDragging, setIsDragging] = useState(false);
   const [start, setStart] = useState<number | null>(null);
   const [end, setEnd] = useState<number | null>(null);
   const [columns, setColumns] = useState<Column[]>([]);
+
+  if (isLoading) return <LoadingSkeleton />;
 
   const handleStart = (e: MouseEvent) => {
     const target = (e.target as HTMLElement).closest("button");
