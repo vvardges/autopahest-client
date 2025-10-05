@@ -1,4 +1,4 @@
-import { Paper, Table, TableContainer } from "@mui/material";
+import { Paper, Tab, Table, TableContainer, Tabs } from "@mui/material";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import Body from "@/components/Body";
@@ -31,16 +31,25 @@ import type { Column, Row as RowType } from "@/types";
 // const generateRows = (count: number, startIndex: number): RowType[] => {
 //     return Array.from({ length: count }, (_, index) => generateEmptyRow(index + startIndex));
 // }
+//
+// const insertData = (jsonData, tab) => {
+//     supabase
+//         .from("data")
+//         .insert([{ json: jsonData, id: tab }])
+//         .then((res) => console.log(res));
+// }
 
 function App() {
   const [rows, setRows] = useState<RowType[]>([]);
   const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
   const [filters, setFilters] = useState<Partial<Record<Column, string>>>({});
+  const [tab, setTab] = useState<number>(1);
 
   useEffect(() => {
     supabase
       .from("data")
       .select("json")
+      .eq("id", tab)
       .then((res) => {
         let data = [];
         if (res && res.data && res.data.length) {
@@ -48,7 +57,18 @@ function App() {
         }
         setRows(data);
       });
-  }, []);
+  }, [tab]);
+
+  const handleSaveToDB = useCallback(
+    (jsonData: RowType[]) => {
+      supabase
+        .from("data")
+        .update([{ json: jsonData }])
+        .eq("id", tab)
+        .then((res) => console.log(res));
+    },
+    [tab],
+  );
 
   const handleEditRow = (index: number) => {
     setEditRowIdx(index);
@@ -88,14 +108,6 @@ function App() {
     }
     setRows(newRows);
     handleSaveToDB(newRows);
-  };
-
-  const handleSaveToDB = (jsonData: RowType[]) => {
-    supabase
-      .from("data")
-      .update([{ json: jsonData }])
-      .eq("id", 1)
-      .then((res) => console.log(res));
   };
 
   const handleSearch = useCallback((column: Column, query: string) => {
@@ -139,6 +151,11 @@ function App() {
       component={Paper}
       sx={{ height: "100vh", overflow: "auto", width: "100%" }}
     >
+      <Tabs value={tab} onChange={(_, newVal) => setTab(newVal)}>
+        <Tab label="Company One" value={1} />
+        <Tab label="Company Two" value={2} />
+        <Tab label="Company Three" value={3} />
+      </Tabs>
       <Table
         size="small"
         stickyHeader

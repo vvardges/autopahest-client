@@ -52,7 +52,7 @@ export default function Images({
   const [images, setImages] = useState<ImageItem[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
 
-  const searchImages = useCallback(async() => {
+  const searchImages = useCallback(async () => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
       console.warn(
