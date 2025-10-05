@@ -8,7 +8,11 @@ function App() {
 
   return (
     <Box height="100vh" overflow="hidden">
-      <Tabs value={tab} onChange={(_, newVal) => setTab(newVal)} sx={{ borderBottom: "1px solid #515151" }}>
+      <Tabs
+        value={tab}
+        onChange={(_, newVal) => setTab(newVal)}
+        sx={{ borderBottom: "1px solid #515151" }}
+      >
         <Tab label="Company One" value={1} />
         <Tab label="Company Two" value={2} />
         <Tab label="Company Three" value={3} />

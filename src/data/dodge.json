@@ -1,0 +1,101 @@
+[
+  {
+    "Model": "Charger",
+    "Bodies": [
+      "LD (Gen7) 2006—2010",
+      "LD (Gen7) Restyling 2011—2014",
+      "LD (Gen7) Restyling 2015—2020",
+      "LD (Gen7) Restyling 2020—2023",
+      "LB (Gen8) 2024—Present"
+    ]
+  },
+  {
+    "Model": "Challenger",
+    "Bodies": [
+      "LC (Gen3) 2008—2014",
+      "LC (Gen3) Restyling 2015—2020",
+      "LC (Gen3) Restyling 2020—2023"
+    ]
+  },
+  {
+    "Model": "Durango",
+    "Bodies": [
+      "DN (Gen1) 1998—2003",
+      "HB (Gen2) 2004—2009",
+      "WD (Gen3) 2011—2013",
+      "WD (Gen3) Restyling 2014—2017",
+      "WD (Gen3) Restyling 2018—2020",
+      "WD (Gen3) Restyling 2021—2023",
+      "WD (Gen3) Restyling 2024—Present"
+    ]
+  },
+  {
+    "Model": "Viper",
+    "Bodies": [
+      "SR I (Gen1) 1992—1995",
+      "SR II (Gen2) 1996—2002",
+      "ZB I (Gen3) 2003—2006",
+      "ZB II (Gen4) 2008—2010",
+      "VX I (Gen5) 2013—2017"
+    ]
+  },
+  {
+    "Model": "Journey",
+    "Bodies": [
+      "JC (Gen1) 2009—2010",
+      "JC (Gen1) Restyling 2011—2013",
+      "JC (Gen1) Restyling 2014—2020"
+    ]
+  },
+  {
+    "Model": "Nitro",
+    "Bodies": ["KA (Gen1) 2007—2011"]
+  },
+  {
+    "Model": "Avenger",
+    "Bodies": ["JR (Gen2) 2007—2010", "JR (Gen2) Restyling 2011—2014"]
+  },
+  {
+    "Model": "Magnum",
+    "Bodies": ["LX (Gen1) 2005—2008"]
+  },
+  {
+    "Model": "Caliber",
+    "Bodies": ["PM (Gen1) 2006—2012"]
+  },
+  {
+    "Model": "Hornet",
+    "Bodies": ["GG (Gen1) 2023—Present"]
+  },
+  {
+    "Model": "Ram (1500)",
+    "Bodies": [
+      "BR/BE (Gen2) 1994—2001",
+      "DR (Gen3) 2002—2008",
+      "DS (Gen4) 2009—2012",
+      "DS (Gen4) Restyling 2013—2018",
+      "DT (Gen5) 2019—2021",
+      "DT (Gen5) Restyling 2022—Present"
+    ]
+  },
+  {
+    "Model": "Ram (2500/3500)",
+    "Bodies": [
+      "BR/BE (Gen2) 1994—2002",
+      "DR (Gen3) 2003—2009",
+      "DJ (Gen4) 2010—2013",
+      "DJ (Gen4) Restyling 2014—2018",
+      "DJ (Gen4) Restyling 2019—Present"
+    ]
+  },
+  {
+    "Model": "Caravan / Grand Caravan",
+    "Bodies": [
+      "AS (Gen3) 1996—2000",
+      "RS (Gen4) 2001—2007",
+      "RT (Gen5) 2008—2010",
+      "RT (Gen5) Restyling 2011—2015",
+      "RT (Gen5) Restyling 2016—2020"
+    ]
+  }
+]

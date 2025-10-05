@@ -12,6 +12,10 @@ const options = [
   "toyota",
   "mazda",
   "lexus",
+  "dodge",
+  "honda",
+  "tesla",
+  "volkswagen",
 ];
 
 type Props = {

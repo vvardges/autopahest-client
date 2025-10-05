@@ -1,0 +1,139 @@
+[
+  {
+    "Model": "Civic",
+    "Bodies": [
+      "EG (Gen5) 1991—1995",
+      "EK (Gen6) 1995—2000",
+      "ES/EP (Gen7) 2000—2003",
+      "ES/EP (Gen7) Restyling 2003—2005",
+      "FA/FG (Gen8) 2005—2008",
+      "FA/FG (Gen8) Restyling 2009—2011",
+      "FB/FG (Gen9) 2011—2013",
+      "FB/FG (Gen9) Restyling 2013—2015",
+      "FC/FK (Gen10) 2015—2019",
+      "FC/FK (Gen10) Restyling 2019—2021",
+      "FE/FL (Gen11) 2022—Present"
+    ]
+  },
+  {
+    "Model": "Accord",
+    "Bodies": [
+      "CB (Gen4) 1990—1993",
+      "CD (Gen5) 1994—1997",
+      "CG (Gen6) 1998—2001",
+      "CG (Gen6) Restyling 2001—2002",
+      "CM (Gen7) 2003—2005",
+      "CM (Gen7) Restyling 2006—2007",
+      "CP/CS (Gen8) 2008—2010",
+      "CP/CS (Gen8) Restyling 2011—2012",
+      "CR (Gen9) 2013—2015",
+      "CR (Gen9) Restyling 2016—2017",
+      "CV (Gen10) 2018—2022",
+      "CV (Gen10) Restyling 2023—Present"
+    ]
+  },
+  {
+    "Model": "CR-V",
+    "Bodies": [
+      "RD1 (Gen1) 1997—2001",
+      "RD4 (Gen2) 2002—2005",
+      "RD4 (Gen2) Restyling 2005—2006",
+      "RE (Gen3) 2007—2009",
+      "RE (Gen3) Restyling 2010—2011",
+      "RM (Gen4) 2012—2014",
+      "RM (Gen4) Restyling 2015—2016",
+      "RW/RT (Gen5) 2017—2019",
+      "RW/RT (Gen5) Restyling 2020—2022",
+      "RS (Gen6) 2023—Present"
+    ]
+  },
+  {
+    "Model": "HR-V / Vezel",
+    "Bodies": [
+      "GH (Gen1) 1998—2001",
+      "GH (Gen1) Restyling 2002—2006",
+      "RU (Gen2) 2013—2016",
+      "RU (Gen2) Restyling 2017—2018",
+      "RV (Gen3) 2021—Present"
+    ]
+  },
+  {
+    "Model": "Fit / Jazz",
+    "Bodies": [
+      "GD (Gen1) 2001—2004",
+      "GD (Gen1) Restyling 2004—2008",
+      "GE (Gen2) 2008—2011",
+      "GE (Gen2) Restyling 2012—2014",
+      "GK (Gen3) 2014—2017",
+      "GK (Gen3) Restyling 2018—2020",
+      "GR (Gen4) 2020—Present"
+    ]
+  },
+  {
+    "Model": "Pilot",
+    "Bodies": [
+      "YF1 (Gen1) 2002—2005",
+      "YF1 (Gen1) Restyling 2006—2008",
+      "YF3 (Gen2) 2009—2011",
+      "YF3 (Gen2) Restyling 2012—2015",
+      "YF5 (Gen3) 2016—2018",
+      "YF5 (Gen3) Restyling 2019—2022",
+      "YF7 (Gen4) 2023—Present"
+    ]
+  },
+  {
+    "Model": "Odyssey",
+    "Bodies": [
+      "RA1 (Gen2 JDM) 1994—1998",
+      "RA6 (Gen3) 1999—2003",
+      "RB1 (Gen4) 2004—2008",
+      "RB3 (Gen5) 2009—2013",
+      "RC1 (Gen6) 2013—2020",
+      "RC5 (Gen7) 2021—Present"
+    ]
+  },
+  {
+    "Model": "Prelude",
+    "Bodies": ["BB1 (Gen4) 1991—1996", "BB6 (Gen5) 1997—2001"]
+  },
+  {
+    "Model": "Ridgeline",
+    "Bodies": [
+      "YK1 (Gen1) 2006—2014",
+      "YK2 (Gen2) 2017—2020",
+      "YK2 (Gen2) Restyling 2021—Present"
+    ]
+  },
+  {
+    "Model": "Insight",
+    "Bodies": [
+      "ZE1 (Gen1) 1999—2006",
+      "ZE2 (Gen2) 2009—2013",
+      "ZE4 (Gen3) 2019—2022"
+    ]
+  },
+  {
+    "Model": "S2000",
+    "Bodies": ["AP1 (Gen1) 1999—2003", "AP2 (Gen1) Restyling 2004—2009"]
+  },
+  {
+    "Model": "Element",
+    "Bodies": ["YH1 (Gen1) 2003—2006", "YH1 (Gen1) Restyling 2007—2011"]
+  },
+  {
+    "Model": "Passport",
+    "Bodies": [
+      "C58 (Gen2) 1994—2002",
+      "YF7 (Gen3) 2019—2021",
+      "YF7 (Gen3) Restyling 2022—Present"
+    ]
+  },
+  {
+    "Model": "Clarity (EV/Fuel Cell)",
+    "Bodies": ["ZF1 (Gen1) 2016—2021"]
+  },
+  {
+    "Model": "e:Ny1 (EV)",
+    "Bodies": ["ZR-V / e:Ny1 (Gen1) 2023—Present"]
+  }
+]

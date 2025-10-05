@@ -1,0 +1,50 @@
+[
+  {
+    "Model": "Model S",
+    "Bodies": [
+      "P85 (Gen1) 2012—2014",
+      "P85D (Gen1) Restyling 2014—2016",
+      "MS75/MS90 (Gen1) Restyling 2016—2020",
+      "MS Long Range / Performance (Gen2) 2021—2022",
+      "MS Plaid (Gen2) Restyling 2022—Present"
+    ]
+  },
+  {
+    "Model": "Model X",
+    "Bodies": [
+      "MX P90D (Gen1) 2015—2017",
+      "MX 100D (Gen1) Restyling 2017—2020",
+      "MX Long Range / Plaid (Gen2) 2021—Present"
+    ]
+  },
+  {
+    "Model": "Model 3",
+    "Bodies": [
+      "M3 Standard / LR / Performance (Gen1) 2017—2020",
+      "M3 (Gen1) Restyling 2021—2023",
+      "M3 Highland (Gen2) 2023—Present"
+    ]
+  },
+  {
+    "Model": "Model Y",
+    "Bodies": [
+      "MY Long Range / Performance (Gen1) 2020—2022",
+      "MY (Gen1) Restyling 2023—Present"
+    ]
+  },
+  {
+    "Model": "Roadster",
+    "Bodies": [
+      "Lotus Elise-based (Gen1) 2008—2012",
+      "Next-Gen Roadster (Gen2) 2025—(expected)"
+    ]
+  },
+  {
+    "Model": "Cybertruck",
+    "Bodies": ["CT AWD / Tri-Motor (Gen1) 2023—Present"]
+  },
+  {
+    "Model": "Semi",
+    "Bodies": ["Class 8 Semi (Gen1) 2022—Present"]
+  }
+]
