@@ -87,6 +87,8 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             );
             break;
           case "english":
+          case "name":
+          case "description":
             content = row[col];
             break;
           default:
