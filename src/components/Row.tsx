@@ -7,7 +7,6 @@ import {
     Switch,
     TableCell,
     TableRow,
-    Typography,
 } from "@mui/material";
 import { ReactNode, useState } from "react";
 
