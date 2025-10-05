@@ -10,6 +10,7 @@ type Props = {
 function Body({ value, onChange, options }: Props) {
   return (
     <Autocomplete
+      popupIcon={null}
       disablePortal
       openOnFocus={true}
       size="small"

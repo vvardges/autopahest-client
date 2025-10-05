@@ -2,12 +2,12 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
 import {
-  Box,
-  IconButton,
-  Switch,
-  TableCell,
-  TableRow,
-  Typography,
+    Box, Chip,
+    IconButton, Stack,
+    Switch,
+    TableCell,
+    TableRow,
+    Typography,
 } from "@mui/material";
 import { ReactNode, useState } from "react";
 
@@ -42,7 +42,13 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             break;
           case "models":
           case "bodies":
-            content = row[col].join(", ");
+            content = (
+                <Stack gap="4px">
+                    {row[col].map((label, index) =>
+                        (<Chip key={index} label={label} size="small" />))
+                    }
+                </Stack>
+            );
             break;
           case "images":
             content = row[col] ? (
@@ -82,14 +88,15 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             content = row[col];
         }
 
+        const isColumnCopiable = getIsColumnCopiable(col);
+
         return (
           <TableCell
             key={col}
-            padding="none"
             sx={{
               position: "relative",
-              paddingLeft: "5px",
               overflow: "hidden",
+              padding: isColumnCopiable ? "16px" : "0px",
               ...getColumnSx(col),
             }}
             onMouseEnter={() => setHoveredColumn(col)}
@@ -97,10 +104,8 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
           >
             {content && (
               <>
-                <Typography component="p" fontSize={14}>
-                  {content}
-                </Typography>
-                {getIsColumnCopiable(col) && hoveredColumn === col && (
+                {content}
+                {isColumnCopiable && hoveredColumn === col && (
                   <Box
                     position="absolute"
                     right={0}

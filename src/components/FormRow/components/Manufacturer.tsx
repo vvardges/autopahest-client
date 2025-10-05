@@ -33,6 +33,7 @@ function Manufacturer({ value, onChange }: Props) {
   };
   return (
     <Autocomplete
+      popupIcon={null}
       disablePortal
       size="small"
       autoSelect={true}

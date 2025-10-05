@@ -21,6 +21,7 @@ export const getColumnSx = (col: Column) => {
         ...stickyBase,
         left: 60, // width of the "Actions" colum
         width: 30,
+        textAlign: "center",
       };
     case "manufacturer":
       return {
@@ -54,11 +55,20 @@ export const getColumnSx = (col: Column) => {
       return {
         width: 95,
       };
+    case "english":
+      return {
+        width: 200,
+      };
+    case "weight":
+      return {
+        width: 60,
+      };
     case "actions":
       return {
         ...stickyBase,
         right: 0,
         width: 70,
+        textAlign: "center",
       };
     default:
       return {
