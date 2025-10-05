@@ -92,7 +92,11 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             content = row[col];
             break;
           default:
-            content = <Typography noWrap>{row[col]}</Typography>;
+            content = (
+              <Typography noWrap fontSize={14}>
+                {row[col]}
+              </Typography>
+            );
         }
 
         const isColumnCopiable = getIsColumnCopiable(col);
@@ -104,6 +108,7 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
               position: "relative",
               overflow: "hidden",
               padding: isColumnCopiable ? "16px" : "0px",
+              fontSize: "14px",
               ...getColumnSx(col),
             }}
             onMouseEnter={() => setHoveredColumn(col)}

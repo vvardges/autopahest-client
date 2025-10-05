@@ -1,5 +1,5 @@
 import { Paper, Table, TableContainer } from "@mui/material";
-import { JSX, useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import Body from "@/components/Body";
 import FormRow from "@/components/FormRow";
@@ -40,13 +40,7 @@ import type { Column, Row as RowType } from "@/types";
 //         .then((res) => console.log(res));
 // }
 
-function MainTable({
-  tab,
-  tabsComponent,
-}: {
-  tab: number;
-  tabsComponent: JSX.Element;
-}) {
+function MainTable({ tab }: { tab: number }) {
   const { state: rows, setState: setRows } = useUndoRedo<RowType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [editRowIdx, setEditRowIdx] = useState<number | null>(null);
@@ -158,9 +152,8 @@ function MainTable({
   return (
     <TableContainer
       component={Paper}
-      sx={{ height: "100vh", overflow: "auto", width: "100%" }}
+      sx={{ width: "100%", height: "calc(100vh - 48px)", overflow: "auto" }}
     >
-      {tabsComponent}
       <Table
         size="small"
         stickyHeader
