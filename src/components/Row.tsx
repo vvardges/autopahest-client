@@ -18,6 +18,7 @@ import { ReactNode, useState } from "react";
 import { COLUMNS } from "@/constants";
 import { getColumnSx, getIsColumnCopiable } from "@/helpers";
 import type { Column, Row as RowType } from "@/types";
+import WarningIcon from "@mui/icons-material/Warning";
 
 const label = { inputProps: { "aria-label": "Actions" } };
 
@@ -26,9 +27,18 @@ type Props = {
   idx: number;
   onEdit: (idx: number) => void;
   onDelete: (idx: number) => void;
+  highlightOEM: boolean;
+  highlightAM: boolean;
 };
 
-const Row = ({ row, idx, onEdit, onDelete }: Props) => {
+const Row = ({
+  row,
+  idx,
+  onEdit,
+  onDelete,
+  highlightOEM,
+  highlightAM,
+}: Props) => {
   const [hoveredColumn, setHoveredColumn] = useState<Column | null>(null);
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
 
@@ -122,6 +132,26 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
           case "name":
           case "description":
             content = row[col];
+            break;
+          case "oemArticle":
+            content = (
+              <Stack alignItems="center" direction="row">
+                {highlightOEM && (
+                  <WarningIcon fontSize="small" color="warning" />
+                )}
+                {row[col]}
+              </Stack>
+            );
+            break;
+          case "amArticle":
+            content = (
+              <Stack alignItems="center" direction="row">
+                {highlightAM && (
+                  <WarningIcon fontSize="small" color="warning" />
+                )}
+                {row[col]}
+              </Stack>
+            );
             break;
           default:
             content = (

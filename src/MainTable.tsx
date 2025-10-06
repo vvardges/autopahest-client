@@ -8,6 +8,7 @@ import Row from "@/components/Row";
 import { useUndoRedo } from "@/hooks/useUndoRedo";
 import supabase from "@/supabese";
 import type { Column, Row as RowType } from "@/types";
+import WarningIcon from "@mui/icons-material/Warning";
 
 // const generateEmptyRow = (index: number): RowType => ({
 //     index,
@@ -149,6 +150,36 @@ function MainTable({ tab }: { tab: number }) {
       });
   }, [rows, filters, sort]);
 
+  // Compute which OEMs appear exactly twice across all rows
+  const oemExactlyTwo = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const r of rows) {
+      const key = (r?.oemArticle ?? "").trim();
+      if (!key) continue;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+    return new Set(
+      Array.from(counts.entries())
+        .filter(([, count]) => count > 1)
+        .map(([key]) => key),
+    );
+  }, [rows]);
+
+  // Compute which AMs appear exactly twice across all rows
+  const amExactlyTwo = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const r of rows) {
+      const key = (r?.amArticle ?? "").trim();
+      if (!key) continue;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+    return new Set(
+      Array.from(counts.entries())
+        .filter(([, count]) => count > 1)
+        .map(([key]) => key),
+    );
+  }, [rows]);
+
   return (
     <TableContainer
       component={Paper}
@@ -197,6 +228,8 @@ function MainTable({ tab }: { tab: number }) {
                 row={row}
                 onEdit={handleEditRow}
                 onDelete={handleDeleteRow}
+                highlightOEM={oemExactlyTwo.has(row.oemArticle)}
+                highlightAM={amExactlyTwo.has(row.amArticle)}
               />
             ),
           )}
