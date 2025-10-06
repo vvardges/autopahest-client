@@ -57,7 +57,7 @@ function Search({ defaultValue, onSelect }: Props) {
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState<ImageItem[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [transferingUrl, setTransferringUrl] = useState<string | null>(null);
+  const [transferringUrl, setTransferringUrl] = useState<string | null>(null);
   const searchImages = useCallback(async() => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
@@ -128,7 +128,7 @@ function Search({ defaultValue, onSelect }: Props) {
                   borderRadius: 8,
                 }}
               >
-                {transferingUrl === img.link && (
+                {transferringUrl === img.link && (
                   <Box
                     position="absolute"
                     width="100%"
