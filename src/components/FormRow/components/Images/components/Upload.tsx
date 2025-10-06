@@ -1,12 +1,5 @@
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
-import {
-  Alert,
-  Box,
-  Button,
-  LinearProgress,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Alert, Box, LinearProgress, Stack, Typography } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 import React, { useCallback, useRef, useState } from "react";
 
@@ -76,8 +69,8 @@ const Upload: React.FC<UploadProps> = ({ onSubmit }) => {
       try {
         const urls = await uploadFiles(files);
         await onSubmit(urls);
-      } catch (e: any) {
-        setError(e?.message || "Failed to upload images.");
+      } catch {
+        setError("Failed to upload images. Please chose another image");
       } finally {
         setIsUploading(false);
       }

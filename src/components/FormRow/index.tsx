@@ -196,9 +196,10 @@ const FormRow = ({
                         onSelect={(urls: string[]) => {
                           setForm({ ...form, [col]: urls } as Row);
                         }}
-                        defaultValue={form.oemArticle ?
-                            `${form.manufacturer} ${form.models[0].split("/")[0].trim()} ${form.oemArticle}` :
-                            `${form.english}`
+                        defaultValue={
+                          form.oemArticle
+                            ? `${form.manufacturer} ${form.models[0].split("/")[0].trim()} ${form.oemArticle}`
+                            : `${form.english}`
                         }
                         defaultSelected={form.images}
                       />

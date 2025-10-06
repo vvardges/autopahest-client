@@ -1,11 +1,14 @@
 import {
+  Box,
   Button,
   CircularProgress,
   ImageList,
   ImageListItem,
   TextField,
+  Tooltip,
 } from "@mui/material";
 import { useCallback, useEffect, useState } from "react";
+import WarningIcon from "@mui/icons-material/Warning";
 
 import supabase from "@/supabese";
 
@@ -53,6 +56,8 @@ function Search({ defaultValue, onSelect }: Props) {
   const [query, setQuery] = useState<string>(defaultValue);
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState<ImageItem[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [transferingUrl, setTransferringUrl] = useState<string | null>(null);
   const searchImages = useCallback(async () => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
@@ -80,14 +85,17 @@ function Search({ defaultValue, onSelect }: Props) {
 
   useEffect(() => {
     void searchImages();
-  }, [searchImages]);
+  }, []);
 
   const handleSelect = async (url: string) => {
     try {
+      setError(null);
+      setTransferringUrl(url);
       const newUrl = await transfer(url);
       onSelect([newUrl]);
-    } catch (error) {
-      console.error("Error transferring image:", error);
+      setTransferringUrl(null);
+    } catch {
+      setError("Error transferring image. Please chose another image");
     }
   };
 
@@ -120,6 +128,25 @@ function Search({ defaultValue, onSelect }: Props) {
                   borderRadius: 8,
                 }}
               >
+                {transferingUrl === img.link && (
+                  <Box
+                    position="absolute"
+                    width="100%"
+                    height="100%"
+                    bgcolor="rgba(0, 0, 0, 0.5)"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                  >
+                    {error ? (
+                      <Tooltip title={error}>
+                        <WarningIcon color="error" fontSize="large"/>
+                      </Tooltip>
+                    ) : (
+                      <CircularProgress size={100} />
+                    )}
+                  </Box>
+                )}
                 <img
                   src={img.link}
                   alt={img.title || "search result"}
