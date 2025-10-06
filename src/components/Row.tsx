@@ -2,6 +2,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
 import {
+  Badge,
   Box,
   Chip,
   IconButton,
@@ -53,14 +54,14 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             );
             break;
           case "images":
-            content = row[col] ? (
-              <img
-                src={row[col]}
-                alt="NMA"
-                style={{ height: "50px", width: "50px", objectFit: "cover" }}
-              />
-            ) : (
-              row[col]
+            content = Array.isArray(row[col]) && (
+              <Badge badgeContent={row[col].length} color="primary">
+                <img
+                  src={row[col][0]}
+                  alt="NMA"
+                  style={{ height: "50px", width: "50px", objectFit: "cover" }}
+                />
+              </Badge>
             );
             break;
           case "publish":

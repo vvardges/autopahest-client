@@ -1,5 +1,16 @@
-import { Close as CloseIcon, Save as SaveIcon } from "@mui/icons-material";
-import { Button, IconButton, Switch, TableCell, TableRow } from "@mui/material";
+import {
+  Close as CloseIcon,
+  ImageRounded as ImageIcon,
+  Save as SaveIcon,
+} from "@mui/icons-material";
+import {
+  Badge,
+  Button,
+  IconButton,
+  Switch,
+  TableCell,
+  TableRow,
+} from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 
 import {
@@ -159,14 +170,37 @@ const FormRow = ({
               case "images":
                 return (
                   <>
-                    <Button onClick={toggle}>Select</Button>
+                    <Button onClick={toggle}>
+                      {form.images.length > 0 ? (
+                        <Badge
+                          badgeContent={form.images.length}
+                          color="primary"
+                        >
+                          <img
+                            src={form.images[0]}
+                            alt="NMA"
+                            style={{
+                              height: "50px",
+                              width: "50px",
+                              objectFit: "cover",
+                            }}
+                          />
+                        </Badge>
+                      ) : (
+                        <ImageIcon />
+                      )}
+                    </Button>
                     {open && (
                       <Images
                         toggle={toggle}
-                        onSelect={(url: string) => {
-                          setForm({ ...form, [col]: url } as Row);
+                        onSelect={(urls: string[]) => {
+                          setForm({ ...form, [col]: urls } as Row);
                         }}
-                        defaultValue={`${form.manufacturer} ${form.models.toString()} ${form.english}`.trim()}
+                        defaultValue={form.oemArticle ?
+                            `${form.manufacturer} ${form.models[0].split("/")[0].trim()} ${form.oemArticle}` :
+                            `${form.english}`
+                        }
+                        defaultSelected={form.images}
                       />
                     )}
                   </>

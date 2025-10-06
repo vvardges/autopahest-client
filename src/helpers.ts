@@ -70,6 +70,11 @@ export const getColumnSx = (col: Column) => {
         width: 70,
         textAlign: "center",
       };
+    case "images":
+      return {
+        textAlign: "center",
+        width: 80,
+      };
     default:
       return {
         width: 80,

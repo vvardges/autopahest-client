@@ -13,7 +13,7 @@ export type Row = {
   brand: string;
   price: string;
   origin: string;
-  images: string;
+  images: string[];
   actions: string;
   english: string;
   amArticle: string;
