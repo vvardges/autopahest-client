@@ -58,7 +58,7 @@ function Search({ defaultValue, onSelect }: Props) {
   const [images, setImages] = useState<ImageItem[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [transferringUrl, setTransferringUrl] = useState<string | null>(null);
-  const searchImages = useCallback(async() => {
+  const searchImages = useCallback(async () => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
       console.warn(
@@ -87,7 +87,7 @@ function Search({ defaultValue, onSelect }: Props) {
     void searchImages();
   }, []);
 
-  const handleSelect = async(url: string) => {
+  const handleSelect = async (url: string) => {
     try {
       setError(null);
       setTransferringUrl(url);

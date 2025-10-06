@@ -6,6 +6,7 @@ import {
   Box,
   Chip,
   IconButton,
+  Popover,
   Stack,
   Switch,
   TableCell,
@@ -29,6 +30,17 @@ type Props = {
 
 const Row = ({ row, idx, onEdit, onDelete }: Props) => {
   const [hoveredColumn, setHoveredColumn] = useState<Column | null>(null);
+  const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
+
+  const handlePopoverOpen = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
   return (
     <TableRow
       hover
@@ -55,13 +67,32 @@ const Row = ({ row, idx, onEdit, onDelete }: Props) => {
             break;
           case "images":
             content = Array.isArray(row[col]) && (
-              <Badge badgeContent={row[col].length} color="primary">
-                <img
-                  src={row[col][0]}
-                  alt="NMA"
-                  style={{ height: "50px", width: "50px", objectFit: "cover" }}
-                />
-              </Badge>
+              <>
+                <Popover
+                  open={open}
+                  anchorEl={anchorEl}
+                  sx={{ pointerEvents: "none" }}
+                >
+                  <Stack>
+                    {row[col].map((src) => (
+                      <img src={src} key={src} width={100} alt="" />
+                    ))}
+                  </Stack>
+                </Popover>
+                <Badge badgeContent={row[col].length} color="primary">
+                  <img
+                    onMouseEnter={handlePopoverOpen}
+                    onMouseLeave={handlePopoverClose}
+                    src={row[col][0]}
+                    alt="NMA"
+                    style={{
+                      height: "50px",
+                      width: "50px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </Badge>
+              </>
             );
             break;
           case "publish":

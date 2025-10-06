@@ -22,7 +22,7 @@ function generateUniquePath(file: File) {
 }
 
 async function uploadFiles(files: File[]): Promise<string[]> {
-  const uploads = files.map(async(file) => {
+  const uploads = files.map(async (file) => {
     const path = generateUniquePath(file);
 
     const { error } = await supabase.storage.from("images").upload(path, file, {
@@ -51,7 +51,7 @@ const Upload: React.FC<UploadProps> = ({ onSubmit }) => {
   }, []);
 
   const handleFiles = useCallback(
-    async(filesList: FileList | File[] | null) => {
+    async (filesList: FileList | File[] | null) => {
       if (!filesList) return;
 
       const filesArray: File[] = Array.isArray(filesList)
