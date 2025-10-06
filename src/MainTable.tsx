@@ -98,22 +98,6 @@ function MainTable({ tab }: { tab: number }) {
     handleSaveToDB(updatedRows);
   };
 
-  const handleCopy = <K extends keyof RowType>(
-    start: number,
-    end: number,
-    columns: K[],
-  ) => {
-    const newRows = [...rows];
-    for (let i = start + 1; i <= end; i++) {
-      for (const column of columns) {
-        newRows[i][column] = rows[start][column];
-      }
-      newRows[i]._filled = true;
-    }
-    setRows(newRows);
-    handleSaveToDB(newRows);
-  };
-
   const handleSearch = useCallback((column: Column, query: string) => {
     setFilters((prev) => ({ ...prev, [column]: query }));
   }, []);
@@ -149,6 +133,28 @@ function MainTable({ tab }: { tab: number }) {
         return 0;
       });
   }, [rows, filters, sort]);
+
+  const handleCopy = <K extends keyof RowType>(
+    start: number,
+    end: number,
+    columns: K[],
+  ) => {
+    const uniqueRows = new Set<number>();
+    const originalRow = filteredRows[start];
+    for (let i = start + 1; i <= end; i++) {
+      uniqueRows.add(filteredRows[i].index);
+    }
+    const newKeyValues = Object.fromEntries(
+      columns.map((column) => [column, originalRow[column]]),
+    );
+    const newRows = rows.map((row) => {
+      return uniqueRows.has(row.index)
+        ? { ...row, _filled: true, ...newKeyValues }
+        : row;
+    });
+    setRows(newRows);
+    handleSaveToDB(newRows);
+  };
 
   // Compute which OEMs appear exactly twice across all rows
   const oemExactlyTwo = useMemo(() => {

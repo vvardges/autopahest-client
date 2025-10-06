@@ -139,7 +139,9 @@ const Row = ({
                 {highlightOEM && (
                   <WarningIcon fontSize="small" color="warning" />
                 )}
-                {row[col]}
+                <Typography noWrap fontSize={14}>
+                  {row[col]}
+                </Typography>
               </Stack>
             );
             break;
@@ -149,7 +151,9 @@ const Row = ({
                 {highlightAM && (
                   <WarningIcon fontSize="small" color="warning" />
                 )}
-                {row[col]}
+                <Typography noWrap fontSize={14}>
+                  {row[col]}
+                </Typography>
               </Stack>
             );
             break;
