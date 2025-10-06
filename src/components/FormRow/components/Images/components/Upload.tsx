@@ -1,7 +1,7 @@
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { Alert, Box, LinearProgress, Stack, Typography } from "@mui/material";
 import { alpha } from "@mui/material/styles";
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import supabase from "@/supabese";
 
@@ -22,7 +22,7 @@ function generateUniquePath(file: File) {
 }
 
 async function uploadFiles(files: File[]): Promise<string[]> {
-  const uploads = files.map(async (file) => {
+  const uploads = files.map(async(file) => {
     const path = generateUniquePath(file);
 
     const { error } = await supabase.storage.from("images").upload(path, file, {
@@ -51,12 +51,16 @@ const Upload: React.FC<UploadProps> = ({ onSubmit }) => {
   }, []);
 
   const handleFiles = useCallback(
-    async (filesList: FileList | null) => {
-      if (!filesList || filesList.length === 0) return;
+    async(filesList: FileList | File[] | null) => {
+      if (!filesList) return;
 
-      const files = Array.from(filesList).filter((f) =>
-        f.type.startsWith("image/"),
-      );
+      const filesArray: File[] = Array.isArray(filesList)
+        ? filesList
+        : Array.from(filesList);
+
+      if (filesArray.length === 0) return;
+
+      const files = filesArray.filter((f) => f.type.startsWith("image/"));
 
       if (files.length === 0) {
         setError("Please select image files only.");
@@ -112,6 +116,36 @@ const Upload: React.FC<UploadProps> = ({ onSubmit }) => {
     setIsDragging(false);
   }, []);
 
+  useEffect(() => {
+    const onPaste = (e: ClipboardEvent) => {
+      if (isUploading) return;
+
+      const items = e.clipboardData?.items;
+      if (!items || items.length === 0) return;
+
+      const files: File[] = [];
+      for (let i = 0; i < items.length; i += 1) {
+        const item = items[i];
+        if (item.kind === "file") {
+          const file = item.getAsFile();
+          if (file && file.type.startsWith("image/")) {
+            files.push(file);
+          }
+        }
+      }
+
+      if (files.length > 0) {
+        e.preventDefault();
+        void handleFiles(files);
+      }
+    };
+
+    document.addEventListener("paste", onPaste as EventListener);
+    return () => {
+      document.removeEventListener("paste", onPaste as EventListener);
+    };
+  }, [handleFiles, isUploading]);
+
   return (
     <Stack spacing={1.5}>
       <Box
@@ -143,7 +177,7 @@ const Upload: React.FC<UploadProps> = ({ onSubmit }) => {
             boxShadow: `0 0 0 3px ${alpha(theme.palette.primary.main, 0.2)}`,
           },
         })}
-        aria-label="Upload images by clicking or dragging and dropping onto this area"
+        aria-label="Upload images by clicking or dragging and dropping onto this area. You can also paste an image anywhere (Ctrl/Cmd+V)."
       >
         <input
           ref={inputRef}
@@ -160,6 +194,10 @@ const Upload: React.FC<UploadProps> = ({ onSubmit }) => {
           />
           <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
             Drag and drop images here or click to select
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Tip: Paste an image from your clipboard (Ctrl/Cmd+V) anywhere on the
+            page
           </Typography>
         </Stack>
       </Box>

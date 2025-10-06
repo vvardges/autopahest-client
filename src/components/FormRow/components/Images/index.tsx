@@ -106,11 +106,7 @@ export default function Images({
       </DialogContent>
       <DialogActions>
         <Button onClick={toggle}>Cancel</Button>
-        <Button
-          variant="contained"
-          onClick={handleSave}
-          disabled={selected.length === 0}
-        >
+        <Button variant="contained" onClick={handleSave}>
           Save
         </Button>
       </DialogActions>

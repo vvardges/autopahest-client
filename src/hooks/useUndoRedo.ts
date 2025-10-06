@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-type Options<T> = {
+type Options = {
   maxHistory?: number; // default: 20
 };
 
-export function useUndoRedo<T>(initialState: T, options: Options<T> = {}) {
+export function useUndoRedo<T>(initialState: T, options: Options = {}) {
   const { maxHistory = 5 } = options;
 
   const [state, setState] = useState<T>(initialState);

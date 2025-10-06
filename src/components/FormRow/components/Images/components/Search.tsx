@@ -1,3 +1,4 @@
+import WarningIcon from "@mui/icons-material/Warning";
 import {
   Box,
   Button,
@@ -8,7 +9,6 @@ import {
   Tooltip,
 } from "@mui/material";
 import { useCallback, useEffect, useState } from "react";
-import WarningIcon from "@mui/icons-material/Warning";
 
 import supabase from "@/supabese";
 
@@ -58,7 +58,7 @@ function Search({ defaultValue, onSelect }: Props) {
   const [images, setImages] = useState<ImageItem[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [transferingUrl, setTransferringUrl] = useState<string | null>(null);
-  const searchImages = useCallback(async () => {
+  const searchImages = useCallback(async() => {
     if (!query) return;
     if (!API_KEY || !CX_ID) {
       console.warn(
@@ -87,7 +87,7 @@ function Search({ defaultValue, onSelect }: Props) {
     void searchImages();
   }, []);
 
-  const handleSelect = async (url: string) => {
+  const handleSelect = async(url: string) => {
     try {
       setError(null);
       setTransferringUrl(url);
@@ -140,7 +140,7 @@ function Search({ defaultValue, onSelect }: Props) {
                   >
                     {error ? (
                       <Tooltip title={error}>
-                        <WarningIcon color="error" fontSize="large"/>
+                        <WarningIcon color="error" fontSize="large" />
                       </Tooltip>
                     ) : (
                       <CircularProgress size={100} />
