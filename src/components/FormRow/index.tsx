@@ -16,6 +16,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Body,
   Brand,
+  Category,
   Default,
   Description,
   Images,
@@ -224,6 +225,13 @@ const FormRow = ({
                       <CloseIcon fontSize="small" />
                     </IconButton>
                   </>
+                );
+              case "category":
+                return (
+                  <Category
+                    value={String(form.category)}
+                    onChange={handleChange}
+                  />
                 );
               default:
                 return (

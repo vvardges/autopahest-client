@@ -1,6 +1,7 @@
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
+import WarningIcon from "@mui/icons-material/Warning";
 import {
   Badge,
   Box,
@@ -18,7 +19,6 @@ import { ReactNode, useState } from "react";
 import { COLUMNS } from "@/constants";
 import { getColumnSx, getIsColumnCopiable } from "@/helpers";
 import type { Column, Row as RowType } from "@/types";
-import WarningIcon from "@mui/icons-material/Warning";
 
 const label = { inputProps: { "aria-label": "Actions" } };
 
@@ -157,6 +157,9 @@ const Row = ({
               </Stack>
             );
             break;
+          case "category":
+            content = <Typography fontSize={14}>{row[col]}</Typography>;
+            break;
           default:
             content = (
               <Typography noWrap fontSize={14}>
@@ -173,7 +176,7 @@ const Row = ({
             sx={{
               position: "relative",
               overflow: "hidden",
-              padding: isColumnCopiable ? "16px" : "0px",
+              padding: isColumnCopiable ? "6px" : "0px",
               fontSize: "14px",
               ...getColumnSx(col),
             }}

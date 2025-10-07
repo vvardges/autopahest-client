@@ -1,5 +1,6 @@
 import Body from "@/components/FormRow/components/Body";
 import Brand from "@/components/FormRow/components/Brand";
+import Category from "@/components/FormRow/components/Category";
 import Default from "@/components/FormRow/components/Default";
 import Description from "@/components/FormRow/components/Description";
 import Images from "@/components/FormRow/components/Images";
@@ -12,6 +13,7 @@ import Price from "@/components/FormRow/components/Price";
 export {
   Body,
   Brand,
+  Category,
   Default,
   Description,
   Images,

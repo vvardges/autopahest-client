@@ -14,5 +14,6 @@ export const COLUMNS = [
   "amArticle",
   "oemArticle",
   "weight",
+  "category",
   "actions",
 ] as const;

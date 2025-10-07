@@ -8,7 +8,6 @@ import Row from "@/components/Row";
 import { useUndoRedo } from "@/hooks/useUndoRedo";
 import supabase from "@/supabese";
 import type { Column, Row as RowType } from "@/types";
-import WarningIcon from "@mui/icons-material/Warning";
 
 // const generateEmptyRow = (index: number): RowType => ({
 //     index,

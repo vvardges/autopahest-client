@@ -25,7 +25,7 @@ export const getColumnSx = (col: Column) => {
       };
     case "manufacturer":
       return {
-        width: 120,
+        width: 80,
       };
     case "models":
       return {
@@ -41,7 +41,7 @@ export const getColumnSx = (col: Column) => {
       };
     case "description":
       return {
-        width: 160,
+        width: 100,
       };
     case "brand":
       return {
@@ -49,11 +49,11 @@ export const getColumnSx = (col: Column) => {
       };
     case "origin":
       return {
-        width: 65,
+        width: 50,
       };
     case "price":
       return {
-        width: 95,
+        width: 60,
       };
     case "english":
       return {
@@ -61,7 +61,7 @@ export const getColumnSx = (col: Column) => {
       };
     case "weight":
       return {
-        width: 60,
+        width: 50,
       };
     case "actions":
       return {
@@ -74,6 +74,10 @@ export const getColumnSx = (col: Column) => {
       return {
         textAlign: "center",
         width: 80,
+      };
+    case "category":
+      return {
+        width: 100,
       };
     default:
       return {
