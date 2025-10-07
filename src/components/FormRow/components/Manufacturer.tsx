@@ -19,18 +19,18 @@ const options = [
 ];
 
 type Props = {
-  value: string;
+  value: string[];
   onChange: (value: {
-    manufacturer: string;
+    manufacturers: string[];
     models: string[];
     bodies: string[];
   }) => void;
 };
 
 function Manufacturer({ value, onChange }: Props) {
-  const handleChange = (value: string) => {
+  const handleChange = (value: string[]) => {
     onChange({
-      manufacturer: value,
+      manufacturers: value,
       models: [],
       bodies: [],
     });
@@ -39,12 +39,14 @@ function Manufacturer({ value, onChange }: Props) {
     <Autocomplete
       popupIcon={null}
       disablePortal
+      disableClearable
+      multiple
       size="small"
       autoSelect={true}
       autoHighlight={true}
       options={options}
       value={value}
-      onChange={(_event, newValue) => handleChange(newValue as string)}
+      onChange={(_event, newValue) => handleChange(newValue as string[])}
       fullWidth
       renderInput={(params) => (
         <TextField {...params} placeholder="Manufacturer" fullWidth />

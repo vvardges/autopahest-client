@@ -1,7 +1,7 @@
 export const COLUMNS = [
   "publish",
   "index",
-  "manufacturer",
+  "manufacturers",
   "models",
   "bodies",
   "name",

@@ -41,8 +41,8 @@ const Body = ({ children, onDragEnd, isLoading }: Props) => {
     const col = target.dataset.column as Column;
 
     let columns;
-    if (col === "bodies") columns = ["bodies", "models", "manufacturer"];
-    else if (col === "models") columns = ["models", "manufacturer"];
+    if (col === "bodies") columns = ["bodies", "models", "manufacturers"];
+    else if (col === "models") columns = ["models", "manufacturers"];
     else columns = [col];
 
     setIsDragging(true);

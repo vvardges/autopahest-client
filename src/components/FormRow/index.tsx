@@ -84,13 +84,28 @@ const FormRow = ({
     onAdd?.(payload);
   };
 
-  const manufacturer = form.manufacturer;
+  const manufacturers = form.manufacturers;
   useEffect(() => {
-    if (!manufacturer) return;
-    import(`../../data/${manufacturer}.json`).then((res) =>
-      setModelOptions(res.default),
-    );
-  }, [manufacturer]);
+    const loadModels = async() => {
+      try {
+        const results = await Promise.all(
+          manufacturers.map(
+            (manufacturer) => import(`../../data/${manufacturer}.json`),
+          ),
+        );
+
+        // Merge all arrays into one (if each JSON exports an array)
+        const allOptions: ModelOptions[] = results.flatMap(
+          (res) => res.default,
+        );
+        setModelOptions(allOptions);
+      } catch (error) {
+        console.error("Failed to load model data:", error);
+      }
+    };
+
+    loadModels();
+  }, [manufacturers]);
 
   return (
     <TableRow ref={ref}>
@@ -102,10 +117,10 @@ const FormRow = ({
                 return <Switch defaultChecked={false} disabled={true} />;
               case "index":
                 return rowData.index;
-              case "manufacturer":
+              case "manufacturers":
                 return (
                   <Manufacturer
-                    value={form.manufacturer as string}
+                    value={form.manufacturers as string[]}
                     onChange={handleChange}
                   />
                 );
@@ -113,7 +128,7 @@ const FormRow = ({
                 return (
                   <Model
                     options={
-                      form.manufacturer
+                      form.manufacturers?.length > 0
                         ? modelOptions.map((item) => item.Model)
                         : []
                     }
@@ -201,7 +216,7 @@ const FormRow = ({
                         }}
                         defaultValue={
                           form.oemArticle
-                            ? `${form.manufacturer} ${form.models[0].split("/")[0].trim()} ${form.oemArticle}`
+                            ? `${form.manufacturers[0]} ${form.models[0].split("/")[0].trim()} ${form.oemArticle}`
                             : `${form.english}`
                         }
                         defaultSelected={form.images}

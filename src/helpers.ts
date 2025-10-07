@@ -23,9 +23,9 @@ export const getColumnSx = (col: Column) => {
         width: 30,
         textAlign: "center",
       };
-    case "manufacturer":
+    case "manufacturers":
       return {
-        width: 80,
+        width: 130,
       };
     case "models":
       return {

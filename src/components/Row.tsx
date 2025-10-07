@@ -67,9 +67,10 @@ const Row = ({
             break;
           case "models":
           case "bodies":
+          case "manufacturers":
             content = (
               <Stack gap="4px">
-                {row[col].map((label, index) => (
+                {row[col]?.map((label, index) => (
                   <Chip key={index} label={label} size="small" />
                 ))}
               </Stack>
