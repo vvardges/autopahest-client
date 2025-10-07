@@ -223,6 +223,11 @@ function MainTable({ tab }: { tab: number }) {
                       .filter((row) => row.brand.trim() !== "")
                       .map((row) => row.brand),
                   ),
+                  tags: new Set(
+                    rows
+                      .filter((row) => row.tags?.length > 0)
+                      .flatMap((row) => row.tags),
+                  ),
                 }}
                 rowData={row}
               />

@@ -20,5 +20,6 @@ export type Row = {
   oemArticle: string;
   weight: string;
   category: string;
+  tags: string[];
   _filled: boolean;
 };

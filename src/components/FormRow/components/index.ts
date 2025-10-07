@@ -9,6 +9,7 @@ import Model from "@/components/FormRow/components/Model";
 import Name from "@/components/FormRow/components/Name";
 import Origin from "@/components/FormRow/components/Origin";
 import Price from "@/components/FormRow/components/Price";
+import Tags from "@/components/FormRow/components/Tags";
 
 export {
   Body,
@@ -22,4 +23,5 @@ export {
   Name,
   Origin,
   Price,
+  Tags,
 };

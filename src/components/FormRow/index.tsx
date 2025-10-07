@@ -25,6 +25,7 @@ import {
   Name,
   Origin,
   Price,
+  Tags,
 } from "@/components/FormRow/components";
 import { COLUMNS } from "@/constants";
 import { getColumnSx } from "@/helpers";
@@ -45,6 +46,7 @@ const FormRow = ({
   helperData: {
     name: Set<string>;
     brand: Set<string>;
+    tags: Set<string>;
   };
   rowData: Row;
   onCancel?: () => void;
@@ -231,6 +233,14 @@ const FormRow = ({
                   <Category
                     value={String(form.category)}
                     onChange={handleChange}
+                  />
+                );
+              case "tags":
+                return (
+                  <Tags
+                    value={form.tags}
+                    onChange={handleChange}
+                    options={[...helperData.tags]}
                   />
                 );
               default:

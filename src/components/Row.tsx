@@ -14,7 +14,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import { ReactNode, useState } from "react";
+import React, { ReactNode, useState } from "react";
 
 import { COLUMNS } from "@/constants";
 import { getColumnSx, getIsColumnCopiable } from "@/helpers";
@@ -159,6 +159,11 @@ const Row = ({
             break;
           case "category":
             content = <Typography fontSize={14}>{row[col]}</Typography>;
+            break;
+          case "tags":
+            content = row.tags?.map((tag, index) => (
+              <Chip variant="outlined" label={tag} key={index} size="small" />
+            ));
             break;
           default:
             content = (
